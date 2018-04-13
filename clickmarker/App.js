@@ -19,7 +19,7 @@ import {
   View,
   StyleSheet,
   Polygon,
-  Image
+
 } from 'react-native';
 
 import { Constants, Location, Permissions } from 'expo';
@@ -28,6 +28,12 @@ import Marker from 'react-native';
 
 import { MapView } from 'expo';
 
+var golfCourse = require('./kingsmill.json')
+/*
+  Yes, I know this is terrible!
+
+  However, by doing this method, these images load very fast across the Javascript bridge!
+*/
 const holes = [];
 holes[0] = require('./assets/img/Hole1.png')
 holes[1] = require('./assets/img/Hole2.png')
@@ -48,7 +54,7 @@ holes[15] = require('./assets/img/Hole16.png')
 holes[16] = require('./assets/img/Hole17.png')
 holes[17] = require('./assets/img/Hole18.png')
 
-// ];
+// ]; 
 /*
 timeout= how long does the API have to return a value before error is thrown
 maximumAge=how old can the cache value be before I get another
@@ -61,10 +67,8 @@ const GEOLOCATION_OPTIONS = { enableHighAccuracy: true, timeout: 1000, maximumAg
 // Haymarket VA
 // var p = { latitude: 38.839454, longitude: -77.658044 }
 // greensboro dr
-var p = { latitude: 38.925161, longitude: -77.232729 }
-
-var latOffSet = 0.0005;
-var lngOffSet = 0.0005;
+// var p = { latitude: 38.925161, longitude: -77.232729 }
+var p = golfCourse.initialRegion;
 
 export default class App extends Component {
   constructor(props) {
@@ -73,8 +77,8 @@ export default class App extends Component {
     this.initialRegion = {  // this is over arlignton va
       latitude: p.latitude,
       longitude: p.longitude,
-      latitudeDelta: 0.01,
-      longitudeDelta: 0.01,
+      latitudeDelta: p.latitudeDelta,
+      longitudeDelta: p.longitudeDelta,
     }
 
     this.state = {
@@ -85,28 +89,6 @@ export default class App extends Component {
       inFence: 0,
       selectedTab: 0,
       mapType: 'satellite',
-
-      // greensboro dr, tysons
-      wayPoints: [
-        { coordinate: { latitude: 38.925161, longitude:  -77.232729 },
-            visible: false, disResult: null, color: null
-        },
-        { coordinate: { latitude: 38.926048, longitude:  -77.232049 },
-            visible: false, disResult: null, color: null
-        },
-        { coordinate:
-          { latitude: 38.925310, longitude:  -77.229756},
-            visible: false, disResult: null, color: null
-        },
-        { coordinate:
-          { latitude: 38.924207, longitude:  -77.227273},
-            visible: false, disResult: null, color: null
-        },
-        { coordinate:
-          { latitude: 38.922844, longitude:  -77.227566},
-            visible: false, disResult: null, color: null
-        },
-      ]
 
 
     }
@@ -130,8 +112,8 @@ export default class App extends Component {
     region = {
       latitude: location.coords.latitude,
       longitude: location.coords.longitude,
-      latitudeDelta: 0.3,
-      longitudeDelta: 0.3,
+      latitudeDelta: 0.1,
+      longitudeDelta: 0.1,
     }
 
     this.setState({location, region})
@@ -155,7 +137,18 @@ export default class App extends Component {
 
   // render the app
   render() {
-    let z = "hi"
+    let wayPoints = []
+    golfCourse.Features.forEach((h) => {
+      let ob = {}
+      ob.coordinate = {}
+      ob.coordinate.latitude = h.properties.FlagLocation.lat
+      ob.coordinate.longitude = h.properties.FlagLocation.lng
+
+      // console.log("c=",ob)
+      wayPoints.push(ob)
+    })
+
+    let z = "hello"
     return (
       <TabBarIOS>
         <TabBarIOS.Item
@@ -172,8 +165,8 @@ export default class App extends Component {
             >
             <View >
           {
-            this.state.wayPoints.map((wp, index) => {
-              // console.log(flg)
+             wayPoints.map((wp, index) => {
+              console.log(wp)
               return <Expo.MapView.Marker
                 key={index}
                 coordinate={wp.coordinate}
