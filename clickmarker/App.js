@@ -10,7 +10,7 @@ Expo.io uses AirBnB's react-native-map
 
 */
 import React, { Component } from 'react';
-
+import {createStore} from 'redux';
 import {
   Alert,
   Platform,
@@ -28,7 +28,16 @@ import Marker from 'react-native';
 
 import { MapView } from 'expo';
 
+
+import {addPlayer, updatePlayer} from './actions';
+import positions from './reducers';
+
+
+const store = createStore(positions);
+
 var golfCourse = require('./kingsmill.json')
+var players = require('./tempPlayers.json')
+
 /*
   Yes, I know this is terrible!
 
@@ -54,7 +63,9 @@ holes[15] = require('./assets/img/Hole16.png')
 holes[16] = require('./assets/img/Hole17.png')
 holes[17] = require('./assets/img/Hole18.png')
 
-// ]; 
+
+const BrookHenderson = require('./assets/playericons/BROOKE-HENDERSON-ICON.png')
+// ];
 /*
 timeout= how long does the API have to return a value before error is thrown
 maximumAge=how old can the cache value be before I get another
@@ -92,6 +103,16 @@ export default class App extends Component {
 
 
     }
+    // console.log("players=",players, Object.keys(players))
+    Object.keys(players).forEach(k => {
+      let p = players[k]
+
+      store.dispatch(addPlayer({
+        id: p.properties.id,
+        properties: p.properties
+      }))
+    })
+    // console.log("A: con:", store.getState(), players[9000].properties)
 
   }
 
@@ -163,20 +184,32 @@ export default class App extends Component {
             region={this.region}
             mapType={this.state.mapType}
             >
-            <View >
+
+            <View>
           {
+
              wayPoints.map((wp, index) => {
               console.log(wp)
-              return <Expo.MapView.Marker
-                key={index}
-                coordinate={wp.coordinate}
-                image={holes[index]}
-                onPress={() => {console.log("CLICK=",index) }}
-              />
+              return (
+                <Expo.MapView.Marker
+                  key={index}
+                  coordinate={wp.coordinate}
+                  style={styles.marker}
+                  image={holes[index]}
+                  onPress={() => {console.log("CLICK=",index) }}
+                />
+              )
             })
 
+
+
            }
+             <View><Expo.MapView.Marker
+                coordinate={wayPoints[0].coordinate}
+                image={BrookHenderson}
+             /></View>
            </View>
+
           </Expo.MapView>
         </TabBarIOS.Item>
         <TabBarIOS.Item
@@ -217,16 +250,10 @@ const styles = StyleSheet.create({
   mapr: {
     flex: 1
   },
-  circle1: {
-    width: 100,
-    height: 100,
-    borderRadius: 100/2,
-    backgroundColor: 'red'
-  },
-  circle2: {
-    width: 100,
-    height: 100,
-    borderRadius: 100/2,
-    backgroundColor: 'green'
+  marker: {
+    position: 'absolute',
+    backgroundColor: 'transparent',
+    width: 1,
+    height: 1
   }
 });
