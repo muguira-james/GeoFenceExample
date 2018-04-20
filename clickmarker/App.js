@@ -8,11 +8,29 @@ This is written for Expo.io.  The MapView and Polygon are Expo.io entities.
 
 Expo.io uses AirBnB's react-native-map
 
+wayPoints.map((wp, index) => {
+ console.log(wp)
+ return (
+   <Expo.MapView.Marker
+     key={index}
+     coordinate={wp.coordinate}
+     style={styles.marker}
+     image={holes[index]}
+     onPress={() => {console.log("CLICK=",index) }}
+   >
+   </Expo.MapView.Marker>
+ )
+
+ <View>
+   <Image source={{uri: 'http://localhost:8080/playerBrook'}} style={styles.playerIcon}/>
+ </View>
+})
+
 */
 import React, { Component } from 'react';
 import {createStore} from 'redux';
 import {
-  Alert,
+  Image,
   Platform,
   Text,
   TabBarIOS,
@@ -64,8 +82,9 @@ holes[16] = require('./assets/img/Hole17.png')
 holes[17] = require('./assets/img/Hole18.png')
 
 
-const BrookHenderson = require('./assets/playericons/BROOKE-HENDERSON-ICON.png')
+// const BrookHenderson = require('./assets/playericons/BROOKE-HENDERSON-ICON.png');
 // ];
+
 /*
 timeout= how long does the API have to return a value before error is thrown
 maximumAge=how old can the cache value be before I get another
@@ -168,7 +187,8 @@ export default class App extends Component {
       // console.log("c=",ob)
       wayPoints.push(ob)
     })
-
+    console.log("store=", store.getState())
+    let plyrs = store.getState()
     let z = "hello"
     return (
       <TabBarIOS>
@@ -188,26 +208,39 @@ export default class App extends Component {
             <View>
           {
 
-             wayPoints.map((wp, index) => {
-              console.log(wp)
-              return (
-                <Expo.MapView.Marker
-                  key={index}
-                  coordinate={wp.coordinate}
-                  style={styles.marker}
-                  image={holes[index]}
-                  onPress={() => {console.log("CLICK=",index) }}
-                />
-              )
+            wayPoints.map((wp, index) => {
+             // console.log(wp)
+             return (
+               <Expo.MapView.Marker
+                 key={index}
+                 coordinate={wp.coordinate}
+                 style={styles.marker}
+                 image={holes[index]}
+                 onPress={() => {console.log("Flag CLICK=",index) }}
+               >
+               </Expo.MapView.Marker>
+             )
             })
 
 
 
            }
-             <View><Expo.MapView.Marker
-                coordinate={wayPoints[0].coordinate}
-                image={BrookHenderson}
-             /></View>
+           {
+             Object.keys(plyrs.positions).map((pt, index) => {
+               console.log("pt=", pt, plyrs.positions[pt].photo);
+               return (
+                 <Expo.MapView.Marker
+                  coordinate={wayPoints[index].coordinate}
+                  key={index}
+               >
+               <View>
+                <Image source={{uri: plyrs.positions[pt].photo}} style={styles.playerIcon} />
+               </View>
+               </Expo.MapView.Marker>
+
+             )})
+}
+
            </View>
 
           </Expo.MapView>
@@ -255,5 +288,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     width: 1,
     height: 1
+  },
+  playerIcon: {
+    width: 30,
+    height: 30
   }
 });
