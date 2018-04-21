@@ -3,6 +3,7 @@ fs = require('fs');
 http = require('http');
 url = require('url');
 
+var port = process.env.PORT || 8080;
 
 http.createServer(function(req, res){
   var request = url.parse(req.url, true);
@@ -43,4 +44,4 @@ http.createServer(function(req, res){
   res.end(img, 'binary');
 
 
-}).listen(8080, '127.0.0.1');
+}).listen(port, function() { console.log("listening on port:", port)});
