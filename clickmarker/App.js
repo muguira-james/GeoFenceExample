@@ -177,7 +177,7 @@ export default class App extends Component {
 
   // render the app
   render() {
-    let wayPoints = []
+    let flagPoints = []
     golfCourse.Features.forEach((h) => {
       let ob = {}
       ob.coordinate = {}
@@ -185,18 +185,13 @@ export default class App extends Component {
       ob.coordinate.longitude = h.properties.FlagLocation.lng
 
       // console.log("c=",ob)
-      wayPoints.push(ob)
+      flagPoints.push(ob)
     })
     console.log("store=", store.getState())
     let plyrs = store.getState()
     let z = "hello"
     return (
-      <TabBarIOS>
-        <TabBarIOS.Item
-          systemIcon="favorites"
-          selected={this.state.selectedTab === 0}
-          onPress={this.handleTabPress.bind(this, 0)}
-        >
+
           <Expo.MapView
             style={styles.mapr}
             showsUserLocation={true}
@@ -208,7 +203,7 @@ export default class App extends Component {
             <View>
           {
 
-            wayPoints.map((wp, index) => {
+            flagPoints.map((wp, index) => {
              // console.log(wp)
              return (
                <Expo.MapView.Marker
@@ -230,7 +225,7 @@ export default class App extends Component {
                console.log("pt=", pt, plyrs.positions[pt].photo);
                return (
                  <Expo.MapView.Marker
-                  coordinate={wayPoints[index].coordinate}
+                  coordinate={flagPoints[index].coordinate}
                   key={index}
                >
                <View>
@@ -244,16 +239,7 @@ export default class App extends Component {
            </View>
 
           </Expo.MapView>
-        </TabBarIOS.Item>
-        <TabBarIOS.Item
-          title="Info"
-          icon={require('./assets/pin.png')}
-          selected={this.state.selectedTab === 1}
-          onPress={this.handleTabPress.bind(this, 1)}
-        >
-          <Text style={styles.text}  >{z}</Text>
-        </TabBarIOS.Item>
-      </TabBarIOS>
+        
     );
   }
 }
