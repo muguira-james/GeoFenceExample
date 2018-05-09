@@ -1,0 +1,87 @@
+{
+        9000 : {
+          "type": "Feature",
+
+          "properties": {
+            "id": 9000,
+            "name": "SUNG HYUNPARK",
+            "firstName": "",
+            "lastName": "",
+            "POS": "T1",
+            "toPar": "-2",
+            "walkTime": 7,
+            "profilePhoto": "./images/profilepic/SUNG-HYUNPARK-PROFILE.png",
+            "nationality": "./images/nationality/kor.png",
+            "photo": "./assets/playericons/SUNG-HYUNPARK-ICON.png",
+            "alt_photo": "./images/playericons/SUNG-HYUNPARK-Yellow.png",
+            "currentHole": 1,
+            "locationOnHole": "tee",
+            "position": [42.0, -74.0]
+          }
+        },
+
+        9001 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9001,
+              "name": "SO YEONRYU",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T1",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/SO-YEONRYU-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playericons/SO-YEONRYU-ICON.png",
+              "alt_photo": "./images/playericons/SO-YEONRYU-Yellow.png",
+              "currentHole": 1,
+              "locationOnHole": "tee",
+              "position": [42.0, -74.0]
+            }
+        },
+        9002 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9002,
+              "name": "Brooke Henderson",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T2",
+              "toPar": "-3",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/BROOKE-HENDERSON-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/BROOKE-HENDERSON-ICON.png",
+              "alt_photo": "./images/playericons/BROOKE-HENDERSON-PROFILE.png",
+              "currentHole": 1,
+              "locationOnHole": "tee",
+              "position": [42.0, -74.0]
+            }
+        },
+        9003 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9003,
+              "name": "IN KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 1,
+              "locationOnHole": "tee",
+              "position": [42.0, -74.0]
+            }
+        }
+
+
+
+
+}

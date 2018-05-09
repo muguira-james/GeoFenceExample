@@ -1,0 +1,410 @@
+
+ {
+  "type": "FeatureCollection",
+
+  "initialRegion": {
+    "latitude": 37.22944819712425,
+    "longitude": -76.66792030817544,
+    "latitudeDelta": 0.01,
+    "longitudeDelta": 0.01,
+  },
+  "Features":
+  [
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole1.png",
+        "page": "Hole1.html",
+        "number": "1",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole1.png",
+        "TeeLocation": {
+          "lat": 37.22645400791589,
+          "lng": -76.66848244692517
+        },
+        "FlagLocation": {
+          "lat": 37.22944819712425,
+          "lng": -76.66792030817544
+        },
+        "labelLocation": {
+          "lat": 37.22808776269149,
+          "lng": -76.66821847329493
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole2.png",
+        "page": "Hole2.html",
+        "number": "2",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole2.png",
+        "TeeLocation": {
+          "lat": 37.229485674440795,
+          "lng": -76.66733042666124
+        },
+        "FlagLocation": {
+          "lat": 37.23096702507858,
+          "lng": -76.6675710417984
+        },
+        "labelLocation": {
+          "lat": 37.23046004187642,
+          "lng": -76.66759652278404
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole3.png",
+        "page": "Hole3.html",
+        "number": "3",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole3.png",
+        "TeeLocation": {
+          "lat": 37.23110464410236,
+          "lng": -76.66617459897498
+        },
+        "FlagLocation": {
+          "lat": 37.23517455710481,
+          "lng": -76.66525615209719
+        },
+        "labelLocation": {
+          "lat": 37.23347070815913,
+          "lng": -76.66511212278601
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole4.png",
+        "page": "Hole4.html",
+        "number": "4",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole4.png",
+        "TeeLocation": {
+          "lat": 37.235241434097816,
+          "lng": -76.6642771667515
+        },
+        "FlagLocation": {
+          "lat": 37.23421897277551,
+          "lng": -76.66069823172728
+        },
+        "labelLocation": {
+          "lat": 37.23435999386404,
+          "lng": -76.66275226543189
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole5.png",
+        "page": "Hole5.html",
+        "number": "5",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole5.png",
+        "TeeLocation": {
+          "lat": 37.23458909277752,
+          "lng": -76.6594479993098
+        },
+        "FlagLocation": {
+          "lat": 37.23523853276878,
+          "lng": -76.65859960036823
+        },
+        "labelLocation": {
+          "lat": 37.23495368565682,
+          "lng": -76.65911056118557
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole6.png",
+        "page": "Hole6.html",
+        "number": "6",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole6.png",
+        "TeeLocation": {
+          "lat": 37.235837113213066,
+          "lng": -76.6579516784114
+        },
+        "FlagLocation": {
+          "lat": 37.232968236226135,
+          "lng": -76.65763377442187
+        },
+        "labelLocation": {
+          "lat": 37.23438932133602,
+          "lng": -76.65770917839143
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole7.png",
+        "page": "Hole7.html",
+        "number": "7",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole7.png",
+        "TeeLocation": {
+          "lat": 37.232279043978835,
+          "lng": -76.65808386510844
+        },
+        "FlagLocation": {
+          "lat": 37.23032983443834,
+          "lng": -76.66240961265726
+        },
+        "labelLocation": {
+          "lat": 37.23145988491656,
+          "lng": -76.66027278967067
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole8.png",
+        "page": "Hole8.html",
+        "number": "8",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole8.png",
+        "TeeLocation": {
+          "lat": 37.23030569833478,
+          "lng": -76.66160387782946
+        },
+        "FlagLocation": {
+          "lat": 37.228454581074715,
+          "lng": -76.66493272121534
+        },
+        "labelLocation": {
+          "lat": 37.22935046839006,
+          "lng": -76.66278672102021
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole9.png",
+        "page": "Hole9.html",
+        "number": "9",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole9.png",
+        "TeeLocation": {
+          "lat": 37.229997475192796,
+          "lng": -76.66559144367517
+        },
+        "FlagLocation": {
+          "lat": 37.22679100577037,
+          "lng": -76.66768537331518
+        },
+        "labelLocation": {
+          "lat": 37.2283686864717,
+          "lng": -76.666790992284
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole10.png",
+        "page": "Hole10.html",
+        "number": "10",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole10.png",
+        "TeeLocation": {
+          "lat": 37.226925777556566,
+          "lng": -76.66960670571575
+        },
+        "FlagLocation": {
+          "lat": 37.229301801486585,
+          "lng": -76.66960069227093
+        },
+        "labelLocation": {
+          "lat": 37.228401718096336,
+          "lng": -76.66996903470789
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole11.png",
+        "page": "Hole11.html",
+        "number": "11",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole11.png",
+        "TeeLocation": {
+          "lat": 37.22873555401862,
+          "lng": -76.67046526969523
+        },
+        "FlagLocation": {
+          "lat": 37.23187484126178,
+          "lng": -76.6704800233909
+        },
+        "labelLocation": {
+          "lat": 37.23052123823853,
+          "lng": -76.67014356140726
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole12.png",
+        "page": "Hole12.html",
+        "number": "12",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole12.png",
+        "TeeLocation": {
+          "lat": 37.23284335845418,
+          "lng": -76.67061930644252
+        },
+        "FlagLocation": {
+          "lat": 37.235835395747586,
+          "lng": -76.67134737509508
+        },
+        "labelLocation": {
+          "lat": 37.234549937515006,
+          "lng": -76.6706278951383
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole13.png",
+        "page": "Hole13.html",
+        "number": "13",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole13.png",
+        "TeeLocation": {
+          "lat": 37.23608370403525,
+          "lng": -76.67216714509402
+        },
+        "FlagLocation": {
+          "lat": 37.235536056979974,
+          "lng": -76.6736398992366
+        },
+        "labelLocation": {
+          "lat": 37.23584026370855,
+          "lng": -76.67296644338046
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole14.png",
+        "page": "Hole14.html",
+        "number": "14",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole14.png",
+        "TeeLocation": {
+          "lat": 37.235342726858654,
+          "lng": -76.67387844905352
+        },
+        "FlagLocation": {
+          "lat": 37.23223565572242,
+          "lng": -76.67348337466251
+        },
+        "labelLocation": {
+          "lat": 37.23379800300479,
+          "lng": -76.673632442881
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole15.png",
+        "page": "Hole15.html",
+        "number": "15",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole15.png",
+        "TeeLocation": {
+          "lat": 37.231277495396746,
+          "lng": -76.67327312061553
+        },
+        "FlagLocation": {
+          "lat": 37.227243129731605,
+          "lng": -76.67402388281425
+        },
+        "labelLocation": {
+          "lat": 37.228813814127946,
+          "lng": -76.67337865756798
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole16.png",
+        "page": "Hole16.html",
+        "number": "16",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole16.png",
+        "TeeLocation": {
+          "lat": 37.22674167237859,
+          "lng": -76.67343271255106
+        },
+        "FlagLocation": {
+          "lat": 37.22362863707632,
+          "lng": -76.67426002918461
+        },
+        "labelLocation": {
+          "lat": 37.22494210399274,
+          "lng": -76.67340445749454
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole17.png",
+        "page": "Hole17.html",
+        "number": "17",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole17.png",
+        "TeeLocation": {
+          "lat": 37.223126074969386,
+          "lng": -76.67474762899155
+        },
+        "FlagLocation": {
+          "lat": 37.22316558735168,
+          "lng": -76.67327777845139
+        },
+        "labelLocation": {
+          "lat": 37.22314209350523,
+          "lng": -76.6741253565001
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole18.png",
+        "page": "Hole18.html",
+        "number": "18",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole18.png",
+        "TeeLocation": {
+          "lat": 37.22323887407592,
+          "lng": -76.67266469457297
+        },
+        "FlagLocation": {
+          "lat": 37.225306571464294,
+          "lng": -76.66954644047922
+        },
+        "labelLocation": {
+          "lat": 37.22425123734105,
+          "lng": -76.67037677028327
+        }
+      }
+    }
+  ]
+}
