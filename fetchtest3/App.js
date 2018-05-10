@@ -5,6 +5,8 @@ This employs a customer view for the Marker image AND positions the image
 on the map using {lat, lng}
 
 This is an experiment to see how zooming works
+
+Place 30 players on the map
 */
 
 
@@ -24,11 +26,13 @@ import positions from './reducers';
 // let latt = 37.25;
 // let longg = -76.68;
 // this is Kingsmill middle of the 1st hole on the farway
+//"latitude": 37.22944819712425,
+// "longitude": -76.66792030817544,
 const p = {
-  "latitude": 37.22944819712425,
-  "longitude": -76.66792030817544,
-  "latitudeDelta": 0.007,
-  "longitudeDelta": 0.005,
+  "latitude": 37.22808776269149,
+  "longitude": -76.66821847329493,
+  "latitudeDelta": 0.00025,
+  "longitudeDelta": 0.0025,
 };
 
 let _mapView: MapView;
@@ -59,6 +63,48 @@ picon[0] = require('./assets/playericons/SUNG-HYUNPARK-ICON.png')
 picon[1] = require('./assets/playericons/SO-YEONRYU-ICON.png')
 picon[2] = require('./assets/playericons/BROOKE-HENDERSON-ICON.png')
 picon[3] = require('./assets/playericons/IN-KYUNGKIM-ICON.png')
+
+picon[4] = require('./assets/playericons/SUNG-HYUNPARK-ICON.png')
+picon[5] = require('./assets/playericons/SO-YEONRYU-ICON.png')
+picon[6] = require('./assets/playericons/BROOKE-HENDERSON-ICON.png')
+picon[7] = require('./assets/playericons/IN-KYUNGKIM-ICON.png')
+
+picon[8] = require('./assets/playericons/SUNG-HYUNPARK-ICON.png')
+picon[9] = require('./assets/playericons/SO-YEONRYU-ICON.png')
+picon[10] = require('./assets/playericons/BROOKE-HENDERSON-ICON.png')
+picon[11] = require('./assets/playericons/IN-KYUNGKIM-ICON.png')
+
+picon[12] = require('./assets/playericons/SUNG-HYUNPARK-ICON.png')
+picon[13] = require('./assets/playericons/SO-YEONRYU-ICON.png')
+picon[14] = require('./assets/playericons/BROOKE-HENDERSON-ICON.png')
+picon[15] = require('./assets/playericons/IN-KYUNGKIM-ICON.png')
+
+picon[16] = require('./assets/playericons/SUNG-HYUNPARK-ICON.png')
+picon[17] = require('./assets/playericons/SO-YEONRYU-ICON.png')
+picon[18] = require('./assets/playericons/BROOKE-HENDERSON-ICON.png')
+picon[19] = require('./assets/playericons/IN-KYUNGKIM-ICON.png')
+
+picon[20] = require('./assets/playericons/SUNG-HYUNPARK-ICON.png')
+picon[21] = require('./assets/playericons/SO-YEONRYU-ICON.png')
+picon[22] = require('./assets/playericons/BROOKE-HENDERSON-ICON.png')
+picon[23] = require('./assets/playericons/IN-KYUNGKIM-ICON.png')
+
+picon[24] = require('./assets/playericons/SUNG-HYUNPARK-ICON.png')
+picon[25] = require('./assets/playericons/SO-YEONRYU-ICON.png')
+picon[26] = require('./assets/playericons/BROOKE-HENDERSON-ICON.png')
+picon[27] = require('./assets/playericons/IN-KYUNGKIM-ICON.png')
+
+picon[28] = require('./assets/playericons/SUNG-HYUNPARK-ICON.png')
+picon[29] = require('./assets/playericons/SO-YEONRYU-ICON.png')
+picon[30] = require('./assets/playericons/BROOKE-HENDERSON-ICON.png')
+picon[31] = require('./assets/playericons/IN-KYUNGKIM-ICON.png')
+
+picon[32] = require('./assets/playericons/SUNG-HYUNPARK-ICON.png')
+picon[33] = require('./assets/playericons/SO-YEONRYU-ICON.png')
+picon[34] = require('./assets/playericons/BROOKE-HENDERSON-ICON.png')
+picon[35] = require('./assets/playericons/IN-KYUNGKIM-ICON.png')
+
+
 
 const store = createStore(positions);
 
@@ -91,7 +137,11 @@ export default class App extends React.Component {
         properties: p.properties
       }))
     })
-
+    let i=0;
+    let plyrs = store.getState()
+    Object.keys(plyrs.positions).forEach((pt) => {
+      players[pt].photo = picon[i++]
+    })
 
   }
 
@@ -122,7 +172,7 @@ export default class App extends React.Component {
     // console.log("aa=", this.state.region);
 
     let plyrs = store.getState()
-
+    let index = 0;
     return (
         <Expo.MapView
           style={styles.mapr}
@@ -149,20 +199,41 @@ export default class App extends React.Component {
             })
            }
            {
-             Object.keys(plyrs.positions).map((pt, index) => {
-               // console.log("pt=", pt, plyrs.positions[pt].photo);
+
+             Object.keys(plyrs.positions).map((pt, keyIndex) => {
+               let coord = {};
+               coord.coordinate = {};
+
                let zOffSet = util.computeZoomOffSet(this.state.region)
                // console.log("z->", players[pt].properties.currentHole)
                let cHole = (players[pt].properties.currentHole - 1);
-               let b = util.boxCalc(flagPoints[cHole].coordinate, zOffSet, index)
+               let plyr = players[pt].properties
+               if (plyr.locationOnHole === "tee") {
+                 coord.coordinate.latitude = golfCourse.Features[cHole].properties.TeeLocation.lat
+                 coord.coordinate.longitude = golfCourse.Features[cHole].properties.TeeLocation.lng
+               } else if (plyr.locationOnHole === "fairway") {
+                 coord.coordinate.latitude = golfCourse.Features[cHole].properties.labelLocation.lat
+                 coord.coordinate.longitude = golfCourse.Features[cHole].properties.labelLocation.lng
+
+               } else if (plyr.locationOnHole === "green") {
+                 coord.coordinate.latitude = golfCourse.Features[cHole].properties.FlagLocation.lat
+                 coord.coordinate.longitude = golfCourse.Features[cHole].properties.FlagLocation.lng
+
+               }
+               console.log("coord=", index, coord.coordinate)
+               let b = util.boxCalc(coord.coordinate, zOffSet, index)
+               index = index + 1
+               if (index > 3) {
+                 index = 0
+               }
                // console.log("b=", index, zOffSet, b)
                return (
                  <Expo.MapView.Marker
                   coordinate={b}
-                  key={index}
+                  key={keyIndex}
                   // image={plyrs.positions[pt].photo}
                   // this works !!
-                  image={picon[index]}
+                  image={players[pt].photo}
                >
                </Expo.MapView.Marker>
              )})

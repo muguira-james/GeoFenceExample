@@ -55,7 +55,7 @@
               "nationality": "./images/nationality/kor.png",
               "photo": "./assets/playercicons/BROOKE-HENDERSON-ICON.png",
               "alt_photo": "./images/playericons/BROOKE-HENDERSON-PROFILE.png",
-              "currentHole": 2,
+              "currentHole": 1,
               "locationOnHole": "tee",
               "position": [42.0, -74.0]
             }
@@ -75,13 +75,589 @@
               "nationality": "./images/nationality/kor.png",
               "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
               "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
-              "currentHole": 2,
+              "currentHole": 1,
               "locationOnHole": "tee",
               "position": [42.0, -74.0]
             }
-        }
+        },
 
 
 
 
+        9004 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9004,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 1,
+              "locationOnHole": "fairway",
+              "position": [42.0, -74.0]
+            }
+        },
+
+
+
+        9005 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9005,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 1,
+              "locationOnHole": "fairway",
+              "position": [42.0, -74.0]
+            }
+        },
+
+
+
+        9006 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9006,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 1,
+              "locationOnHole": "fairway",
+              "position": [42.0, -74.0]
+            }
+        },
+
+
+
+        9007 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9007,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 1,
+              "locationOnHole": "fairway",
+              "position": [42.0, -74.0]
+            }
+        },
+
+
+
+        9008 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9008,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 1,
+              "locationOnHole": "fairway",
+              "position": [42.0, -74.0]
+            }
+        },
+
+
+        9009 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9009,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 1,
+              "locationOnHole": "green",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9010 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9010,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 1,
+              "locationOnHole": "green",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9011 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9011,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 1,
+              "locationOnHole": "green",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9012 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9012,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 1,
+              "locationOnHole": "green",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9013 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9013,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 9,
+              "locationOnHole": "tee",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9014 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9014,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 9,
+              "locationOnHole": "tee",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9015 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9015,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 9,
+              "locationOnHole": "tee",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9016 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9016,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 9,
+              "locationOnHole": "fairway",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9017 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9017,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 9,
+              "locationOnHole": "fairway",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9018 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9018,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 9,
+              "locationOnHole": "fairway",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9019 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9019,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 9,
+              "locationOnHole": "green",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9020 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9020,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 9,
+              "locationOnHole": "green",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9021 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9021,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 9,
+              "locationOnHole": "green",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9022 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9022,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 10,
+              "locationOnHole": "tee",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9023 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9023,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 10,
+              "locationOnHole": "tee",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9024 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9024,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 10,
+              "locationOnHole": "tee",
+              "position": [42.0, -74.0]
+            }
+        },
+
+
+        9025 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9025,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 10,
+              "locationOnHole": "fairway",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9026 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9026,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 10,
+              "locationOnHole": "fairway",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9027 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9027,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 10,
+              "locationOnHole": "fairway",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9028 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9028,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 10,
+              "locationOnHole": "green",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9029 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9029,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 10,
+              "locationOnHole": "green",
+              "position": [42.0, -74.0]
+            }
+        },
+
+        9030 : {
+          "type": "Feature",
+
+            "properties": {
+              "id": 9030,
+              "name": "IN1 KyungKim",
+              "firstName": "",
+              "lastName": "",
+              "POS": "T3",
+              "toPar": "-2",
+              "walkTime": 14,
+              "profilePhoto": "./images/profilepic/IN-KYUNGKIM-PROFILE.png",
+              "nationality": "./images/nationality/kor.png",
+              "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
+              "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
+              "currentHole": 10,
+              "locationOnHole": "green",
+              "position": [42.0, -74.0]
+            }
+        },
 }

@@ -5,8 +5,8 @@
   "initialRegion": {
     "latitude": 37.22944819712425,
     "longitude": -76.66792030817544,
-    "latitudeDelta": 0.01,
-    "longitudeDelta": 0.01,
+    "latitudeDelta": 0.001,
+    "longitudeDelta": 0.001,
   },
   "Features":
   [
