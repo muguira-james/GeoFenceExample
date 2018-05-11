@@ -75,7 +75,7 @@
               "nationality": "./images/nationality/kor.png",
               "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
               "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
-              "currentHole": 1,
+              "currentHole": 3,
               "locationOnHole": "tee",
               "position": [42.0, -74.0]
             }
@@ -168,7 +168,7 @@
               "nationality": "./images/nationality/kor.png",
               "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
               "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
-              "currentHole": 1,
+              "currentHole": 2,
               "locationOnHole": "fairway",
               "position": [42.0, -74.0]
             }
@@ -191,7 +191,7 @@
               "nationality": "./images/nationality/kor.png",
               "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
               "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
-              "currentHole": 1,
+              "currentHole": 2,
               "locationOnHole": "fairway",
               "position": [42.0, -74.0]
             }
@@ -276,7 +276,7 @@
               "nationality": "./images/nationality/kor.png",
               "photo": "./assets/playercicons/IN-KYUNGKIM-ICON.png",
               "alt_photo": "./images/playericons/IN-KYUNGKIM-PROFILE.png",
-              "currentHole": 1,
+              "currentHole": 2,
               "locationOnHole": "green",
               "position": [42.0, -74.0]
             }

@@ -4,8 +4,51 @@ createLatLng = function(lat, lng) {
   return JSON.parse(p2);
 }
 //
+var holeMapIndex = [18];
 
-exports.boxCalc = function(centerPoint, zoomOffSet, index) {
+exports.mapLocationClear = function() {
+  for (i=0; i<18; i++) {
+
+    // console.log("i=", i);
+    holeMapIndex[i] = 0;
+  }
+}
+
+exports.mapLocationOnHole = function(zoomOffSet, hole, plyr, golfCourse) {
+
+  let coord = {};
+  coord.coordinate = {};
+
+  let i = holeMapIndex[hole];
+  console.log("mloh: hole->", hole, i);
+  if (plyr.locationOnHole === "tee") {
+    coord.coordinate.latitude = golfCourse.Features[hole].properties.TeeLocation.lat
+    coord.coordinate.longitude = golfCourse.Features[hole].properties.TeeLocation.lng
+    holeMapIndex[hole] += 1
+    if (holeMapIndex[hole] > 2) {
+      holeMapIndex[hole] = 0
+    }
+  } else if (plyr.locationOnHole === "fairway") {
+    coord.coordinate.latitude = golfCourse.Features[hole].properties.labelLocation.lat
+    coord.coordinate.longitude = golfCourse.Features[hole].properties.labelLocation.lng
+    holeMapIndex[hole] += 1
+    if (holeMapIndex[hole] > 2) {
+      holeMapIndex[hole] = 0
+    }
+  } else if (plyr.locationOnHole === "green") {
+    coord.coordinate.latitude = golfCourse.Features[hole].properties.FlagLocation.lat
+    coord.coordinate.longitude = golfCourse.Features[hole].properties.FlagLocation.lng
+    holeMapIndex[hole] += 1
+    if (holeMapIndex[hole] > 2) {
+      holeMapIndex[hole] = 0
+    }
+  }
+  let latlng = boxCalc(coord.coordinate, zoomOffSet, i);
+
+  return latlng;
+}
+
+boxCalc = function(centerPoint, zoomOffSet, index) {
   var box = [];
 
   if (centerPoint === null) return 0;
@@ -67,7 +110,7 @@ exports.computeZoomOffSet = function(e) {
 
   if (e === null) return offset;
 
-  console.log("->", e.latitude, e.longitude)
+  // console.log("->", e.latitude, e.longitude)
 
   if (e.longitudeDelta <= 0.0009) {
     console.log("zoom changed: 20", e.longitudeDelta)
