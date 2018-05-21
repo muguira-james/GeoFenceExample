@@ -1,0 +1,34 @@
+
+{
+  "GolfDataFeed":
+  {
+    "Type":"Locatorboards",
+    "Timestamp":"5/17/2018 6:03:39 PM",
+    "Tournament":
+    {
+      "Locatorboard":
+      {
+        "Player":
+        [
+          {
+            "HoleLocation":"TEE",
+            "Status":"InProgress",
+            "Hole":9,
+            "StartTee":10,
+            "FirstName":"Dorsey",
+            "StartTime":"09:16",
+            "Country":"USA",
+            "ID":99203,
+            "LastName":"Addicks",
+            "Course":"Ki"
+          },
+          {"HoleLocation":"GRN","Status":"InProgress","Hole":4,"StartTee":1,"FirstName":"Marina","StartTime":"13:27","Country":"USA","ID":98011,"LastName":"Alex","Course":"Ki"},
+          {"HoleLocation":"GRN","Status":"InProgress","Hole":4,"StartTee":1,"FirstName":"Rebecca","StartTime":"13:38","Country":"AUS","ID":98276,"LastName":"Artis","Course":"Ki"},
+          {"HoleLocation":"GRN","Status":"InProgress","Hole":4,"StartTee":1,"FirstName":"Celine","StartTime":"12:32","Country":"FRA","ID":98355,"LastName":"Boutier","Course":"Ki"}
+
+
+        ]
+      }
+    }
+  }
+}

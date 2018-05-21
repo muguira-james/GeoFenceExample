@@ -1,0 +1,29 @@
+{
+  "GolfDataFeed":
+  {
+    "Type":"Locatorboards",
+    "Timestamp":"5/17/2018 6:03:39 PM",
+    "Tournament":
+    {
+      "Locatorboard":
+      {
+        "Player":
+        [
+          {
+            "HoleLocation":"TEE",
+            "Status":"InProgress",
+            "Hole":9,
+            "StartTee":10,
+            "FirstName":"Dorsey",
+            "StartTime":"09:16",
+            "Country":"USA",
+            "ID":99203,
+            "LastName":"Addicks",
+            "Course":"Ki"
+          },
+        
+        ]
+      }
+    }
+  }
+}

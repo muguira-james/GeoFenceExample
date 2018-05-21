@@ -17,9 +17,10 @@ import {
   TabBarIOS,
   View,
   StyleSheet,
-  Polygon
+  Polygon,
+  Image
 } from 'react-native';
-import { Constants, Location, Permissions } from 'expo';
+import { Constants, Location, Permissions, AppLoading } from 'expo';
 
 import Geofence from 'react-native-expo-geofence';
 
@@ -38,10 +39,15 @@ const GEOLOCATION_OPTIONS = { enableHighAccuracy: true, timeout: 1000, maximumAg
 // Haymarket Va
 // var p = { latitude: 38.839454, longitude: -77.658044 }
 // greensboro dr
-var p = { latitude: 38.925161, longitude: -77.232729 }
+// var p = { latitude: 38.925161, longitude: -77.232729 }
+// arlington
+var p = { latitude: 38.833202, longitude: -77.086843 }
 
 var latOffSet = 0.0005;    // this is about an 1/8 mile
 var lngOffSet = 0.0005;
+
+let flags = []
+
 
 export default class App extends Component {
   constructor(props) {
@@ -50,13 +56,15 @@ export default class App extends Component {
     this.initialRegion = {
       latitude: p.latitude,
       longitude: p.longitude,
-      latitudeDelta: 0.01,
-      longitudeDelta: 0.01,
+      latitudeDelta: 0.005,
+      longitudeDelta: 0.005,
     }
 
     this.state = {
+      isReady: false,
       location: { coords: {latitude: p.latitude, longitude: p.longitude}},
       disResult: null,
+      region: this.initialRegion,
       // location: { coords: {latitude: 38.83719, longitude: -77.08654}},
       errorMessage: null,
       inFence: 0,
@@ -64,13 +72,13 @@ export default class App extends Component {
       mapType: 'satellite',
 
       // greensboro dr, tysons
-      wayPoints: [
-        { coordinate: { latitude: 38.925161, longitude:  -77.232729 },
-            visible: false, disResult: null, color: null
-        },
-        { coordinate: { latitude: 38.926048, longitude:  -77.232049 },
-            visible: false, disResult: null, color: null
-        },
+      // wayPoints: [
+      //   { coordinate: { latitude: 38.925161, longitude:  -77.232729 },
+      //       visible: false, disResult: null, color: null
+      //   },
+      //   { coordinate: { latitude: 38.926048, longitude:  -77.232049 },
+      //       visible: false, disResult: null, color: null
+      //   },
         // { coordinate:
         //   { latitude: 38.925310, longitude:  -77.229756},
         //     visible: false, disResult: null, color: null
@@ -83,7 +91,7 @@ export default class App extends Component {
         //   { latitude: 38.922844, longitude:  -77.227566},
         //     visible: false, disResult: null, color: null
         // },
-      ]
+      // ]
 
       // haymarket Va
       // wayPoints: [
@@ -108,27 +116,43 @@ export default class App extends Component {
       // ]
 
       // Arlington Va
-      // wayPoints: [
-      //   { latitude: 38.833202, longitude: -77.086843,
-      //     visible: true, disResult: null,
-      //     color: null
-      //   },
-      //
-      //   { latitude: 38.831019, longitude: -77.086569,
-      //     visible: false, disResult: null,
-      //     color: null
-      //   },
-      //
-      //   { latitude: 38.829231, longitude: -77.087518,
-      //     visible: false, disResult: null,
-      //     color: null
-      //   },
-      //
-      //   { latitude: 38.829471, longitude: -77.088943,
-      //     visible: false, disResult: null,
-      //     color: null
-      //   }
-      // ]
+      wayPoints: [
+        { coordinate: {latitude: 38.833202, longitude: -77.086843 },
+          visible: true, disResult: null,
+          color: null
+        },
+
+        { coordinate: {latitude: 38.831019, longitude: -77.086569},
+          visible: false, disResult: null,
+          color: null
+        },
+
+        { coordinate: {latitude: 38.829231, longitude: -77.087518},
+          visible: false, disResult: null,
+          color: null
+        },
+
+        { coordinate: {latitude: 38.829471, longitude: -77.088943},
+          visible: false, disResult: null,
+          color: null
+        },
+        { coordinate: {latitude: 38.839471, longitude: -77.088943},
+          visible: false, disResult: null,
+          color: null
+        },
+        { coordinate: {latitude: 38.829231, longitude: -77.084518},
+          visible: false, disResult: null,
+          color: null
+        },
+        { coordinate: {latitude: 38.729231, longitude: -77.084518},
+          visible: false, disResult: null,
+          color: null
+        },
+        { coordinate: {latitude: 38.829231, longitude: -77.024518},
+          visible: false, disResult: null,
+          color: null
+        }
+      ]
     }
 
   }
@@ -241,20 +265,23 @@ export default class App extends Component {
     this.setState({ wayPoints: wayPoints })
     this.setState({errorMessage: msg})
 
-    // this keeps the display centered on the user
-    region = {
-      latitude: location.coords.latitude,
-      longitude: location.coords.longitude,
-      latitudeDelta: 0.3,
-      longitudeDelta: 0.3,
-    }
+    point.latitudeDelta= 0.005
+    point.longitudeDelta = 0.005
 
-    this.setState({location, region})
+    this.setState({location, point})
+    this.setState({region: point})
     this.setState({disResult: result})
   }
 
+  askPermission = async () => {
+    let { status } = await Permissions.askAsync(Permissions.LOCATION);
+    if (status != 'granted') {
+      Alert("not allowed to use location")
+    }
+  }
   // start the location service
   componentWillMount() {
+    this.askPermission()
     this.clearLocation = Location.watchPositionAsync(GEOLOCATION_OPTIONS, this.locationChanged);
   }
 
@@ -263,6 +290,16 @@ export default class App extends Component {
     this.clearLocation.remove()
   }
 
+  _loadAssetsAsync = async () => {
+    flags[0] = require('./assets/Hole1.png')
+    flags[1] = require('./assets/Hole2.png')
+    flags[2] = require('./assets/Hole3.png')
+    flags[3] = require('./assets/Hole4.png')
+    flags[4] = require('./assets/Hole5.png')
+    flags[5] = require('./assets/Hole6.png')
+    flags[6] = require('./assets/Hole7.png')
+    flags[7] = require('./assets/Hole8.png')
+  }
   // handle changing from Favorrite screen to text screen
   handleTabPress(tab) {
     this.setState({ selectedTab: tab })
@@ -273,6 +310,16 @@ export default class App extends Component {
     let it = null
     let poly = {}
     let z = this.state.errorMessage
+
+    // if (this.state.isReady  === false) {
+    //   return (
+    //     <AppLoading
+    //       startAsync={() => {this._loadAssetsAsync()}}
+    //       onFinish={() => this.setState({ isReady: true })}
+    //       onError={console.warn}
+    //     />
+    //   )
+    // }
     return (
       <TabBarIOS>
         <TabBarIOS.Item
@@ -283,8 +330,8 @@ export default class App extends Component {
           <Expo.MapView
             style={styles.mapr}
             showsUserLocation={true}
-            initialRegion={this.initialRegion}
-            region={this.region}
+            // initialRegion={this.initialRegion}
+            region={this.state.region}
             mapType={this.state.mapType}
             >
             <View>
@@ -294,10 +341,25 @@ export default class App extends Component {
               poly = this.createPolygonFromPoint(pt.coordinate)
               if (pt.visible === 0) {
                 pt.color = 'rgba(0,52,0,0.7)'
-                it = <View key={index} ><MapView.Polygon fillColor={pt.color} coordinates={poly} /><MapView.Marker key={index} coordinate={pt.coordinate} /></View>
+                it = <View key={index} >
+                      <MapView.Polygon fillColor={pt.color} coordinates={poly} />
+                        <MapView.Marker
+                          key={index}
+                          coordinate={pt.coordinate} >
+                            <Image source={flags[index]} style={styles.flagSize} />
+                        </MapView.Marker>
+
+                      </View>
               } else {
                 pt.color = 'rgba(67,0,52, 0.5)'
-                it = <View key={index} ><MapView.Polygon fillColor={pt.color} coordinates={poly} /><MapView.Marker key={index} coordinate={pt.coordinate} /></View>
+                it = <View key={index} >
+                        <MapView.Polygon fillColor={pt.color} coordinates={poly} />
+                          <MapView.Marker
+                            key={index}
+                            coordinate={pt.coordinate} >
+                              <Image source={flags[index]} style={styles.flagSize} />
+                          </MapView.Marker>
+                      </View>
               }
               return it
             })
@@ -355,5 +417,9 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 100/2,
     backgroundColor: 'green'
+  },
+  flagSize: {
+    width:30,
+    height:30
   }
 });

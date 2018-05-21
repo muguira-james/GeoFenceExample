@@ -52,56 +52,56 @@ export default class App extends Component {
     }
 
     this.state = {
-      location: { coords: {latitude: p.latitude, longitude: p.longitude}},
+      // location: { coords: {latitude: p.latitude, longitude: p.longitude}},
       disResult: null,
-      // location: { coords: {latitude: 38.83719, longitude: -77.08654}},
+      location: { coords: {latitude: 38.83719, longitude: -77.08654}},
       errorMessage: null,
       inFence: 0,
       selectedTab: 0,
       mapType: 'satellite',
 
-      wayPoints: [
-        { latitude: 38.839454, longitude: -77.658044,
-          visible: true, disResult: null,
-          color: null
-        },
-
-        { latitude: 38.837734, longitude: -77.659563,
-          visible: true, disResult: null,
-          color: null
-        },
-        { latitude: 38.837586, longitude: -77.661732,
-          visible: true, disResult: null,
-          color: null
-        },
-
-        { latitude: 38.839531, longitude: -77.660562,
-          visible: true, disResult: null,
-          color: null
-        }
-      ]
-
       // wayPoints: [
-      //   { latitude: 38.833202, longitude: -77.086843,
+      //   { latitude: 38.839454, longitude: -77.658044,
       //     visible: true, disResult: null,
       //     color: null
       //   },
       //
-      //   { latitude: 38.831019, longitude: -77.086569,
-      //     visible: false, disResult: null,
+      //   { latitude: 38.837734, longitude: -77.659563,
+      //     visible: true, disResult: null,
+      //     color: null
+      //   },
+      //   { latitude: 38.837586, longitude: -77.661732,
+      //     visible: true, disResult: null,
       //     color: null
       //   },
       //
-      //   { latitude: 38.829231, longitude: -77.087518,
-      //     visible: false, disResult: null,
-      //     color: null
-      //   },
-      //
-      //   { latitude: 38.829471, longitude: -77.088943,
-      //     visible: false, disResult: null,
+      //   { latitude: 38.839531, longitude: -77.660562,
+      //     visible: true, disResult: null,
       //     color: null
       //   }
       // ]
+
+      wayPoints: [
+        { latitude: 38.833202, longitude: -77.086843,
+          visible: true, disResult: null,
+          color: null
+        },
+
+        { latitude: 38.831019, longitude: -77.086569,
+          visible: false, disResult: null,
+          color: null
+        },
+
+        { latitude: 38.829231, longitude: -77.087518,
+          visible: false, disResult: null,
+          color: null
+        },
+
+        { latitude: 38.829471, longitude: -77.088943,
+          visible: false, disResult: null,
+          color: null
+        }
+      ]
     }
 
   }
@@ -218,8 +218,12 @@ export default class App extends Component {
     this.setState({disResult: result})
   }
 
+  _foo = async () => {
+    let { status } = await Permissions.askAsync(Permissions.LOCATION);
+  }
   // start the location service
   componentWillMount() {
+    this._foo()
     this.clearLocation = Location.watchPositionAsync(GEOLOCATION_OPTIONS, this.locationChanged);
   }
 

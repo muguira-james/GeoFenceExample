@@ -1,0 +1,85 @@
+<Locatorboard RoundID="2">
+       <Group Num="25" StartTee="1" StartTime="11:35" Course="Ol" Hole="1" HoleLocation="Tee" Status="Active">
+           <Player ID="88128" FirstName="Paula" LastName="Reto" Country="RSA" />
+           <Player ID="98776" FirstName="Gemma" LastName="Dryburgh" Country="SCO" />
+           <Player ID="81327" FirstName="Becky" LastName="Morgan" Country="WAL" />
+       </Group>
+       <Group Num="26" StartTee="10" StartTime="11:35" Course="Ol" Hole="1" HoleLocation="Approach" Status="Active">
+           <Player ID="81127" FirstName="Candie" LastName="Kung" Country="TPE" />
+           <Player ID="88893" FirstName="Katelyn" LastName="Sepmoree" Country="USA" />
+           <Player ID="98355" FirstName="Celine" LastName="Boutier" Country="FRA" />
+       </Group>
+       <Group Num="27" StartTee="1" StartTime="11:46" Course="Ol" Hole="1" HoleLocation="Green" Status="Active">
+           <Player ID="99429" FirstName="Kennedy" LastName="Pedigo" Country="USA" />
+           <Player ID="98617" FirstName="Lauren" LastName="Kim" Country="USA" />
+           <Player ID="88943" FirstName="Allison" LastName="Emrey" Country="USA" />
+       </Group>
+       <Group Num="28" StartTee="10" StartTime="11:46" Course="Ol" Hole="2" HoleLocation="Tee" Status="Active">
+           <Player ID="98278" FirstName="Holly" LastName="Clyburn" Country="ENG" />
+           <Player ID="88150" FirstName="Kendall" LastName="Dye" Country="USA" />
+           <Player ID="81102" FirstName="Lorie" LastName="Kane" Country="CAN" />
+       </Group>
+       <Group Num="29" StartTee="1" StartTime="11:57" Course="Ol" Hole="2" HoleLocation="Approach" Status="Active">
+           <Player ID="98720" FirstName="Alexandra" LastName="Newell" Country="USA" />
+           <Player ID="82819" FirstName="Brittany" LastName="Lang" Country="USA" />
+           <Player ID="88236" FirstName="Amelia" LastName="Lewis" Country="USA" />
+       </Group>
+  </Locatorboard>
+
+<Locatorboard RoundID="2">
+       <Group Num="25" StartTee="1" StartTime="11:35" Course="Ol" Hole="1" HoleLocation="Approach" Status="Active">
+           <Player ID="88128" FirstName="Paula" LastName="Reto" Country="RSA" />
+           <Player ID="98776" FirstName="Gemma" LastName="Dryburgh" Country="SCO" />
+           <Player ID="81327" FirstName="Becky" LastName="Morgan" Country="WAL" />
+       </Group>
+       <Group Num="26" StartTee="10" StartTime="11:35" Course="Ol" Hole="1" HoleLocation="Green" Status="Active">
+           <Player ID="81127" FirstName="Candie" LastName="Kung" Country="TPE" />
+           <Player ID="88893" FirstName="Katelyn" LastName="Sepmoree" Country="USA" />
+           <Player ID="98355" FirstName="Celine" LastName="Boutier" Country="FRA" />
+       </Group>
+       <Group Num="27" StartTee="1" StartTime="11:46" Course="Ol" Hole="2" HoleLocation="Tee" Status="Active">
+           <Player ID="99429" FirstName="Kennedy" LastName="Pedigo" Country="USA" />
+           <Player ID="98617" FirstName="Lauren" LastName="Kim" Country="USA" />
+           <Player ID="88943" FirstName="Allison" LastName="Emrey" Country="USA" />
+       </Group>
+       <Group Num="28" StartTee="10" StartTime="11:46" Course="Ol" Hole="2" HoleLocation="Approach" Status="Active">
+           <Player ID="98278" FirstName="Holly" LastName="Clyburn" Country="ENG" />
+           <Player ID="88150" FirstName="Kendall" LastName="Dye" Country="USA" />
+           <Player ID="81102" FirstName="Lorie" LastName="Kane" Country="CAN" />
+       </Group>
+       <Group Num="29" StartTee="1" StartTime="11:57" Course="Ol" Hole="2" HoleLocation="Green" Status="Active">
+           <Player ID="98720" FirstName="Alexandra" LastName="Newell" Country="USA" />
+           <Player ID="82819" FirstName="Brittany" LastName="Lang" Country="USA" />
+           <Player ID="88236" FirstName="Amelia" LastName="Lewis" Country="USA" />
+       </Group>
+  </Locatorboard>
+
+
+
+<Locatorboard RoundID="2">
+       <Group Num="25" StartTee="1" StartTime="11:35" Course="Ol" Hole="1" HoleLocation="Green" Status="Active">
+           <Player ID="88128" FirstName="Paula" LastName="Reto" Country="RSA" />
+           <Player ID="98776" FirstName="Gemma" LastName="Dryburgh" Country="SCO" />
+           <Player ID="81327" FirstName="Becky" LastName="Morgan" Country="WAL" />
+       </Group>
+       <Group Num="26" StartTee="10" StartTime="11:35" Course="Ol" Hole="2" HoleLocation="Tee" Status="Active">
+           <Player ID="81127" FirstName="Candie" LastName="Kung" Country="TPE" />
+           <Player ID="88893" FirstName="Katelyn" LastName="Sepmoree" Country="USA" />
+           <Player ID="98355" FirstName="Celine" LastName="Boutier" Country="FRA" />
+       </Group>
+       <Group Num="27" StartTee="1" StartTime="11:46" Course="Ol" Hole="2" HoleLocation="Approach" Status="Active">
+           <Player ID="99429" FirstName="Kennedy" LastName="Pedigo" Country="USA" />
+           <Player ID="98617" FirstName="Lauren" LastName="Kim" Country="USA" />
+           <Player ID="88943" FirstName="Allison" LastName="Emrey" Country="USA" />
+       </Group>
+       <Group Num="28" StartTee="10" StartTime="11:46" Course="Ol" Hole="2" HoleLocation="Green" Status="Active">
+           <Player ID="98278" FirstName="Holly" LastName="Clyburn" Country="ENG" />
+           <Player ID="88150" FirstName="Kendall" LastName="Dye" Country="USA" />
+           <Player ID="81102" FirstName="Lorie" LastName="Kane" Country="CAN" />
+       </Group>
+       <Group Num="29" StartTee="1" StartTime="11:57" Course="Ol" Hole="3" HoleLocation="Tee" Status="Active">
+           <Player ID="98720" FirstName="Alexandra" LastName="Newell" Country="USA" />
+           <Player ID="82819" FirstName="Brittany" LastName="Lang" Country="USA" />
+           <Player ID="88236" FirstName="Amelia" LastName="Lewis" Country="USA" />
+       </Group>
+  </Locatorboard>

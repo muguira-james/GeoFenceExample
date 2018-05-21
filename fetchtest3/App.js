@@ -254,7 +254,7 @@ export default class App extends React.Component {
                // let b = util.boxCalc(coord.coordinate, zOffSet, index)
                let b = util.mapLocationOnHole(zOffSet, cHole, plyr, golfCourse)
 
-               // console.log("b=", index, zOffSet, b)
+               console.log("b=", index, zOffSet, b)
                return (
                  <Expo.MapView.Marker
                   coordinate={b}

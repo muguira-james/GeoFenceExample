@@ -3,7 +3,7 @@ if (process.argv.length <= 2) {
   console.log('usage: node readline fileName')
   return
 }
-
+  
 var lineReader = require('readline').createInterface({
   input: require('fs').createReadStream(process.argv[2])
 });
