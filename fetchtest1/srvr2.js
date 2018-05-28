@@ -3,6 +3,7 @@ fs = require('fs');
 http = require('http');
 url = require('url');
 
+var cntr = 1;
 var z = {
   "GolfDataFeed":
   {
@@ -47,9 +48,11 @@ http.createServer(function(req, res){
      res.writeHead(200, {'Content-Type': 'image/png' });
      res.end(img, 'binary');
   } else if (action === '/active') {
-    console.log("hit")
-    var raw = fs.readFileSync('da.json');
-    var zzz = JSON.parse(raw)
+    console.log("hit=",cntr)
+    cntr += 1;
+    var raw = fs.readFileSync('da.json', 'utf8');
+    let someText = raw.replace(/(\r\n\t|\n|\r\t)/gm,"");
+    var zzz = JSON.parse(someText)
     console.log(zzz)
     // var js = "{ hello: 1 }"
     // console.log(js)
