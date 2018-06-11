@@ -50,10 +50,11 @@ http.createServer(function(req, res){
   } else if (action === '/active') {
     console.log("hit=",cntr)
     cntr += 1;
-    var raw = fs.readFileSync('da.json', 'utf8');
-    let someText = raw.replace(/(\r\n\t|\n|\r\t)/gm,"");
-    var zzz = JSON.parse(someText)
-    console.log(zzz)
+    // var raw = fs.readFileSync('course.json', 'utf8');
+    var raw = fs.readFileSync('feed144.json', 'utf8');
+    // let someText = raw.replace(/(\r\n\t|\n|\r\t)/gm,"");
+    // var zzz = JSON.parse(someText)
+    // console.log(zzz)
     // var js = "{ hello: 1 }"
     // console.log(js)
     res.writeHead(200, {'Content-Type': 'application/json' });

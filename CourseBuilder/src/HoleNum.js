@@ -5,7 +5,7 @@ export default class HoleNum extends React.Component {
     return (
       <div>
         <label>Hole Number: </label>
-        <select id="holeNum">
+        <select id="holeID">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>

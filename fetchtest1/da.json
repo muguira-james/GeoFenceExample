@@ -11,21 +11,24 @@
         "Player":
         [
           {
-            "HoleLocation":"FWY",
+            "HoleLocation":"GRN",
             "Status":"InProgress",
-            "Hole":9,
+            "Hole":18,
             "StartTee":10,
-            "FirstName":"Dorsey",
+            "FirstName":"Carlota",
             "StartTime":"09:16",
             "Country":"USA",
-            "ID":99203,
-            "LastName":"Addicks",
-            "Course":"Ki"
+            "ID":93254,
+            "LastName":"Ciganda",
+            "Course":"Ki",
+            "Rank": "57",
+            "CumulativeToPar": "12",
+            "RoundToPar": "8"
           },
-          {"HoleLocation":"FWY","Status":"InProgress","Hole":1,"StartTee":1,"FirstName":"Marina","StartTime":"13:27","Country":"USA","ID":98011,"LastName":"Alex","Course":"Ki"},
-          {"HoleLocation":"FWY","Status":"InProgress","Hole":1,"StartTee":1,"FirstName":"Rebecca","StartTime":"13:38","Country":"AUS","ID":98276,"LastName":"Artis","Course":"Ki"},
-          {"HoleLocation":"FWY","Status":"InProgress","Hole":1,"StartTee":1,"FirstName":"Celine","StartTime":"12:32","Country":"FRA","ID":98355,"LastName":"Boutier","Course":"Ki"}
-
+          {"HoleLocation":"GRN","Status":"InProgress","Hole":18,"StartTee":17,"FirstName":"Marina","StartTime":"13:27","Country":"USA","ID":98011,"LastName":"Alex","Course":"Ki", "Rank": "57","CumulativeToPar": "12","RoundToPar": "8"},
+          {"HoleLocation":"GRN","Status":"InProgress","Hole":18,"StartTee":17,"FirstName":"Rebecca","StartTime":"13:38","Country":"AUS","ID":98276,"LastName":"Artis","Course":"Ki", "Rank": "57","CumulativeToPar": "12","RoundToPar": "8"},
+          {"HoleLocation":"GRN","Status":"InProgress","Hole":16,"StartTee":16,"FirstName":"Lizette","StartTime":"13:27","Country":"USA","ID":88510,"LastName":"Salas","Course":"Ki", "Rank": "57","CumulativeToPar": "12","RoundToPar": "8"},
+          {"HoleLocation":"GRN","Status":"InProgress","Hole":16,"StartTee":16,"FirstName":"Jennifer","StartTime":"13:38","Country":"AUS","ID":88275,"LastName":"Song","Course":"Ki", "Rank": "57","CumulativeToPar": "12","RoundToPar": "8"}
 
         ]
       }

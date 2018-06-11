@@ -10,17 +10,21 @@ import GeneralButton from './GeneralButton';
 import HoleNum from './HoleNum';
 import Locator from './Locator';
 import OutLinePointsDisplay from './OutLinePointsDisplay';
+// import PickCourseFile from './PickCourseFile';
 
-import {holeElement} from './utils';
+// import {holeElement} from './utils';
 
 // this little function just makes elements.
 function _elm(location, url) {
-  this.teelocation = location
+  this.location = location
   this.icon = {}
   this.icon.url = url
   this.icon.scaledSize = new window.google.maps.Size(20,20);
 }
 
+// var aCourse = null;
+
+let fileReader = new FileReader()
 
 
 export class MapContainer extends Component {
@@ -30,11 +34,41 @@ export class MapContainer extends Component {
     this.state = {
       cntlState: 'T',
       markers: [],
+      aCourse: {"Features":[]},
     }
     this.handleMapClick = this.handleMapClick.bind(this);
     this.handleCourseObjClick = this.handleCourseObjClick.bind(this);
+    this.handleClearClick = this.handleClearClick.bind(this);
   }
 
+  handleFileResult = (e) => {
+    // const aCourse = fileReader.result;
+    this.setState({aCourse: JSON.parse(fileReader.result) })
+
+    // console.log("a course-->", this.state.aCourse)
+
+  }
+  uploadFile(event) {
+      let file = event.target.files[0];
+      
+      
+      if (file) {
+        
+        fileReader.onloadend = this.handleFileResult;
+        fileReader.readAsText(file)
+        
+
+        // console.log("file = -->", aCourse);
+        // axios.post('/files', data)...
+      }
+  }
+
+  handleClearClick() {
+    document.getElementById('tloc').value = ""
+    document.getElementById('floc').value = ""
+    document.getElementById('lloc').value = ""
+    document.getElementById('outLP').value = ""
+  }
   // change me!!!
   //
   // Right now: I do the following:
@@ -76,9 +110,6 @@ export class MapContainer extends Component {
     var t = {}
     t.type = "Feature";
     t.properties = {};
-    t.properties.par = "4/5";
-    t.properties.yards = 514;
-    t.properties.holeZoomLevel = 18;
 
     t.properties.image = "Hole" + hnumData + ".png";
     t.properties.page = "Hole" + hnumData + ".html";
@@ -86,17 +117,23 @@ export class MapContainer extends Component {
 
     t.properties.Tphoto = "./images/Tee2.png";
     t.properties.Flagphoto = "./images/Hole" + hnumData + ".png";
-    t.properties.TeeLocation = JSON.stringify(JSON.parse(tloc));
-    t.properties.FlagLocation = JSON.stringify(JSON.parse(floc));
-    t.properties.labelLocation = JSON.stringify(JSON.parse(lloc));
+    t.properties.TeeLocation = JSON.parse(tloc);
+    t.properties.FlagLocation = JSON.parse(floc);
+    t.properties.labelLocation = JSON.parse(lloc);
 
-    t.properties.LayoutCoordinates = {};
-    t.properties.LayoutCoordinates.type = "Feature";
-    t.properties.LayoutCoordinates.properties = {};
-    t.properties.LayoutCoordinates.properties.name = "LineCoordinates";
-    t.properties.LayoutCoordinates.geometry = {};
-    t.properties.LayoutCoordinates.geometry.type = "LineString";
-    t.properties.LayoutCoordinates.geometry.coordinates = "[ " + mlayout + " ]";
+    t.properties.teeTemplateCenter = JSON.parse(tloc);
+    t.properties.greenTemplateCenter = JSON.parse(floc);
+    t.properties.fairwayTemplateCenter = JSON.parse(lloc);
+
+    t.properties.holeCenter = JSON.parse(lloc);
+
+    // t.properties.LayoutCoordinates = {};
+    // t.properties.LayoutCoordinates.type = "Feature";
+    // t.properties.LayoutCoordinates.properties = {};
+    // t.properties.LayoutCoordinates.properties.name = "LineCoordinates";
+    // t.properties.LayoutCoordinates.geometry = {};
+    // t.properties.LayoutCoordinates.geometry.type = "LineString";
+    // t.properties.LayoutCoordinates.geometry.coordinates = "[ " + mlayout + " ]";
 
     var outp = JSON.stringify(t, null, 2);
     console.log("------>",outp);
@@ -111,26 +148,29 @@ export class MapContainer extends Component {
 
     // turn the click into a ( lat, lng ) pair
     var geo = new window.google.maps.LatLng(evnt.latLng.lat(), evnt.latLng.lng())
-    // console.log("geo = ", geo.lat(), this.state.cntlState);
+    var geometry = {}
+    geometry.latitude = geo.lat()
+    geometry.longitude = geo.lng()
+    // console.log("geo = ", JSON.stringify(geometry), this.state.cntlState);
 
     switch (this.state.cntlState) {
       case "T":
         {
-          document.getElementById('tloc').value = JSON.stringify(geo.toJSON());
+          document.getElementById('tloc').value = JSON.stringify(geometry);
           let elm = new _elm(geo, "./Tee1.png");
           this.setState({markers: [...this.state.markers, elm]})
           break;
         }
       case "F":
         {
-          document.getElementById('floc').value = JSON.stringify(geo.toJSON());
+          document.getElementById('floc').value = JSON.stringify(geometry);
           let elm = new _elm(geo, './Flag.png');
           this.setState({markers: [...this.state.markers, elm]})
           break;
         }
       case "L":
         {
-          document.getElementById('lloc').value = JSON.stringify(geo.toJSON());
+          document.getElementById('lloc').value = JSON.stringify(geometry);
           let elm = new _elm(geo, './Fan.png');
           this.setState({markers: [...this.state.markers, elm]})
           break;
@@ -139,9 +179,9 @@ export class MapContainer extends Component {
         {
           var it = document.getElementById('outLP').value;
           if (it === "") {
-            it = it + JSON.stringify(geo) + "\n";
+            it = it + geometry + "\n";
           } else {
-            it = it + ', ' + JSON.stringify(geo) + "\n";
+            it = it + ', ' + geometry + "\n";
           }
           document.getElementById('outLP').value = it;
           break;
@@ -161,12 +201,30 @@ export class MapContainer extends Component {
     this.setState({ cntlState: typ} );
   }
 
+  // handleReadCourseFile(e) {
+  //   // console.log("in handle read file")
+  //   let fileName = e.target.value.split('\\')[2]
+  //   console.log("in handle read file:", __dirname, path, fileName)
+  //   let r = fs.readFile(fileName, function read(err, data) {
+  //     if (err) {
+  //       throw err;
+  //     }
+  //     console.log("data-->", data, r)
+  //     this.setState( {course: data} )
+  //   })
+  //   // console.log("PCF", )
+  // }
   // show me the controls
   render() {
     return (
       <div className="GMap">
 
         <HoleNum />
+        {/* <PickCourseFile handleReadCourseFile={this.handleReadCourseFile}/> */}
+        <input type="file" 
+          name="myFile"
+          onChange={(e) => this.uploadFile(e)} 
+        />
         <GeneralButton name="clear" handleClick={this.handleClearClick} />
         <GeneralButton name="Save" handleClick={this.handleSaveClick} />
         <GeneralButton name="Mask" handleClick={this.handleMaskClick} />
@@ -189,13 +247,17 @@ export class MapContainer extends Component {
             onClick={this.handleMapClick}
             >
             {
-              this.state.markers.map((mr) => {
-                // console.log("ma=", mr.location.lat(), mr.location.lng(), mr.icon);
+              this.state.aCourse.Features.map((mr, keyIndex) => {
+              // this.state.markers.map((mr, keyIndex) => {
+                let lat=mr.properties.TeeLocation.latitude 
+                let lng = mr.properties.TeeLocation.longitude
+                let icon = { url: "../public/Tee1.png",
+                          }
+                console.log("ma=", mr.properties.number, mr.properties.TeeLocation);
                 return (
-                  <Marker
-                    name={"foo"}
-                    position={mr.location}
-                    icon={mr.icon}
+                  <Marker          
+                    key={mr.properties.number}
+                    position={{ lat: lat, lng: lng}}
                     />
                 )
               })
