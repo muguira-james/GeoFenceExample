@@ -1,0 +1,823 @@
+
+ {
+  "type": "FeatureCollection",
+
+  "initialRegion": {
+    "latitude": 39.448358,
+    "longitude": -74.471217,
+    "latitudeDelta": 0.00005,
+    "longitudeDelta": 0.0000025
+  },
+  "Features":
+  [
+    {
+      "type": "Feature",
+      "properties": {
+        "Par": 4,
+        "Yards": 345,
+        "image": "Hole1.png",
+        "page": "Hole1.html",
+        "number": "1",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole1.png",
+        "TeeLocation": {
+          "latitude": 39.44798589296043,
+          "longitude": -74.47182490794523
+        },
+        "FlagLocation": {
+          "latitude": 39.44709541676368,
+          "longitude": -74.46895011257021
+        },
+        "fairwayLocation": {
+          "latitude": 39.44749616046622,
+          "longitude": -74.47033944671819
+        },
+        "teeTemplateCenter": {
+          "latitude": 39.44798589296043,
+          "longitude": -74.47182490794523
+        },
+        "teeDrawingPattern": "hline",
+        "greenTemplateCenter": {
+          "latitude": 39.44709541676368,
+          "longitude": -74.46925011257021
+        },
+        "greenDrawingPattern": "hline",
+        "fairwayTemplateCenter": {
+          "latitude": 39.44749616046622,
+          "longitude": -74.47033944671819
+        },
+        "fairwayDrawingPattern": "hline",
+        "holeCenter": {
+          "latitude": 39.44749616046622,
+          "longitude": -74.47033944671819
+        },
+        "description":
+          "A short but tough opening hole. A lengthy bunker and O.B. protect the right side with native grasses and mounds protecting the left side. A cautious approach to the green will need to be negotiated since the green slopes away from you."
+
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Par": 4,
+        "Yards": 420,
+        "image": "Hole2.png",
+        "page": "Hole2.html",
+        "number": "2",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole2.png",
+        "TeeLocation": {
+          "latitude": 39.44678452238244,
+          "longitude": -74.46811346863512
+        },
+        "FlagLocation": {
+          "latitude": 39.44570299853959,
+          "longitude": -74.46483849142794
+        },
+        "fairwayLocation": {
+          "latitude": 39.44625635363979,
+          "longitude": -74.46664361809496
+        },
+        "teeTemplateCenter": {
+          "latitude": 39.44678452238244,
+          "longitude": -74.46811346863512
+        },
+        "teeDrawingPattern": "3grp",
+        "greenTemplateCenter": {
+          "latitude": 39.44570299853959,
+          "longitude": -74.46483849142794
+        },
+        "greenDrawingPattern": "3grp",
+        "fairwayTemplateCenter": {
+          "latitude": 39.44625635363979,
+          "longitude": -74.46664361809496
+        },
+        "fairwayDrawingPattern": "hline",
+        "holeCenter": {
+          "latitude": 39.44625635363979,
+          "longitude": -74.46664361809496
+        },
+        "description":
+        "Be careful not to get distracted by the views of Reeds Bay and the Atlantic City skyline. A lengthy par 4 that can play like a par 5 with the prevailing wind in your face. The tee shot must avoid O.B. and fairway bunkers on the right. The approach shot must negotiate a waste environment sensitive area to the left. Don't overshoot the green here with trouble to the right and behind the green. "
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Par": 5,
+        "Yards": 484,
+        "image": "Hole3.png",
+        "page": "Hole3.html",
+        "number": "3",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole3.png",
+        "TeeLocation": {
+          "latitude": 39.44620631637181,
+          "longitude": -74.4643637404323
+        },
+        "FlagLocation": {
+          "latitude": 39.44751948239559,
+          "longitude": -74.46894763563876
+        },
+        "fairwayLocation": {
+          "latitude": 39.447076239850134,
+          "longitude": -74.46722833966021
+        },
+        "teeTemplateCenter": {
+          "latitude": 39.44620631637181,
+          "longitude": -74.4643637404323
+        },
+        "teeDrawingPattern": "hline",
+        "greenTemplateCenter": {
+          "latitude": 39.44751948239559,
+          "longitude": -74.46894763563876
+        },
+        "greenDrawingPattern": "3grp",
+        "fairwayTemplateCenter": {
+          "latitude": 39.447076239850134,
+          "longitude": -74.46722833966021
+        },
+        "fairwayDrawingPattern": "hline",
+        "holeCenter": {
+          "latitude": 39.447076239850134,
+          "longitude": -74.46722833966021
+        },
+        "description":
+        "A relatively short par 5 that is a great birdie opportunity with a good drive. Favor the right side of the faily off the tee. Lay up to the left to leave a short approach or go for the green with a long iron or fairway utility. The green is undulating so keep an eye on the daily pin position."
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole4.png",
+        "page": "Hole4.html",
+        "number": "4",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole4.png",
+        "TeeLocation": {
+          "latitude": 39.447826022318786,
+          "longitude": -74.46968256090884
+        },
+        "FlagLocation": {
+          "latitude": 39.44934354388804,
+          "longitude": -74.4664746536564
+        },
+        "fairwayLocation": {
+          "latitude": 39.448818574907115,
+          "longitude": -74.46756899493448
+        },
+        "teeTemplateCenter": {
+          "latitude": 39.447826022318786,
+          "longitude": -74.46968256090884
+        },
+        "teeDrawingPattern": "3grp",
+        "greenTemplateCenter": {
+          "latitude": 39.44934354388804,
+          "longitude": -74.4664746536564
+        },
+        "greenDrawingPattern": "3grp",
+        "fairwayTemplateCenter": {
+          "latitude": 39.448518574907115,
+          "longitude": -74.46756899493448
+        },
+        "fairwayDrawingPattern": "3grp",
+        "holeCenter": {
+          "latitude": 39.448818574907115,
+          "longitude": -74.46756899493448
+        },
+        "description":
+        "A tricky par 4 that requires a tee shot in the fairway left of the center. The approach is to a small two tiered green so accuracy is a premium on this hole.",
+        "Par": 4,
+        "Yards": 360
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole5.png",
+        "page": "Hole5.html",
+        "number": "5",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole5.png",
+        "TeeLocation": {
+          "latitude": 39.44919027743535,
+          "longitude": -74.46565926211588
+        },
+        "FlagLocation": {
+          "latitude": 39.44778808084865,
+          "longitude": -74.46823418277017
+        },
+        "fairwayLocation": {
+          "latitude": 39.44825617324768,
+          "longitude": -74.46718275683634
+        },
+        "teeDrawingPattern": "hline",
+        "teeTemplateCenter": {
+          "latitude": 39.44899027743535,
+          "longitude": -74.46595926211588
+        },
+        "greenDrawingPattern": "3grp",
+        "greenTemplateCenter": {
+          "latitude": 39.44778808084865,
+          "longitude": -74.46823418277017
+        },
+        "fairwayDrawingPattern": "3grp",
+        "fairwayTemplateCenter": {
+          "latitude": 39.44805617324768,
+          "longitude": -74.46718275683634
+        },
+        "holeCenter": {
+          "latitude": 39.44825617324768,
+          "longitude": -74.46718275683634
+        },
+        "description":
+        "A short par 4 that doesn't require you to use a drive off the tee, but puts a premium on accuracy. Get it in the fairway and you have a short approach to a very generous green that is well guarded by greenside bunkers.",
+        "Par": 4,
+        "Yards": 301
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole6.png",
+        "page": "Hole6.html",
+        "number": "6",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole6.png",
+        "TeeLocation": {
+          "latitude": 39.44761858965271,
+          "longitude": -74.46769505875818
+        },
+        "FlagLocation": {
+          "latitude": 39.447069714902874,
+          "longitude": -74.4636948220641
+        },
+        "fairwayLocation": {
+          "latitude": 39.44723955585372,
+          "longitude": -74.46533739703409
+        },
+        "teeTemplateCenter": {
+          "latitude": 39.44761858965271,
+          "longitude": -74.46769505875818
+        },
+        "teeDrawingPattern": "hline",
+        "greenTemplateCenter": {
+          "latitude": 39.446869714902874,
+          "longitude": -74.4635948220641
+        },
+        "greenDrawingPattern": "3grp",
+        "fairwayTemplateCenter": {
+          "latitude": 39.44723955585372,
+          "longitude": -74.46533739703409
+        },
+        "fairwayDrawingPattern": "hline",
+        "holeCenter": {
+          "latitude": 39.44723955585372,
+          "longitude": -74.46533739703409
+        },
+        "description":
+        "A long par 4 playing downhill into the prevailing wind off of Reeds Bay. The tee shot should favor the right center of the fairway as the fairway slopes to the left. The approach shot is played to a pronounce two tiered green with bunkers and the bay protecting any errant shots.",
+        "Par": 4,
+        "Yards": 393
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole7.png",
+        "page": "Hole7.html",
+        "number": "7",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole7.png",
+        "TeeLocation": {
+          "latitude": 39.44756680920075,
+          "longitude": -74.4638021104247
+        },
+        "FlagLocation": {
+          "latitude": 39.44784435197332,
+          "longitude": -74.46574671196049
+        },
+        "fairwayLocation": {
+          "latitude": 39.447734577725356,
+          "longitude": -74.46486158298558
+        },
+        "teeTemplateCenter": {
+          "latitude": 39.44756680920075,
+          "longitude": -74.4638021104247
+        },
+        "teeDrawingPattern": "hline",
+        "greenTemplateCenter": {
+          "latitude": 39.44784435197332,
+          "longitude": -74.46544671196049
+        },
+        "greenDrawingPattern": "vline",
+        "fairwayTemplateCenter": {
+          "latitude": 39.447734577725356,
+          "longitude": -74.46486158298558
+        },
+        "fairwayDrawingPattern": "3grp",
+        "holeCenter": {
+          "latitude": 39.447734577725356,
+          "longitude": -74.46486158298558
+        },
+        "description":
+        "This lengthy par 3 plays uphill and is much harder than it appears. An accurate tee shot is a must to this well guarded green to the right, left and rear of the green.",
+        "Par": 3,
+        "Yards": 185
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole8.png",
+        "page": "Hole8.html",
+        "number": "8",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole8.png",
+        "TeeLocation": {
+          "latitude": 39.44783039711967,
+          "longitude": -74.46630188954458
+        },
+        "FlagLocation": {
+          "latitude": 39.45008475218713,
+          "longitude": -74.46459826392459
+        },
+        "fairwayLocation": {
+          "latitude": 39.4492417914957,
+          "longitude": -74.46528533232794
+        },
+        "teeTemplateCenter": {
+          "latitude": 39.44783039711967,
+          "longitude": -74.46630188954458
+        },
+        "teeDrawingPattern": "vline",
+        "greenTemplateCenter": {
+          "latitude": 39.45008475218713,
+          "longitude": -74.46459826392459
+        },
+        "greenDrawingPattern": "3grp",
+        "fairwayTemplateCenter": {
+          "latitude": 39.4492417914957,
+          "longitude": -74.46528533232794
+        },
+        "fairwayDrawingPattern": "vline",
+        "holeCenter": {
+          "latitude": 39.4492417914957,
+          "longitude": -74.46528533232794
+        },
+        "description":
+        "A short par 4 requiring an accurate tee shot to the right center of the fairway. Marshland guards the entire right side and behind the green. The approach shot is a delicate shot to an elevated green that slopes from front to back.",
+        "Par": 4,
+        "Yards": 319
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "Hole9.png",
+        "page": "Hole9.html",
+        "number": "9",
+        "Tphoto": "./images/Tee2.png",
+        "Flagphoto": "./images/Hole9.png",
+        "TeeLocation": {
+          "latitude": 39.45000397752611,
+          "longitude": -74.46615394515322
+        },
+        "FlagLocation": {
+          "latitude": 39.44814190470714,
+          "longitude": -74.47049416137213
+        },
+        "fairwayLocation": {
+          "latitude": 39.449200591199244,
+          "longitude": -74.46812536877917
+        },
+        "teeTemplateCenter": {
+          "latitude": 39.44990397752611,
+          "longitude": -74.46615394515322
+        },
+        "teeDrawingPattern": "hline",
+        "greenTemplateCenter": {
+          "latitude": 39.44814190470714,
+          "longitude": -74.47049416137213
+        },
+        "greenDrawingPattern": "3grp",
+        "fairwayTemplateCenter": {
+          "latitude": 39.448800591199244,
+          "longitude": -74.46812536877917
+        },
+        "fairwayDrawingPattern": "3grp",
+        "holeCenter": {
+          "latitude": 39.449200591199244,
+          "longitude": -74.46812536877917
+        },
+        "description":
+        "A par 5 with a generous fairway awaits your tee shot. Be careful with the second shot, deep cross bunkers guard against errant or short shots. Once you have negotiated your second shot, a deep bunker guards the right side of the green, while the left and back side is protected with natural grass mounds. The green slopes severly to the right and away from you. Par is a good score here.",
+        "Par": 5,
+        "Yards": 476
+      }
+    },
+    {
+       "type": "Feature",
+       "properties": {
+         "image": "Hole10.png",
+         "page": "Hole10.html",
+         "number": "10",
+         "Tphoto": "./images/Tee2.png",
+         "Flagphoto": "./images/Hole10.png",
+         "TeeLocation": {
+           "latitude": 39.44814902611846,
+           "longitude": -74.47151906410136
+         },
+         "FlagLocation": {
+           "latitude": 39.45061941325809,
+           "longitude": -74.46934471836892
+         },
+         "fairwayLocation": {
+           "latitude": 39.44965436987314,
+           "longitude": -74.46969267609467
+         },
+         "teeTemplateCenter": {
+           "latitude": 39.44814902611846,
+           "longitude": -74.47131906410136
+         },
+         "teeDrawingPattern": "3grp",
+         "greenTemplateCenter": {
+           "latitude": 39.45061941325809,
+           "longitude": -74.46934471836892
+         },
+         "greenDrawingPattern": "vline",
+         "fairwayTemplateCenter": {
+           "latitude": 39.44925436987314,
+           "longitude": -74.46969267609467
+         },
+         "fairwayDrawingPattern": "3grp",
+         "holeCenter": {
+           "latitude": 39.44965436987314,
+           "longitude": -74.46969267609467
+         },
+         "description":
+         "A dog leg left, this relatively short par 4 requires an accurate tee shot to the right center of the fairway. The smallest green on the course will challenge your approach shot, which is partial blocked by the natural grass mounding and bunkers that protect the green.",
+         "Par": 4,
+         "Yards": 352
+       }
+     },
+     {
+        "type": "Feature",
+        "properties": {
+          "image": "Hole11.png",
+          "page": "Hole11.html",
+          "number": "11",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole11.png",
+          "TeeLocation": {
+            "latitude": 39.451146272365726,
+            "longitude": -74.4688266522594
+          },
+          "FlagLocation": {
+            "latitude": 39.449687695764524,
+            "longitude": -74.46861588165109
+          },
+          "fairwayLocation": {
+            "latitude": 39.450323984573416,
+            "longitude": -74.46853005096261
+          },
+          "teeTemplateCenter": {
+            "latitude": 39.450946272365726,
+            "longitude": -74.4688266522594
+          },
+          "teeDrawingPattern": "vline",
+          "greenTemplateCenter": {
+            "latitude": 39.449687695764524,
+            "longitude": -74.46861588165109
+          },
+          "greenDrawingPattern": "3grp",
+          "fairwayTemplateCenter": {
+            "latitude": 39.450323984573416,
+            "longitude": -74.46853005096261
+          },
+          "fairwayDrawingPattern": "3grp",
+          "holeCenter": {
+            "latitude": 39.450323984573416,
+            "longitude": -74.46853005096261
+          },
+          "description":
+          "A long and difficult par 3 that plays into the prevailing wind may require a wood off the tee. Bunkers guard the right and left side of this generous green.",
+          "Par": 3,
+          "Yards": 179
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "image": "Hole12.png",
+          "page": "Hole12.html",
+          "number": "12",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole12.png",
+          "TeeLocation": {
+            "latitude": 39.449230231898774,
+            "longitude": -74.46904272464838
+          },
+          "FlagLocation": {
+            "latitude": 39.45018212086128,
+            "longitude": -74.46575505410465
+          },
+          "fairwayLocation": {
+            "latitude": 39.450117861033625,
+            "longitude": -74.46735132184801
+          },
+          "teeTemplateCenter": {
+            "latitude":39.450049203414366,
+            "longitude":-74.46802821620759
+          },
+          "teeDrawingPattern": "vline",
+          "greenTemplateCenter": {
+            "latitude": 39.45018212086128,
+            "longitude": -74.46575505410465
+          },
+          "greenDrawingPattern": "hline",
+          "fairwayTemplateCenter": {
+            "latitude":39.44984861830389,
+            "longitude":-74.46721282466706
+          },
+          "fairwayDrawingPattern": "3grp",
+          "holeCenter": {
+            "latitude": 39.450117861033625,
+            "longitude": -74.46735132184801
+          },
+          "description":
+          "A sharp dog leg to the right that does not require a driver off the tee. Place an accurate tee shot in the left center of the fairway for the best angle into the green. The approach must be accurate to this elevated narrow green that slopes back to front.",
+          "Par": 4,
+          "Yards": 320
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "image": "Hole13.png",
+          "page": "Hole13.html",
+          "number": "13",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole13.png",
+          "TeeLocation": {
+            "latitude": 39.450344401714005,
+            "longitude": -74.464889054597
+          },
+          "FlagLocation": {
+            "latitude": 39.45159373634607,
+            "longitude": -74.46862713160294
+          },
+          "fairwayLocation": {
+            "latitude": 39.451099024272146,
+            "longitude": -74.46713720441431
+          },
+          "teeTemplateCenter": {
+            "latitude": 39.450444401714005,
+            "longitude": -74.464889054597
+          },
+          "teeDrawingPattern": "hline",
+          "greenTemplateCenter": {
+            "latitude": 39.45159373634607,
+            "longitude": -74.46862713160294
+          },
+          "greenDrawingPattern": "hline",
+          "fairwayTemplateCenter": {
+            "latitude": 39.451099024272146,
+            "longitude": -74.46713720441431
+          },
+          "fairwayDrawingPattern": "hline",
+          "holeCenter": {
+            "latitude": 39.451099024272146,
+            "longitude": -74.46713720441431
+          },
+          "description":
+          "This uphill par 4 has a generous fairway. Place your tee shot to the right center of the fairway for the best angle into the green. The approach shot is to an elevated green that is undulating with a ridge running the length of the green so keep an eye on the daily pin position.",
+          "Par": 4,
+          "Yards": 405
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "image": "Hole14.png",
+          "page": "Hole14.html",
+          "number": "14",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole14.png",
+          "TeeLocation": {
+            "latitude": 39.45199386616072,
+            "longitude": -74.46868878719357
+          },
+          "FlagLocation": {
+            "latitude": 39.451059616484116,
+            "longitude": -74.46455374652481
+          },
+          "fairwayLocation": {
+            "latitude": 39.45153149070533,
+            "longitude": -74.46590580371912
+          },
+          "teeTemplateCenter": {
+            "latitude": 39.45199386616072,
+            "longitude": -74.46868878719357
+          },
+          "teeDrawingPattern": "hline",
+          "greenTemplateCenter": {
+            "latitude": 39.451059616484116,
+            "longitude": -74.46455374652481
+          },
+          "greenDrawingPattern": "vline",
+          "fairwayTemplateCenter": {
+            "latitude": 39.45153149070533,
+            "longitude": -74.46590580371912
+          },
+          "fairwayDrawingPattern": "3grp",
+          "holeCenter": {
+            "latitude": 39.45153149070533,
+            "longitude": -74.46590580371912
+          },
+          "description":
+          "This long par 4 requires an accurate tee shot to the right center to this right to left sloping fairway. The downhill approach shot is into the prevailing wind, so don't be fooled by the distance. The green is guarded by bunkers and Reed Bay in the backdrop.",
+          "Par": 4,
+          "Yards": 419
+        }
+      },
+      {
+         "type": "Feature",
+         "properties": {
+           "image": "Hole15.png",
+           "page": "Hole15.html",
+           "number": "15",
+           "Tphoto": "./images/Tee2.png",
+           "Flagphoto": "./images/Hole15.png",
+           "TeeLocation": {
+             "latitude": 39.450364387632526,
+             "longitude": -74.46414582416475
+           },
+           "FlagLocation": {
+             "latitude": 39.45198042345928,
+             "longitude": -74.46410364155088
+           },
+           "fairwayLocation": {
+             "latitude": 39.45139803288401,
+             "longitude": -74.4640396433104
+           },
+           "teeTemplateCenter": {
+             "latitude": 39.450364387632526,
+             "longitude": -74.46414582416475
+           },
+           "teeDrawingPattern": "vline",
+           "greenTemplateCenter": {
+             "latitude": 39.45198042345928,
+             "longitude": -74.46410364155088
+           },
+           "greenDrawingPattern": "hline",
+           "fairwayTemplateCenter": {
+             "latitude": 39.45139803288401,
+             "longitude": -74.4640396433104
+           },
+           "fairwayDrawingPattern": "3grp",
+           "holeCenter": {
+             "latitude": 39.45139803288401,
+             "longitude": -74.4640396433104
+           },
+           "description":
+           "This tough par 3 plays uphill to an elevated green that is generous in size. Guarded by a deep bunker on the left and marshland on the right, your tee shot must be accurate to a sloping back to front green.",
+           "Par": 3,
+           "Yards": 204
+         }
+       },
+       {
+          "type": "Feature",
+          "properties": {
+            "image": "Hole16.png",
+            "page": "Hole16.html",
+            "number": "16",
+            "Tphoto": "./images/Tee2.png",
+            "Flagphoto": "./images/Hole16.png",
+            "TeeLocation": {
+              "latitude": 39.45215711239077,
+              "longitude": -74.46380432346342
+            },
+            "FlagLocation": {
+              "latitude": 39.453288372909284,
+              "longitude": -74.46730803046495
+            },
+            "fairwayLocation": {
+              "latitude": 39.4524924946824,
+              "longitude": -74.46618367132487
+            },
+            "teeTemplateCenter": {
+              "latitude": 39.45235711239077,
+              "longitude": -74.46380432346342
+            },
+            "teeDrawingPattern": "hline",
+            "greenTemplateCenter": {
+              "latitude": 39.453088372909284,
+              "longitude": -74.46640803046495
+            },
+            "greenDrawingPattern": "hline",
+            "fairwayTemplateCenter": {
+              "latitude": 39.4524924946824,
+              "longitude": -74.46618367132487
+            },
+            "fairwayDrawingPattern": "3grp",
+            "holeCenter": {
+              "latitude": 39.4524924946824,
+              "longitude": -74.46618367132487
+            },
+            "description":
+            "This dogleg to the right can be a risk reward hole for the long hitters. Take your chances over the right bunker \"Nellie's Crotch\" and leave yourself a short approach to this undulating green. The safe player will want to hit their tee shot left of center.",
+            "Par": 4,
+            "Yards": 377
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "image": "Hole17.png",
+            "page": "Hole17.html",
+            "number": "17",
+            "Tphoto": "./images/Tee2.png",
+            "Flagphoto": "./images/Hole17.png",
+            "TeeLocation": {
+              "latitude": 39.45321226126429,
+              "longitude": -74.46763321921605
+            },
+            "FlagLocation": {
+              "latitude": 39.45240040456993,
+              "longitude": -74.4680918769576
+            },
+            "fairwayLocation": {
+              "latitude": 39.45278458793564,
+              "longitude": -74.4678746180274
+            },
+            "teeTemplateCenter": {
+              "latitude": 39.45321226126429,
+              "longitude": -74.46763321921605
+            },
+            "teeDrawingPattern": "vline",
+            "greenTemplateCenter": {
+              "latitude": 39.45240040456993,
+              "longitude": -74.4680918769576
+            },
+            "greenDrawingPattern": "3grp",
+            "fairwayTemplateCenter": {
+              "latitude": 39.45278458793564,
+              "longitude": -74.4678746180274
+            },
+            "holeCenter": {
+              "latitude": 39.45278458793564,
+              "longitude": -74.4678746180274
+            },
+            "description":
+            "This well guarded par 3 will test anyone's wedge game. This par 3 requires and accurate tee shot to a slightly elevated green.",
+            "Par": 3,
+            "Yards": 115
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "image": "Hole18.png",
+            "page": "Hole18.html",
+            "number": "18",
+            "Tphoto": "./images/Tee2.png",
+            "Flagphoto": "./images/Hole18.png",
+            "TeeLocation": {
+              "latitude": 39.451385521619336,
+              "longitude": -74.46946327118337
+            },
+            "FlagLocation": {
+              "latitude": 39.44832583941958,
+              "longitude": -74.47225354140545
+            },
+            "fairwayLocation": {
+              "latitude": 39.449679274211896,
+              "longitude": -74.47047042362931
+            },
+            "teeTemplateCenter": {
+              "latitude": 39.451385521619336,
+              "longitude": -74.46946327118337
+            },
+            "teeDrawingPattern": "vline",
+            "greenTemplateCenter": {
+              "latitude": 39.44832583941958,
+              "longitude": -74.47225354140545
+            },
+            "greenDrawingPattern": "3grp",
+            "fairwayTemplateCenter": {
+              "latitude": 39.449679274211896,
+              "longitude": -74.47047042362931
+            },
+            "holeCenter": {
+              "latitude": 39.449679274211896,
+              "longitude": -74.47047042362931
+            },
+            "description":
+            "This par 5 finishing hole is a good birdie opportunity with a well struck tee shot to the right center of the fairway. Fairway bunkers and O.B. await tee shots to the right with more fairway bunkers guarding the left side of the fairway. Your second shot must negotiate fairway bunkers on the right and left about 100 yards from the green. Your approach shot must avoid the bunkers and natural grass mounds to a green that slopes from front to back.",
+            "Par": 5,
+            "Yards": 501
+          }
+        }
+  ]
+}

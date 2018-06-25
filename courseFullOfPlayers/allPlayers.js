@@ -2,7 +2,8 @@
 var fs = require('fs')
 var raw = fs.readFileSync('score.json')
 var zzz = JSON.parse(raw)
-
+var playerDrawingUtils = require("./PlayerDrawingUtils.js");
+var golfCourse = require("./shoprite.json");
 // var a = {}
 
 // console.log(zzz.GolfDataFeed.Tournament.Locatorboard.Player)
@@ -16,6 +17,19 @@ var zzz = JSON.parse(raw)
 //   }
 // })
 // console.log(Object.keys(a).length)
+
+const region = {
+  latitude: golfCourse.initialRegion.latitude,
+  longitude: golfCourse.initialRegion.longitude,
+  latitudeDelta: 0.0003,
+  longitudeDelta: 0.0025
+};
+
+playerDrawingUtils.mapLocationClear();
+
+let zOffSet = playerDrawingUtils.computeZoomOffSet(region);
+
+;
 
 var hole = 1
 var loc = "TEE"
@@ -44,6 +58,13 @@ zzz.GolfDataFeed.Tournament.Leaderboard.Player.forEach(p => {
     p.HoleLocation = loc
   }
   cnt++
+  let b = playerDrawingUtils.mapLocationOnHole(
+    zOffSet,
+    p.Hole,
+    p,
+    golfCourse
+  )
+  p.coordinate = b
   plyr.push(p)
 })
 zzz.GolfDataFeed.Tournament.Leaderboard.Player = plyr

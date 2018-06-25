@@ -7,6 +7,8 @@ import Locator from './Locator'
 import GeneralButton from './GeneralButton'
 import ButtonGroup from './ButtonGroup'
 
+
+
 var pcourse = {}
 pcourse.Features = [
   { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }, { properties: {} }
@@ -22,7 +24,7 @@ pcourse.Features = [
   // }
 ]
 
-var initialCenter = { lat: 39.449689, lng: -74.468472 }
+var initialCenter = { lat: 36.296168, lng: -94.198221 }
 
 var convertGeoToGoogle = (latLng) => {
   let geo = {}
@@ -33,6 +35,7 @@ var convertGeoToGoogle = (latLng) => {
 }
 
 var convertGeoFromGoogle = (ll) => {
+  
   let geo = {}
   geo.latitude = ll.lat
   geo.longitude = ll.lng
@@ -108,28 +111,82 @@ class App extends Component {
     }
   }
 
-  handleClearClick() {
+  handleClearClick = () => {
     document.getElementById("tloc").value = ""
     document.getElementById("floc").value = ""
     document.getElementById("lloc").value = ""
     document.getElementById("tTmp").value = ""
     document.getElementById("fTmp").value = ""
     document.getElementById("lTmp").value = ""
+
+    document.getElementById("Tee").style.background = '#ffffff'
+    document.getElementById("Green").style.background = '#ffffff'
+    document.getElementById("Fairway").style.background = '#ffffff'
+    document.getElementById("Tee_Tmpl").style.background = '#ffffff'
+    document.getElementById("Green_Tmpl").style.background = '#ffffff'
+    document.getElementById("Fairway_Tmpl").style.background = '#ffffff'
+
+    document.getElementById("Tee").style.background = '#00ff00'
+    this.setState({whichPos: "T"}); 
   }
 
   handleSaveCourseClick = () => {
     
     let theCourse = JSON.parse(JSON.stringify(this.state.aCourse))
     theCourse.Features.forEach((p) => {
-      p.properties.TeeLocation = convertGeoFromGoogle(p.properties.TeeLocation)
-      p.properties.FlagLocation = convertGeoFromGoogle(p.properties.FlagLocation)
-      p.properties.fairwayLocation = convertGeoFromGoogle(p.properties.fairwayLocation)
-      p.properties.teeTemplateCenter = convertGeoFromGoogle(p.properties.teeTemplateCenter)
-      p.properties.greenTemplateCenter = convertGeoFromGoogle(p.properties.greenTemplateCenter)
-      p.properties.fairwayTemplateCenter = convertGeoFromGoogle(p.properties.fairwayTemplateCenter)
+      
+      if ("TeeLocation" in p.properties) {
+        p.properties.TeeLocation = convertGeoFromGoogle(p.properties.TeeLocation)
+      }
+      
+      if ("FlagLocation" in p.properties) {
+        p.properties.FlagLocation = convertGeoFromGoogle(p.properties.FlagLocation)
+      }
+     
+      if ("fairwayLocation" in p.properties) {
+        p.properties.fairwayLocation = convertGeoFromGoogle(p.properties.fairwayLocation)
+      }
+      
+      if ("teeTemplateCenter" in p.properties) {
+        p.properties.teeTemplateCenter = []
+        p.properties.teeTemplateCenter.push(convertGeoFromGoogle(p.properties.teeTemplateCenter))
+        p.properties.teeTemplateCenter.push(convertGeoFromGoogle(p.properties.teeTemplateCenter))
+        p.properties.teeTemplateCenter.push(convertGeoFromGoogle(p.properties.teeTemplateCenter))
+      }
+
+      if ("greenTemplateCenter" in p.properties) {
+        p.properties.greenTemplateCenter = []
+        p.properties.greenTemplateCenter.push(convertGeoFromGoogle(p.properties.greenTemplateCenter))
+        p.properties.greenTemplateCenter.push(convertGeoFromGoogle(p.properties.greenTemplateCenter))
+        p.properties.greenTemplateCenter.push(convertGeoFromGoogle(p.properties.greenTemplateCenter))
+      }
+      
+      if ("fairwayTemplateCenter" in p.properties) {
+        p.properties.fairwayTemplateCenter = []
+        p.properties.fairwayTemplateCenter.push(convertGeoFromGoogle(p.properties.fairwayTemplateCenter))
+        p.properties.fairwayTemplateCenter.push(convertGeoFromGoogle(p.properties.fairwayTemplateCenter))
+        p.properties.fairwayTemplateCenter.push(convertGeoFromGoogle(p.properties.fairwayTemplateCenter))
+      }
+
+      if ("TeeLocation" in p.properties) {
+        let num = p.properties.number
+        p.properties.Par = 4
+        p.properties.Yards = 345
+        p.properties.image =  "Hole" + num + ".png"
+        p.properties.page = "Hole" + num + ".html"
+        p.properties.number = num+1
+        p.properties.Tphoto = "./images/Tee2.png"
+        p.properties.Flagphoto = "./images/Hole" + num + ".png"
+
+        
+        let content = JSON.stringify(theCourse, null, 2)
+        console.log(content)
+      }
     })
-    // console.log("yy-->", theCourse)
-    console.log(JSON.stringify(theCourse, null, 2))
+    
+    
+    
+
     
   }
   // 

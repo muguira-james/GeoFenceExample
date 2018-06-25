@@ -54,6 +54,7 @@ export default class App extends React.Component {
     LayoutAnimation.easeInEaseOut();
   }
   render() {
+    console.log("env->", process.env)
     let it = null;
     if (this.state.flagClicked != true) {
       it =
@@ -82,7 +83,33 @@ export default class App extends React.Component {
 
             </View>
 
-    } else {
+    } 
+
+
+    return (
+      it
+
+    )
+  }
+
+
+}
+
+
+const styles = StyleSheet.create({
+
+  mapr: {
+    flex:1,
+    flexDirection: 'column',
+  },
+
+
+});
+
+
+/*
+
+else {
       it = <View style={{ flex: 1, flexDirection: 'column'}}>
           <View style={{ flex: .70}} >
             <Expo.MapView
@@ -112,23 +139,4 @@ export default class App extends React.Component {
         </View>
     }
 
-
-    return (
-      it
-
-    )
-  }
-
-
-}
-
-
-const styles = StyleSheet.create({
-
-  mapr: {
-    flex:1,
-    flexDirection: 'column',
-  },
-
-
-});
+    */

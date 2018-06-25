@@ -201,21 +201,22 @@ export class MapContainer extends Component {
     this.setState({ cntlState: typ} );
   }
 
-  // handleReadCourseFile(e) {
-  //   // console.log("in handle read file")
-  //   let fileName = e.target.value.split('\\')[2]
-  //   console.log("in handle read file:", __dirname, path, fileName)
-  //   let r = fs.readFile(fileName, function read(err, data) {
-  //     if (err) {
-  //       throw err;
-  //     }
-  //     console.log("data-->", data, r)
-  //     this.setState( {course: data} )
-  //   })
-  //   // console.log("PCF", )
-  // }
   // show me the controls
   render() {
+    let teeImage = {
+      url: "./Tee1.png",
+      scaledSize: new window.google.maps.Size(25,25)
+    }
+    let flagImage = {
+      url: "./Flag.png",
+      scaledSize: new window.google.maps.Size(25,25)
+    }
+
+    let fairwayImage = {
+      url: "./Fan.png",
+      scaledSize: new window.google.maps.Size(25,25)
+    }
+
     return (
       <div className="GMap">
 
@@ -237,36 +238,62 @@ export class MapContainer extends Component {
           <p>Current Zoom: { this.state.zoom }</p>
           <p>Cntl State: {this.state.cntlState}</p>
         </div>
-
+        <OutLinePointsDisplay textArea="outLP" />
+        <OutLinePointsDisplay textArea="outLPD"/>
         <div>
           <Map
             google={this.props.google}
+            
             initialCenter={this.props.initialCenter}
             mapType={this.props.mapType}
             zoom={this.props.zoomLevel}
-            onClick={this.handleMapClick}
+            
             >
             {
               this.state.aCourse.Features.map((mr, keyIndex) => {
               // this.state.markers.map((mr, keyIndex) => {
-                let lat=mr.properties.TeeLocation.latitude 
-                let lng = mr.properties.TeeLocation.longitude
-                let icon = { url: "../public/Tee1.png",
-                          }
-                console.log("ma=", mr.properties.number, mr.properties.TeeLocation);
-                return (
+                let tlat = mr.properties.TeeLocation.latitude 
+                let tlng = mr.properties.TeeLocation.longitude
+
+                let flat = mr.properties.FlagLocation.latitude 
+                let flng = mr.properties.FlagLocation.longitude
+
+                let llat = mr.properties.fairwayLocation.latitude 
+                let llng = mr.properties.fairwayLocation.longitude
+
+               
+                // console.log("ma=", mr.properties.number, mr.properties.fairwayLocation);
+                return ( [
                   <Marker          
                     key={mr.properties.number}
-                    position={{ lat: lat, lng: lng}}
-                    />
+                    draggable={true}
+                    position={{ lat: tlat, lng: tlng}}
+                    icon={teeImage}
+                    onClick={console.log("mouse click")}
+                    onlick={(e) => {console.log("child click", e)}}
+                    onChildMouseDowne={console.log("child move")}
+                    />,
+                  <Marker 
+                    key={mr.properties.number+19}
+                    position = {{ lat: flat, lng: flng }}
+                    icon = {flagImage}
+                    />,
+                  <Marker 
+                    key={mr.properties.number+(19 * 2)}
+                    psotiion = {{ lat: llat, lng: llng }}
+                    icon = {fairwayImage}
+                  />
+                ]
+                  
                 )
               })
+            
+              
             }
 
           </Map>
         </div>
-        <OutLinePointsDisplay textArea="outLP" />
-        <OutLinePointsDisplay textArea="outLPD"/>
+        
       </div>
     );
   }

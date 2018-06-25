@@ -1,0 +1,26 @@
+type Query {
+  players: [Player!]!
+  playersU: [Player!]!
+  player(ID: Int!): Player
+  playersLPGA: [Player!]!
+  hole(Hole: Int!): Player
+}
+
+type Player {
+
+
+    HoleLocation: String
+    Status: String
+    Hole: Int
+    StartTee: Int
+    FirstName: String
+    StartTime: String
+    Country: String
+    ID: Int
+    LastName: String
+    Course: String
+    Rank: Int
+    CumulativeToPar: Int
+    RoundToPar: Int
+
+}

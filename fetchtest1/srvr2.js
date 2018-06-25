@@ -50,8 +50,9 @@ http.createServer(function(req, res){
   } else if (action === '/active') {
     console.log("hit=",cntr)
     cntr += 1;
-    // var raw = fs.readFileSync('course.json', 'utf8');
-    var raw = fs.readFileSync('feed144.json', 'utf8');
+    var fileName = "da.json"
+    console.log("file name=", fileName)
+    var raw = fs.readFileSync(fileName, 'utf8');
     // let someText = raw.replace(/(\r\n\t|\n|\r\t)/gm,"");
     // var zzz = JSON.parse(someText)
     // console.log(zzz)

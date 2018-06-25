@@ -1,0 +1,289 @@
+{
+    "Features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "TeeLocation": {
+            "latitude": 36.29633233527451,
+            "longitude": -94.19967920697849
+          },
+          "FlagLocation": {
+            "latitude": 36.29363486933725,
+            "longitude": -94.19941635049503
+          },
+          "FairwayLocation": {
+            "lat": 36.29489447080809,
+            "lng": -94.19952363885562
+          },
+          "teeTemplateCenter": [
+            {
+                "latitude": 36.29634456408995,
+                "longitude": -94.19966847814243
+            },
+            {
+                "latitude": 36.29634456408995,
+                "longitude": -94.19966847814243
+            },
+            {
+                "latitude": 36.29634456408995,
+                "longitude": -94.19966847814243
+            },
+          ],
+          "fairwayTemplateCenter": [
+            {
+                "latitude": 36.29489447080809,
+                "longitude": -94.19956655419986
+            },
+            {
+                "latitude": 36.29489447080809,
+                "longitude": -94.19956655419986
+            },
+            {
+                "latitude": 36.29489447080809,
+                "longitude": -94.19956655419986
+            },
+          ],
+
+          "greenTemplateCenter": [
+            {
+                "latitude": 36.2936409839566,
+                "longitude": -94.19945926583927
+              },
+              {
+                "latitude": 36.2936409839566,
+                "longitude": -94.19945926583927
+              },
+              {
+                "latitude": 36.2936409839566,
+                "longitude": -94.19945926583927
+              },
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": "1",
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "TeeLocation": {
+            "latitude": 36.29376726318372,
+            "longitude": -94.19997338586597
+          },
+          "FlagLocation": {
+            "latitude": 36.29806744265642,
+            "longitude": -94.20169436538504
+          },
+          "FairwayLocation": {
+            "lat": 36.29584918897337,
+            "lng": -94.2004980937798
+          },
+          "teeTemplateCenter": {
+            "latitude": 36.293768791836,
+            "longitude": -94.19998143249302
+          },
+          "fairwayTemplateCenter": {
+            "latitude": 36.29584918897337,
+            "longitude": -94.20046590727162
+          },
+          "greenTemplateCenter": {
+            "latitude": 36.29806744265642,
+            "longitude": -94.20170241201208
+          },
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": "1",
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      },
+      {
+        "properties": {
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole1.png",
+          "page": "Hole1.html",
+          "number": "1",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole1.png"
+        }
+      }
+    ]
+  }
