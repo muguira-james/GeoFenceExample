@@ -1,289 +1,1255 @@
 {
-    "Features": [
+  "type": "FeatureCollection",
+
+  "initialRegion": {
+    "latitude": 39.448358,
+    "longitude": -74.471217,
+    "latitudeDelta": 0.00005,
+    "longitudeDelta": 0.0000025
+  },
+
+  "Features": [
       {
-        "type": "Feature",
-        "properties": {
+      "type": "Feature",
+      "properties": {
           "TeeLocation": {
-            "latitude": 36.29633233527451,
-            "longitude": -94.19967920697849
+          "latitude": 36.296202588381114,
+          "longitude": -94.19974254396345
           },
           "FlagLocation": {
-            "latitude": 36.29363486933725,
-            "longitude": -94.19941635049503
+          "latitude": 36.29348735381284,
+          "longitude": -94.19937776353743
           },
           "FairwayLocation": {
-            "lat": 36.29489447080809,
-            "lng": -94.19952363885562
+          "latitude": 36.294853630153206,
+          "longitude": -94.19954942491438
           },
           "teeTemplateCenter": [
-            {
-                "latitude": 36.29634456408995,
-                "longitude": -94.19966847814243
-            },
-            {
-                "latitude": 36.29634456408995,
-                "longitude": -94.19966847814243
-            },
-            {
-                "latitude": 36.29634456408995,
-                "longitude": -94.19966847814243
-            },
+          {
+              "latitude": 36.296232588381116,
+              "longitude": -94.19971254396346
+          },
+          {
+              "latitude": 36.296232588381116,
+              "longitude": -94.19977254396345
+          },
+          {
+              "latitude": 36.296202588381114,
+              "longitude": -94.19977254396345
+          }
           ],
           "fairwayTemplateCenter": [
-            {
-                "latitude": 36.29489447080809,
-                "longitude": -94.19956655419986
-            },
-            {
-                "latitude": 36.29489447080809,
-                "longitude": -94.19956655419986
-            },
-            {
-                "latitude": 36.29489447080809,
-                "longitude": -94.19956655419986
-            },
+          {
+              "latitude": 36.29488363015321,
+              "longitude": -94.19951942491439
+          },
+          {
+              "latitude": 36.29488363015321,
+              "longitude": -94.19957942491438
+          },
+          {
+              "latitude": 36.294853630153206,
+              "longitude": -94.19957942491438
+          }
           ],
-
           "greenTemplateCenter": [
-            {
-                "latitude": 36.2936409839566,
-                "longitude": -94.19945926583927
-              },
-              {
-                "latitude": 36.2936409839566,
-                "longitude": -94.19945926583927
-              },
-              {
-                "latitude": 36.2936409839566,
-                "longitude": -94.19945926583927
-              },
+          {
+              "latitude": 36.293517353812845,
+              "longitude": -94.19934776353743
+          },
+          {
+              "latitude": 36.293517353812845,
+              "longitude": -94.19940776353742
+          },
+          {
+              "latitude": 36.29348735381284,
+              "longitude": -94.19940776353742
+          }
           ],
           "teeDrawingPattern": "3grp",
           "greenDrawingPattern": "3grp",
           "fairwayDrawingPattern": "3grp",
-          "number": "1",
+          "number": 1,
           "Par": 4,
           "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
+          "image": "Hole0.png",
+          "page": "Hole0.html",
           "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
+          "Flagphoto": "./images/Hole0.png"
+      }
       },
       {
-        "type": "Feature",
-        "properties": {
+      "type": "Feature",
+      "properties": {
           "TeeLocation": {
-            "latitude": 36.29376726318372,
-            "longitude": -94.19997338586597
+          "latitude": 36.29377067093012,
+          "longitude": -94.19998275513058
           },
           "FlagLocation": {
-            "latitude": 36.29806744265642,
-            "longitude": -94.20169436538504
+          "latitude": 36.297936296433,
+          "longitude": -94.20171069541237
           },
           "FairwayLocation": {
-            "lat": 36.29584918897337,
-            "lng": -94.2004980937798
+          "latitude": 36.29603209301554,
+          "longitude": -94.20077728667519
           },
-          "teeTemplateCenter": {
-            "latitude": 36.293768791836,
-            "longitude": -94.19998143249302
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.293800670930125,
+              "longitude": -94.19995275513058
           },
-          "fairwayTemplateCenter": {
-            "latitude": 36.29584918897337,
-            "longitude": -94.20046590727162
+          {
+              "latitude": 36.293800670930125,
+              "longitude": -94.20001275513057
           },
-          "greenTemplateCenter": {
-            "latitude": 36.29806744265642,
-            "longitude": -94.20170241201208
+          {
+              "latitude": 36.29377067093012,
+              "longitude": -94.20001275513057
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.29606209301554,
+              "longitude": -94.2007472866752
           },
+          {
+              "latitude": 36.29606209301554,
+              "longitude": -94.20080728667519
+          },
+          {
+              "latitude": 36.29603209301554,
+              "longitude": -94.20080728667519
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.297966296433,
+              "longitude": -94.20168069541238
+          },
+          {
+              "latitude": 36.297966296433,
+              "longitude": -94.20174069541237
+          },
+          {
+              "latitude": 36.297936296433,
+              "longitude": -94.20174069541237
+          }
+          ],
           "teeDrawingPattern": "3grp",
           "greenDrawingPattern": "3grp",
           "fairwayDrawingPattern": "3grp",
-          "number": "1",
+          "number": 2,
           "Par": 4,
           "Yards": 345,
           "image": "Hole1.png",
           "page": "Hole1.html",
           "Tphoto": "./images/Tee2.png",
           "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
-      },
-      {
-        "properties": {
-          "Par": 4,
-          "Yards": 345,
-          "image": "Hole1.png",
-          "page": "Hole1.html",
-          "number": "1",
-          "Tphoto": "./images/Tee2.png",
-          "Flagphoto": "./images/Hole1.png"
-        }
       }
-    ]
-  }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.298130634166384,
+          "longitude": -94.20087681612449
+          },
+          "FlagLocation": {
+          "latitude": 36.29871754256721,
+          "longitude": -94.20259233120623
+          },
+          "FairwayLocation": {
+          "latitude": 36.29847051282143,
+          "longitude": -94.20186434067966
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.298160634166386,
+              "longitude": -94.2008468161245
+          },
+          {
+              "latitude": 36.298160634166386,
+              "longitude": -94.20090681612449
+          },
+          {
+              "latitude": 36.298130634166384,
+              "longitude": -94.20090681612449
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.298500512821434,
+              "longitude": -94.20183434067967
+          },
+          {
+              "latitude": 36.298500512821434,
+              "longitude": -94.20189434067966
+          },
+          {
+              "latitude": 36.29847051282143,
+              "longitude": -94.20189434067966
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.29874754256721,
+              "longitude": -94.20256233120624
+          },
+          {
+              "latitude": 36.29874754256721,
+              "longitude": -94.20262233120623
+          },
+          {
+              "latitude": 36.29871754256721,
+              "longitude": -94.20262233120623
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 3,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole2.png",
+          "page": "Hole2.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole2.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29919750745685,
+          "longitude": -94.20255478028002
+          },
+          "FlagLocation": {
+          "latitude": 36.29861778349956,
+          "longitude": -94.20685762031445
+          },
+          "FairwayLocation": {
+          "latitude": 36.298678311255564,
+          "longitude": -94.20462602241406
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.299227507456855,
+              "longitude": -94.20252478028003
+          },
+          {
+              "latitude": 36.299227507456855,
+              "longitude": -94.20258478028002
+          },
+          {
+              "latitude": 36.29919750745685,
+              "longitude": -94.20258478028002
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.29870831125557,
+              "longitude": -94.20459602241407
+          },
+          {
+              "latitude": 36.29870831125557,
+              "longitude": -94.20465602241406
+          },
+          {
+              "latitude": 36.298678311255564,
+              "longitude": -94.20465602241406
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.29864778349956,
+              "longitude": -94.20682762031446
+          },
+          {
+              "latitude": 36.29864778349956,
+              "longitude": -94.20688762031445
+          },
+          {
+              "latitude": 36.29861778349956,
+              "longitude": -94.20688762031445
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 4,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole3.png",
+          "page": "Hole3.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole3.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29881978402876,
+          "longitude": -94.20770494001795
+          },
+          "FlagLocation": {
+          "latitude": 36.29644131882792,
+          "longitude": -94.20687881964136
+          },
+          "FairwayLocation": {
+          "latitude": 36.29746853120491,
+          "longitude": -94.20658109444071
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.29884978402876,
+              "longitude": -94.20767494001795
+          },
+          {
+              "latitude": 36.29884978402876,
+              "longitude": -94.20773494001794
+          },
+          {
+              "latitude": 36.29881978402876,
+              "longitude": -94.20773494001794
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.297498531204916,
+              "longitude": -94.20655109444071
+          },
+          {
+              "latitude": 36.297498531204916,
+              "longitude": -94.2066110944407
+          },
+          {
+              "latitude": 36.29746853120491,
+              "longitude": -94.2066110944407
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.29647131882792,
+              "longitude": -94.20684881964137
+          },
+          {
+              "latitude": 36.29647131882792,
+              "longitude": -94.20690881964136
+          },
+          {
+              "latitude": 36.29644131882792,
+              "longitude": -94.20690881964136
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 5,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole4.png",
+          "page": "Hole4.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole4.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29734627277846,
+          "longitude": -94.2077834200552
+          },
+          "FlagLocation": {
+          "latitude": 36.29869032516698,
+          "longitude": -94.20824035045274
+          },
+          "FairwayLocation": {
+          "latitude": 36.29815227165558,
+          "longitude": -94.20807405349382
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.297376272778465,
+              "longitude": -94.2077534200552
+          },
+          {
+              "latitude": 36.297376272778465,
+              "longitude": -94.20781342005519
+          },
+          {
+              "latitude": 36.29734627277846,
+              "longitude": -94.20781342005519
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.298182271655584,
+              "longitude": -94.20804405349382
+          },
+          {
+              "latitude": 36.298182271655584,
+              "longitude": -94.20810405349381
+          },
+          {
+              "latitude": 36.29815227165558,
+              "longitude": -94.20810405349381
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.29872032516698,
+              "longitude": -94.20821035045275
+          },
+          {
+              "latitude": 36.29872032516698,
+              "longitude": -94.20827035045274
+          },
+          {
+              "latitude": 36.29869032516698,
+              "longitude": -94.20827035045274
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 6,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole5.png",
+          "page": "Hole5.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole5.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29909386286495,
+          "longitude": -94.20793994304307
+          },
+          "FlagLocation": {
+          "latitude": 36.29943476788367,
+          "longitude": -94.2020551764644
+          },
+          "FairwayLocation": {
+          "latitude": 36.29958150770582,
+          "longitude": -94.20549913283952
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.29912386286495,
+              "longitude": -94.20790994304308
+          },
+          {
+              "latitude": 36.29912386286495,
+              "longitude": -94.20796994304307
+          },
+          {
+              "latitude": 36.29909386286495,
+              "longitude": -94.20796994304307
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.29961150770582,
+              "longitude": -94.20546913283953
+          },
+          {
+              "latitude": 36.29961150770582,
+              "longitude": -94.20552913283952
+          },
+          {
+              "latitude": 36.29958150770582,
+              "longitude": -94.20552913283952
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.29946476788367,
+              "longitude": -94.2020251764644
+          },
+          {
+              "latitude": 36.29946476788367,
+              "longitude": -94.2020851764644
+          },
+          {
+              "latitude": 36.29943476788367,
+              "longitude": -94.2020851764644
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 7,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole6.png",
+          "page": "Hole6.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole6.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29898843256114,
+          "longitude": -94.20148654815324
+          },
+          "FlagLocation": {
+          "latitude": 36.29872552151836,
+          "longitude": -94.19747396346696
+          },
+          "FairwayLocation": {
+          "latitude": 36.29867660773819,
+          "longitude": -94.19890626308091
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.29901843256114,
+              "longitude": -94.20145654815325
+          },
+          {
+              "latitude": 36.29901843256114,
+              "longitude": -94.20151654815324
+          },
+          {
+              "latitude": 36.29898843256114,
+              "longitude": -94.20151654815324
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.29870660773819,
+              "longitude": -94.19887626308092
+          },
+          {
+              "latitude": 36.29870660773819,
+              "longitude": -94.19893626308091
+          },
+          {
+              "latitude": 36.29867660773819,
+              "longitude": -94.19893626308091
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.29875552151836,
+              "longitude": -94.19744396346697
+          },
+          {
+              "latitude": 36.29875552151836,
+              "longitude": -94.19750396346696
+          },
+          {
+              "latitude": 36.29872552151836,
+              "longitude": -94.19750396346696
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 8,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole7.png",
+          "page": "Hole7.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole7.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29858489431771,
+          "longitude": -94.19667466518052
+          },
+          "FlagLocation": {
+          "latitude": 36.29741706733542,
+          "longitude": -94.19968946811326
+          },
+          "FairwayLocation": {
+          "latitude": 36.29817523972313,
+          "longitude": -94.19822498199113
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.298614894317716,
+              "longitude": -94.19664466518053
+          },
+          {
+              "latitude": 36.298614894317716,
+              "longitude": -94.19670466518052
+          },
+          {
+              "latitude": 36.29858489431771,
+              "longitude": -94.19670466518052
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.29820523972313,
+              "longitude": -94.19819498199114
+          },
+          {
+              "latitude": 36.29820523972313,
+              "longitude": -94.19825498199113
+          },
+          {
+              "latitude": 36.29817523972313,
+              "longitude": -94.19825498199113
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.29744706733542,
+              "longitude": -94.19965946811327
+          },
+          {
+              "latitude": 36.29744706733542,
+              "longitude": -94.19971946811326
+          },
+          {
+              "latitude": 36.29741706733542,
+              "longitude": -94.19971946811326
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 9,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole8.png",
+          "page": "Hole8.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole8.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.296033976207035,
+          "longitude": -94.19817133781083
+          },
+          "FlagLocation": {
+          "latitude": 36.29322128697994,
+          "longitude": -94.19761880275377
+          },
+          "FairwayLocation": {
+          "latitude": 36.294713247807614,
+          "longitude": -94.19773681995042
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.29606397620704,
+              "longitude": -94.19814133781084
+          },
+          {
+              "latitude": 36.29606397620704,
+              "longitude": -94.19820133781083
+          },
+          {
+              "latitude": 36.296033976207035,
+              "longitude": -94.19820133781083
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.29474324780762,
+              "longitude": -94.19770681995043
+          },
+          {
+              "latitude": 36.29474324780762,
+              "longitude": -94.19776681995042
+          },
+          {
+              "latitude": 36.294713247807614,
+              "longitude": -94.19776681995042
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.293251286979945,
+              "longitude": -94.19758880275377
+          },
+          {
+              "latitude": 36.293251286979945,
+              "longitude": -94.19764880275376
+          },
+          {
+              "latitude": 36.29322128697994,
+              "longitude": -94.19764880275376
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 10,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole9.png",
+          "page": "Hole9.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole9.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29330689206129,
+          "longitude": -94.1966693007625
+          },
+          "FlagLocation": {
+          "latitude": 36.292395804589816,
+          "longitude": -94.19509752627977
+          },
+          "FairwayLocation": {
+          "latitude": 36.292854406995936,
+          "longitude": -94.19588609573015
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.29333689206129,
+              "longitude": -94.1966393007625
+          },
+          {
+              "latitude": 36.29333689206129,
+              "longitude": -94.19669930076249
+          },
+          {
+              "latitude": 36.29330689206129,
+              "longitude": -94.19669930076249
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.29288440699594,
+              "longitude": -94.19585609573015
+          },
+          {
+              "latitude": 36.29288440699594,
+              "longitude": -94.19591609573014
+          },
+          {
+              "latitude": 36.292854406995936,
+              "longitude": -94.19591609573014
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.29242580458982,
+              "longitude": -94.19506752627977
+          },
+          {
+              "latitude": 36.29242580458982,
+              "longitude": -94.19512752627976
+          },
+          {
+              "latitude": 36.292395804589816,
+              "longitude": -94.19512752627976
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 11,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole10.png",
+          "page": "Hole10.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole10.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29231631323194,
+          "longitude": -94.19475420352586
+          },
+          "FlagLocation": {
+          "latitude": 36.295369920375904,
+          "longitude": -94.19568101445395
+          },
+          "FairwayLocation": {
+          "latitude": 36.29412363676692,
+          "longitude": -94.19543330282738
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.292346313231945,
+              "longitude": -94.19472420352587
+          },
+          {
+              "latitude": 36.292346313231945,
+              "longitude": -94.19478420352586
+          },
+          {
+              "latitude": 36.29231631323194,
+              "longitude": -94.19478420352586
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.29415363676692,
+              "longitude": -94.19540330282739
+          },
+          {
+              "latitude": 36.29415363676692,
+              "longitude": -94.19546330282738
+          },
+          {
+              "latitude": 36.29412363676692,
+              "longitude": -94.19546330282738
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.29539992037591,
+              "longitude": -94.19565101445396
+          },
+          {
+              "latitude": 36.29539992037591,
+              "longitude": -94.19571101445395
+          },
+          {
+              "latitude": 36.295369920375904,
+              "longitude": -94.19571101445395
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 12,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole11.png",
+          "page": "Hole11.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole11.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29570621625014,
+          "longitude": -94.19479883581403
+          },
+          "FlagLocation": {
+          "latitude": 36.294776767139034,
+          "longitude": -94.19043219953778
+          },
+          "FairwayLocation": {
+          "latitude": 36.29553501125899,
+          "longitude": -94.19188595682385
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.29573621625014,
+              "longitude": -94.19476883581403
+          },
+          {
+              "latitude": 36.29573621625014,
+              "longitude": -94.19482883581402
+          },
+          {
+              "latitude": 36.29570621625014,
+              "longitude": -94.19482883581402
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.295565011258994,
+              "longitude": -94.19185595682386
+          },
+          {
+              "latitude": 36.295565011258994,
+              "longitude": -94.19191595682385
+          },
+          {
+              "latitude": 36.29553501125899,
+              "longitude": -94.19191595682385
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.294806767139036,
+              "longitude": -94.19040219953779
+          },
+          {
+              "latitude": 36.294806767139036,
+              "longitude": -94.19046219953778
+          },
+          {
+              "latitude": 36.294776767139034,
+              "longitude": -94.19046219953778
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 13,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole12.png",
+          "page": "Hole12.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole12.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29515586708476,
+          "longitude": -94.1904000130296
+          },
+          "FlagLocation": {
+          "latitude": 36.295682814201626,
+          "longitude": -94.19597997447448
+          },
+          "FairwayLocation": {
+          "latitude": 36.29621477032927,
+          "longitude": -94.1926701285501
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.29518586708476,
+              "longitude": -94.19037001302961
+          },
+          {
+              "latitude": 36.29518586708476,
+              "longitude": -94.1904300130296
+          },
+          {
+              "latitude": 36.29515586708476,
+              "longitude": -94.1904300130296
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.296244770329274,
+              "longitude": -94.19264012855011
+          },
+          {
+              "latitude": 36.296244770329274,
+              "longitude": -94.1927001285501
+          },
+          {
+              "latitude": 36.29621477032927,
+              "longitude": -94.1927001285501
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.29571281420163,
+              "longitude": -94.19594997447449
+          },
+          {
+              "latitude": 36.29571281420163,
+              "longitude": -94.19600997447448
+          },
+          {
+              "latitude": 36.295682814201626,
+              "longitude": -94.19600997447448
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 14,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole13.png",
+          "page": "Hole13.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole13.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.2962586662089,
+          "longitude": -94.19718331776005
+          },
+          "FlagLocation": {
+          "latitude": 36.2969336145215,
+          "longitude": -94.19611311636311
+          },
+          "FairwayLocation": {
+          "latitude": 36.29665915929523,
+          "longitude": -94.1966710158382
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.2962886662089,
+              "longitude": -94.19715331776005
+          },
+          {
+              "latitude": 36.2962886662089,
+              "longitude": -94.19721331776005
+          },
+          {
+              "latitude": 36.2962586662089,
+              "longitude": -94.19721331776005
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.296689159295234,
+              "longitude": -94.19664101583821
+          },
+          {
+              "latitude": 36.296689159295234,
+              "longitude": -94.1967010158382
+          },
+          {
+              "latitude": 36.29665915929523,
+              "longitude": -94.1967010158382
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.2969636145215,
+              "longitude": -94.19608311636311
+          },
+          {
+              "latitude": 36.2969636145215,
+              "longitude": -94.1961431163631
+          },
+          {
+              "latitude": 36.2969336145215,
+              "longitude": -94.1961431163631
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 15,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole14.png",
+          "page": "Hole14.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole14.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29728213232321,
+          "longitude": -94.19714040241581
+          },
+          "FlagLocation": {
+          "latitude": 36.29763989134743,
+          "longitude": -94.1934854680656
+          },
+          "FairwayLocation": {
+          "latitude": 36.29791503461859,
+          "longitude": -94.19478902164684
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.29731213232321,
+              "longitude": -94.19711040241582
+          },
+          {
+              "latitude": 36.29731213232321,
+              "longitude": -94.19717040241581
+          },
+          {
+              "latitude": 36.29728213232321,
+              "longitude": -94.19717040241581
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.29794503461859,
+              "longitude": -94.19475902164685
+          },
+          {
+              "latitude": 36.29794503461859,
+              "longitude": -94.19481902164684
+          },
+          {
+              "latitude": 36.29791503461859,
+              "longitude": -94.19481902164684
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.29766989134743,
+              "longitude": -94.19345546806561
+          },
+          {
+              "latitude": 36.29766989134743,
+              "longitude": -94.1935154680656
+          },
+          {
+              "latitude": 36.29763989134743,
+              "longitude": -94.1935154680656
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 16,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole15.png",
+          "page": "Hole15.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole15.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29734908937635,
+          "longitude": -94.19334599319683
+          },
+          "FlagLocation": {
+          "latitude": 36.29870034426923,
+          "longitude": -94.19200488868938
+          },
+          "FairwayLocation": {
+          "latitude": 36.29809503388566,
+          "longitude": -94.19257351700054
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.29737908937635,
+              "longitude": -94.19331599319683
+          },
+          {
+              "latitude": 36.29737908937635,
+              "longitude": -94.19337599319682
+          },
+          {
+              "latitude": 36.29734908937635,
+              "longitude": -94.19337599319682
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.29812503388566,
+              "longitude": -94.19254351700054
+          },
+          {
+              "latitude": 36.29812503388566,
+              "longitude": -94.19260351700053
+          },
+          {
+              "latitude": 36.29809503388566,
+              "longitude": -94.19260351700053
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.29873034426923,
+              "longitude": -94.19197488868939
+          },
+          {
+              "latitude": 36.29873034426923,
+              "longitude": -94.19203488868938
+          },
+          {
+              "latitude": 36.29870034426923,
+              "longitude": -94.19203488868938
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 17,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole16.png",
+          "page": "Hole16.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole16.png"
+      }
+      },
+      {
+      "type": "Feature",
+      "properties": {
+          "TeeLocation": {
+          "latitude": 36.29881651441165,
+          "longitude": -94.19257888141857
+          },
+          "FlagLocation": {
+          "latitude": 36.29726348873052,
+          "longitude": -94.19795402828441
+          },
+          "FairwayLocation": {
+          "latitude": 36.29843743225543,
+          "longitude": -94.19578680340038
+          },
+          "teeTemplateCenter": [
+          {
+              "latitude": 36.29884651441165,
+              "longitude": -94.19254888141857
+          },
+          {
+              "latitude": 36.29884651441165,
+              "longitude": -94.19260888141856
+          },
+          {
+              "latitude": 36.29881651441165,
+              "longitude": -94.19260888141856
+          }
+          ],
+          "fairwayTemplateCenter": [
+          {
+              "latitude": 36.298467432255435,
+              "longitude": -94.19575680340039
+          },
+          {
+              "latitude": 36.298467432255435,
+              "longitude": -94.19581680340038
+          },
+          {
+              "latitude": 36.29843743225543,
+              "longitude": -94.19581680340038
+          }
+          ],
+          "greenTemplateCenter": [
+          {
+              "latitude": 36.297293488730524,
+              "longitude": -94.19792402828442
+          },
+          {
+              "latitude": 36.297293488730524,
+              "longitude": -94.19798402828441
+          },
+          {
+              "latitude": 36.29726348873052,
+              "longitude": -94.19798402828441
+          }
+          ],
+          "teeDrawingPattern": "3grp",
+          "greenDrawingPattern": "3grp",
+          "fairwayDrawingPattern": "3grp",
+          "number": 18,
+          "Par": 4,
+          "Yards": 345,
+          "image": "Hole17.png",
+          "page": "Hole17.html",
+          "Tphoto": "./images/Tee2.png",
+          "Flagphoto": "./images/Hole17.png"
+      }
+      }
+  ]
+}
