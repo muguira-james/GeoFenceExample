@@ -192,6 +192,14 @@ class App extends Component {
   handleSaveCourseClick = () => {
     
     let theCourse = JSON.parse(JSON.stringify(this.state.aCourse))
+
+    theCourse.type = "FeatureCollection"
+    theCourse.initialRegion = {}
+    theCourse.initialRegion.latitude = 39.448358
+    theCourse.initialRegion.longitude = -74.471217
+    theCourse.initialRegion.latitudeDelta = 0.00005
+    theCourse.initialRegion.longitudeDelta = 0.0000025
+    
     theCourse.Features.forEach(function(p) {
       // console.log("Feat-->", p, theCourse.Features)
       if ("TeeLocation" in p.properties) { 
@@ -615,42 +623,58 @@ class App extends Component {
     }
     return (
       <div>
-        {deMap}
-        <button onClick={(e) => this.handleHoleButtonClick(e, -1)} >All</button>
-        <ButtonGroup 
-          selected={this.state.selectedButtons} 
-          handleHoleButtonClick={(k) => {this.handleHoleButtonClick(k)}}
-        />
+        <div>
+          {deMap}
+        </div>
 
-        <GeneralButton key={996} name="Help" handleClick={this.handleHelpClick} />
-        <GeneralButton key={997} name="Clear" handleClick={this.handleClearClick} />
-        <GeneralButton key={998} name="Save Hole" handleClick={() => {this.handleSaveClick()}} />
-        <GeneralButton key={999} name="Save Course" handleClick={() => {this.handleSaveCourseClick()}} />
-        
-        <input type="file" 
-          name="myFile"
-          onChange={(e) => this.uploadFile(e)} 
-        />
-        <Locator ikey={991} name="Tee" type="tloc"  handleClick={(e) => this.handleCourseObjClick('T', e)}/>
-        <Locator ikey={991} name="Tee_Tmpl1" type={"tTmp1"}  handleClick={(e) => this.handleCourseObjClick('Tm1', e)}/>
-        <Locator ikey={991} name="Tee_Tmpl2" type={"tTmp2"}  handleClick={(e) => this.handleCourseObjClick('Tm2', e)}/>
-        <Locator ikey={991} name="Tee_Tmpl3" type={"tTmp3"}  handleClick={(e) => this.handleCourseObjClick('Tm3', e)}/>
+        <div className="buttonGroupContainer" >
+          <button onClick={(e) => this.handleHoleButtonClick(e, -1)} >All</button>
+          <ButtonGroup 
+            selected={this.state.selectedButtons} 
+            handleHoleButtonClick={(k) => {this.handleHoleButtonClick(k)}}
+          />
+        </div>
+        <div className="generalButtonContainer" >
+          <GeneralButton key={996} name="Help" handleClick={this.handleHelpClick} />
+          <GeneralButton key={997} name="Clear" handleClick={this.handleClearClick} />
+          <GeneralButton key={998} name="Save Hole" handleClick={() => {this.handleSaveClick()}} />
+          <GeneralButton key={999} name="Save Course" handleClick={() => {this.handleSaveCourseClick()}} />
+          
+          <input type="file" 
+            name="myFile"
+            onChange={(e) => this.uploadFile(e)} 
+          />
+        </div>
+        <div className="holeTeeContainer">
+          <Locator ikey={991} name="Tee" type="tloc"  handleClick={(e) => this.handleCourseObjClick('T', e)}/>
+          <Locator ikey={991} name="Tee_Tmpl1" type={"tTmp1"}  handleClick={(e) => this.handleCourseObjClick('Tm1', e)}/>
+          <Locator ikey={991} name="Tee_Tmpl2" type={"tTmp2"}  handleClick={(e) => this.handleCourseObjClick('Tm2', e)}/>
+          <Locator ikey={991} name="Tee_Tmpl3" type={"tTmp3"}  handleClick={(e) => this.handleCourseObjClick('Tm3', e)}/>
+        </div>
 
-        <Locator ikey={992} name="Green" type="floc"  handleClick={(e) => this.handleCourseObjClick("F", e)}/>
-        <Locator ikey={992} name="Green_Tmpl1" type={"fTmp1"} handleClick={(e) => this.handleCourseObjClick("Fm1", e)}/>
-        <Locator ikey={992} name="Green_Tmpl2" type={"fTmp2"} handleClick={(e) => this.handleCourseObjClick("Fm2", e)}/>
-        <Locator ikey={992} name="Green_Tmpl3" type={"fTmp3"} handleClick={(e) => this.handleCourseObjClick("Fm3", e)}/>
-        
-        <Locator ikey={993} name="Fairway" type="lloc" handleClick={(e) => this.handleCourseObjClick("L", e)}/>
-        <Locator ikey={993} name="Fairway_Tmpl1" type={"lTmp1"} handleClick={(e) => this.handleCourseObjClick("Lm1", e)}/>
-        <Locator ikey={993} name="Fairway_Tmpl2" type={"lTmp2"} handleClick={(e) => this.handleCourseObjClick("Lm2", e)}/>
-        <Locator ikey={993} name="Fairway_Tmpl3" type={"lTmp3"} handleClick={(e) => this.handleCourseObjClick("Lm3", e)}/>
+       
 
+        <div className="holeFairwayContainer">
+          <Locator ikey={993} name="Fairway" type="lloc" handleClick={(e) => this.handleCourseObjClick("L", e)}/>
+          <Locator ikey={993} name="Fairway_Tmpl1" type={"lTmp1"} handleClick={(e) => this.handleCourseObjClick("Lm1", e)}/>
+          <Locator ikey={993} name="Fairway_Tmpl2" type={"lTmp2"} handleClick={(e) => this.handleCourseObjClick("Lm2", e)}/>
+          <Locator ikey={993} name="Fairway_Tmpl3" type={"lTmp3"} handleClick={(e) => this.handleCourseObjClick("Lm3", e)}/>
+        </div>
+
+        <div className="holeGreenContainer">
+          <Locator ikey={992} name="Green" type="floc"  handleClick={(e) => this.handleCourseObjClick("F", e)}/>
+          <Locator ikey={992} name="Green_Tmpl1" type={"fTmp1"} handleClick={(e) => this.handleCourseObjClick("Fm1", e)}/>
+          <Locator ikey={992} name="Green_Tmpl2" type={"fTmp2"} handleClick={(e) => this.handleCourseObjClick("Fm2", e)}/>
+          <Locator ikey={992} name="Green_Tmpl3" type={"fTmp3"} handleClick={(e) => this.handleCourseObjClick("Fm3", e)}/>
+        </div>
+
+        <div>
         <label id="debugt" >{this.state.whichPos}</label>
         <label id="debugc" >{
           stSel
         }</label>
         <textarea id="help" rows="25" cols="200" ></textarea>
+        </div>
       </div>
     )
   }

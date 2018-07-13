@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.buttonGroupContainer {
+  display: flex;
+}
+.generalButtonContainer {
+  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-grow: 2;
+  display: flex;
+  
+}
+
+.holeTeeContainer {
+  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  justify-content: flex-start;
+  flex-direction: row;
+  display: flex;
+
+}
+
+.holeGreenContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  justify-content: flex-start;
+  flex-direction: row;
+  display: flex;
+
+}
+
+.holeFairwayContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  justify-content: flex-start;
+  flex-direction: row;
+  display: flex;
+
+}
