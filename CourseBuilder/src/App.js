@@ -24,9 +24,10 @@ pcourse.Features = [
   // }
 ]
 
-var initialCenter = { lat: 36.296168, lng: -94.198221 }
+
 
 var convertGeoToGoogle = (latLng) => {
+  // console.log("cv->",latLng)
   let geo = {}
   geo.lat = latLng.latitude
   geo.lng = latLng.longitude
@@ -53,6 +54,7 @@ class App extends Component {
       showHoleEditor: true,
       whichHole: 0,
       whichPos: "T",
+      initialRegion: { lat: 36.296168, lng: -94.198221 },
       holeConfig: this.createHoleConfig(),
       aCourse: pcourse,
       selectedButtons: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
@@ -241,8 +243,8 @@ class App extends Component {
         p.properties.image =  "Hole" + num + ".png"
         p.properties.page = "Hole" + num + ".html"
         p.properties.number = num+1
-        p.properties.Tphoto = "./images/Tee2.png"
-        p.properties.Flagphoto = "./images/Hole" + num + ".png"
+        // p.properties.Tphoto = "./images/Tee2.png"
+        // p.properties.Flagphoto = "./images/Hole" + num + ".png"
       }
     })
     let content = JSON.stringify(theCourse, null, 2)
@@ -513,7 +515,7 @@ class App extends Component {
   }
   handleHoleButtonClick(indx) {
     this.setState({ whichHole: indx })
-    console.log("indx", indx, this.state.aCourse)
+    // console.log("indx", indx, this.state.aCourse)
 
     if (Object.keys(this.state.aCourse.Features[indx].properties).length === 0) {
       let h = this.createHoleConfig()
@@ -551,24 +553,36 @@ class App extends Component {
     theCourse.Features.forEach((p) => {
       p.properties.TeeLocation = convertGeoToGoogle(p.properties.TeeLocation)
       p.properties.FlagLocation = convertGeoToGoogle(p.properties.FlagLocation)
-      p.properties.FairwayLocation = convertGeoToGoogle(p.properties.FairwayLocation)
+      p.properties.FairwayLocation = convertGeoToGoogle(p.properties.fairwayLocation)
 
-      for(let z=0; z<3; z++) {
+      let l = p.properties.teeTemplateCenter.length
+      for(let z=0; z<l; z++) {
+        // console.log("z->t", p.properties.teeTemplateCenter)
         p.properties.teeTemplateCenter[z] = convertGeoToGoogle(p.properties.teeTemplateCenter[z])
       }
       
-      for(let z = 0; z<3; z++) {
+      l = p.properties.greenTemplateCenter.length
+      for(let z = 0; z<l; z++) {
+        // console.log("z->g", p.properties.greenTemplateCenter)
         p.properties.greenTemplateCenter[z] = convertGeoToGoogle(p.properties.greenTemplateCenter[z])
       }
       
-      for (let z=0; z<3; z++) {
+      l = p.properties.fairwayTemplateCenter.length
+      for (let z=0; z<l; z++) {
+        // console.log("z->f", p.properties.fairwayTemplateCenter)
         p.properties.fairwayTemplateCenter[z] = convertGeoToGoogle(p.properties.fairwayTemplateCenter[z])
       }
       
     })
-    console.log("yy-->", theCourse)
+    // console.log("yy-->", theCourse)
     this.setState({ aCourse: theCourse });
+    console.log("ic->", theCourse)
+    this.setState({ initialRegion: theCourse.initialRegion })
     this.handleHoleButtonClick(0)
+    let llng = {}
+    llng.lat = theCourse.initialRegion.latitude
+    llng.lng = theCourse.initialRegion.longitude
+    this.map.panTo(llng)
   }
 
   // 
@@ -588,11 +602,16 @@ class App extends Component {
     document.getElementById("Tee").style.background = '#00ff00'
   }
 
+  onMapMounted = (ref) => {
+    console.log("map is mounted", ref)
+    this.map = ref
+  }
+
   // ======================== render =========================
   render() {
     let deMap = null
     
-    console.log("a course-->", this.state.aCourse);
+    // console.log("a course-->", this.state.aCourse);
     let stSel = ""
     for (let j=0; j<18; j++) {
       
@@ -601,13 +620,16 @@ class App extends Component {
         }
     }
 
+    let API_KEY = "AIzaSyDg2L3FSio2Ta-n-9L3sCMsBYziMflOFkY"
+    let url = "https://maps.googleapis.com/maps/api/js?key=" + API_KEY + "&v=3.exp&libraries=geometry,drawing,places"
     if (this.state.showHoleEditor) {
       deMap = 
           <HoleEditor
               key={990}
               isMarkerShown
-              initialCenter={initialCenter}
-              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg2L3FSio2Ta-n-9L3sCMsBYziMflOFkY&v=3.exp&libraries=geometry,drawing,places"
+              onMapMounted={this.onMapMounted}
+              region={this.state.initialRegion}
+              googleMapURL={url}
               loadingElement={<div style={{ height: `100%` }} />}
               containerElement={<div style={{ height: `400px` }} />}
               mapElement={<div style={{ height: `100%` }} />}

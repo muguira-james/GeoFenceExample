@@ -1,8 +1,10 @@
 import React from 'react';
+
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
 
-const HoleEditor = withScriptjs(withGoogleMap((props) => {
+const HoleEditor = 
+  withScriptjs(withGoogleMap((props) => {
   console.log("HE->", props.holeConfig)
   return (
     <GoogleMap
@@ -12,7 +14,9 @@ const HoleEditor = withScriptjs(withGoogleMap((props) => {
         
         mapTypeId: 'satellite',//google.maps.MapTypeId.SATELLITE,
       }}
-      defaultCenter={ props.initialCenter }
+      defaultCenter={ props.region }
+      region={props.region}
+      ref={(r) => props.onMapMounted(r)}
       onClick={(e) => {
         //   console.log("on click", e.latLng.lat(), e.latLng.lng()) 
           props.mapClick(e.latLng)
