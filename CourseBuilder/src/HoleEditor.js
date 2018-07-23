@@ -5,7 +5,7 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-map
 
 const HoleEditor = 
   withScriptjs(withGoogleMap((props) => {
-  console.log("HE->", props.holeConfig)
+  // console.log("HE->", props.holeConfig)
   return (
     <GoogleMap
       defaultZoom={16}

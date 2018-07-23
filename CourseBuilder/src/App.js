@@ -38,10 +38,11 @@ var convertGeoToGoogle = (latLng) => {
 var convertGeoFromGoogle = (ll) => {
   
   let geo = {}
+  
   geo.latitude = ll.lat
   geo.longitude = ll.lng
 
-  return geo
+  return geo 
 }
 
 let fileReader = new FileReader()
@@ -191,62 +192,94 @@ class App extends Component {
     this.setState({whichPos: "T"}); 
   }
 
+  editTeeLocation = (t) => {
+    let aKeyList = Object.keys(t)
+    if (!("latitude" in aKeyList)) { return false }
+    if (!("longitude" in aKeyList)) {return false }
+
+    return true
+  }
+
   handleSaveCourseClick = () => {
-    
+    let badHole = "0"
+    let badKey = "teeLocation"
+
     let theCourse = JSON.parse(JSON.stringify(this.state.aCourse))
 
     theCourse.type = "FeatureCollection"
     theCourse.initialRegion = {}
-    theCourse.initialRegion.latitude = 39.448358
-    theCourse.initialRegion.longitude = -74.471217
-    theCourse.initialRegion.latitudeDelta = 0.00005
-    theCourse.initialRegion.longitudeDelta = 0.0000025
-    
-    theCourse.Features.forEach(function(p) {
-      // console.log("Feat-->", p, theCourse.Features)
-      if ("TeeLocation" in p.properties) { 
-        p.properties.TeeLocation = convertGeoFromGoogle(p.properties.TeeLocation)
-      }
-      
-      if ("FlagLocation" in p.properties) {
-        p.properties.FlagLocation = convertGeoFromGoogle(p.properties.FlagLocation)
-      }
-     
-      if ("FairwayLocation" in p.properties) {
-        p.properties.FairwayLocation = convertGeoFromGoogle(p.properties.FairwayLocation)
-      }
-      
-      if ("teeTemplateCenter" in p.properties) {
-        p.properties.teeTemplateCenter[0] = convertGeoFromGoogle(p.properties.teeTemplateCenter[0])
-        p.properties.teeTemplateCenter[1] = convertGeoFromGoogle(p.properties.teeTemplateCenter[1])
-        p.properties.teeTemplateCenter[2] = convertGeoFromGoogle(p.properties.teeTemplateCenter[2])
-      }
+ 
+    try {
+      theCourse.initialRegion.latitude = theCourse.Features[0].TeeLocation.latitude
+      theCourse.initialRegion.longitude = theCourse.Features[0].TeeLocation.longitude
+      theCourse.initialRegion.latitudeDelta = 0.00005
+      theCourse.initialRegion.longitudeDelta = 0.0000025
 
-      if ("greenTemplateCenter" in p.properties) {
+      theCourse.Features.forEach(function(p) {
+        // console.log("Feat-->", p, theCourse.Features)
+        if ("TeeLocation" in p.properties) { 
+          console.log("t->", p.properties.number, p.properties.TeeLocation)
+          badHole = p.properties.number
+          badKey = "TeeLocation"
+          p.properties.TeeLocation = convertGeoFromGoogle(p.properties.TeeLocation)        
+        }
         
-        p.properties.greenTemplateCenter[0] = convertGeoFromGoogle(p.properties.greenTemplateCenter[0])
-        p.properties.greenTemplateCenter[1] = convertGeoFromGoogle(p.properties.greenTemplateCenter[1])
-        p.properties.greenTemplateCenter[2] = convertGeoFromGoogle(p.properties.greenTemplateCenter[2])
-      }
-      
-      if ("fairwayTemplateCenter" in p.properties) {
+        if ("FlagLocation" in p.properties) {
+          console.log("F->", p.properties.number, p.properties.FlagLocation)
+          badHole = p.properties.number
+          badKey = "FlagLocation"
+          p.properties.FlagLocation = convertGeoFromGoogle(p.properties.FlagLocation)
+        }
+       
+        if ("FairwayLocation" in p.properties) {
+          console.log("f->", p.properties.number, p.properties.FairwayLocation)
+          badHole = p.properties.number
+          badKey = "FairwayLocation"
+          p.properties.FairwayLocation = convertGeoFromGoogle(p.properties.FairwayLocation)
+        }
         
-        p.properties.fairwayTemplateCenter[0] = convertGeoFromGoogle(p.properties.fairwayTemplateCenter[0])
-        p.properties.fairwayTemplateCenter[1] = convertGeoFromGoogle(p.properties.fairwayTemplateCenter[1])
-        p.properties.fairwayTemplateCenter[2] = convertGeoFromGoogle(p.properties.fairwayTemplateCenter[2])
-      }
-
-      if ("TeeLocation" in p.properties) {
-        let num = p.properties.number 
-        p.properties.Par = 4
-        p.properties.Yards = 345
-        p.properties.image =  "Hole" + num + ".png"
-        p.properties.page = "Hole" + num + ".html"
-        p.properties.number = num+1
-        // p.properties.Tphoto = "./images/Tee2.png"
-        // p.properties.Flagphoto = "./images/Hole" + num + ".png"
-      }
-    })
+        if ("teeTemplateCenter" in p.properties) {
+          console.log("tee template:->", p.properties.number, p.properties.teeTemplateCenter)
+          badHole = p.properties.number
+          badKey = "teeTemplateCenter"
+          p.properties.teeTemplateCenter[0] = convertGeoFromGoogle(p.properties.teeTemplateCenter[0])
+          p.properties.teeTemplateCenter[1] = convertGeoFromGoogle(p.properties.teeTemplateCenter[1])
+          p.properties.teeTemplateCenter[2] = convertGeoFromGoogle(p.properties.teeTemplateCenter[2])
+        }
+  
+        if ("greenTemplateCenter" in p.properties) {
+          console.log("gree template:->", p.properties.number, p.properties.greenTemplateCenter)
+          badHole = p.properties.number
+          badKey = "greenTemplateCenter"
+          p.properties.greenTemplateCenter[0] = convertGeoFromGoogle(p.properties.greenTemplateCenter[0])
+          p.properties.greenTemplateCenter[1] = convertGeoFromGoogle(p.properties.greenTemplateCenter[1])
+          p.properties.greenTemplateCenter[2] = convertGeoFromGoogle(p.properties.greenTemplateCenter[2])
+        }
+        
+        if ("fairwayTemplateCenter" in p.properties) { 
+          console.log("fairway template:->", p.properties.number, p.properties.fairwayTemplateCenter)
+          badHole = p.properties.number
+          badKey = "fairwayTemplateCenter"
+          p.properties.fairwayTemplateCenter[0] = convertGeoFromGoogle(p.properties.fairwayTemplateCenter[0])
+          p.properties.fairwayTemplateCenter[1] = convertGeoFromGoogle(p.properties.fairwayTemplateCenter[1])
+          p.properties.fairwayTemplateCenter[2] = convertGeoFromGoogle(p.properties.fairwayTemplateCenter[2])
+        }
+  
+        if ("TeeLocation" in p.properties) {
+          let num = p.properties.number 
+          p.properties.Par = 4
+          p.properties.Yards = 345
+          p.properties.image =  "Hole" + num + ".png"
+          p.properties.page = "Hole" + num + ".html"
+          p.properties.number = num+1
+          // p.properties.Tphoto = "./images/Tee2.png"
+          // p.properties.Flagphoto = "./images/Hole" + num + ".png"
+        }
+      })
+  
+    } catch(error) {
+      alert("bad file definition on hole: " + badHole + " " + badKey)
+    }
     let content = JSON.stringify(theCourse, null, 2)
     console.log(content)
   }
@@ -551,9 +584,32 @@ class App extends Component {
     let theCourse = JSON.parse(fileReader.result);
 
     theCourse.Features.forEach((p) => {
-      p.properties.TeeLocation = convertGeoToGoogle(p.properties.TeeLocation)
-      p.properties.FlagLocation = convertGeoToGoogle(p.properties.FlagLocation)
-      p.properties.FairwayLocation = convertGeoToGoogle(p.properties.fairwayLocation)
+      let aKeyList = Object.keys(p.properties)
+      // console.log("a k->", aKeyList)
+      if (("teeLocation" in aKeyList) || ("TeeLocation" in aKeyList)) {
+        if ("teeLocation" in aKeyList) {
+          p.properties.TeeLocation = convertGeoToGoogle(p.properties.teeLocation)
+        } else if ("TeeLocation" in aKeyList) {
+          p.properties.TeeLocation = convertGeoToGoogle(p.properties.TeeLocation)
+        }
+      }
+
+      if (("flagLocation" in aKeyList) || ("FlagLocation" in aKeyList)) {
+        if ("FlagLocation" in aKeyList) {
+          p.properties.FlagLocation = convertGeoToGoogle(p.properties.FlagLocation)
+        } else if ("flagLocation" in aKeyList) {
+          p.properties.FlagLocation = convertGeoToGoogle(p.properties.flagLocation)
+        }
+      } 
+      
+      if (("fairwayLocation" in aKeyList) || ("FairwayLocation" in aKeyList)) {
+        if ("fairwayLocation" in aKeyList) {
+          p.properties.FairwayLocation = convertGeoToGoogle(p.properties.fairwayLocation)
+        } else if ("FairwayLocation" in aKeyList) {
+          p.properties.FairwayLocation = convertGeoToGoogle(p.properties.FairwayLocation)
+        }
+      }
+      
 
       let l = p.properties.teeTemplateCenter.length
       for(let z=0; z<l; z++) {
@@ -603,7 +659,7 @@ class App extends Component {
   }
 
   onMapMounted = (ref) => {
-    console.log("map is mounted", ref)
+    // console.log("map is mounted", ref)
     this.map = ref
   }
 
@@ -620,7 +676,7 @@ class App extends Component {
         }
     }
 
-    let API_KEY = "AIzaSyDg2L3FSio2Ta-n-9L3sCMsBYziMflOFkY"
+    let API_KEY = "AIzaSyDc6A0WM1MsH8ZLU2d5B99n_3J9hjbR-do"
     let url = "https://maps.googleapis.com/maps/api/js?key=" + API_KEY + "&v=3.exp&libraries=geometry,drawing,places"
     if (this.state.showHoleEditor) {
       deMap = 
