@@ -364,7 +364,7 @@ class App extends Component {
     let sb = Object.assign({}, this.state.selectedButtons)
     sb[o.properties.number] = 1
 
-    console.log("na-->", na)
+    console.log("na-->", na, sb)
     this.setState( { aCourse: na, selectedButtons: sb })
   }
 
