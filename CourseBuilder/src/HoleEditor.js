@@ -5,8 +5,9 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-map
 
 const HoleEditor = 
   withScriptjs(withGoogleMap((props) => {
-  // console.log("HE->", props.holeConfig)
-  var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  console.log("HE->", props.holeConfig)
+  
+  let markers = props.holeConfig
   return (
     <GoogleMap
       defaultZoom={16}
@@ -24,21 +25,16 @@ const HoleEditor =
       }}
     >
     {
-      Object.keys(props.holeConfig.properties).map((k, keyIndex) => {
+      markers && Object.keys(markers).map((k, keyIndex) => {
         // console.log("k->", k, props.holeConfig.properties[k])
-        let markerLabel = null
-        if (keyIndex < 3) {
-          markerLabel = '#'
-        } else {
-          markerLabel = labels[keyIndex % labels.length]
-        }
+
           return (
             <Marker 
                 key={200 + keyIndex}
                 draggable={true}
                 onDragEnd={(e) => {props.dragMarker(e, k)} }
-                position={props.holeConfig.properties[k]}
-                label={markerLabel}
+                position={markers[k]}
+                label={markers[k].label}
             />
           )
       })
