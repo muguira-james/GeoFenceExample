@@ -26,15 +26,25 @@ const HoleEditor =
     >
     {
       markers && Object.keys(markers).map((k, keyIndex) => {
-        // console.log("k->", k, props.holeConfig.properties[k])
-
+        console.log("k->", k, markers[k])
+        if (Object.keys(markers).includes('label')) {
+          return (
+            <Marker 
+                key={200 + keyIndex}
+                draggable={true}
+                onDragEnd={(e) => {props.dragMarker(e, k)} }
+                position={markers[k]} 
+                label={markers[k].label}               
+            />
+          )
+        }
           return (
             <Marker 
                 key={200 + keyIndex}
                 draggable={true}
                 onDragEnd={(e) => {props.dragMarker(e, k)} }
                 position={markers[k]}
-                label={markers[k].label}
+                
             />
           )
       })

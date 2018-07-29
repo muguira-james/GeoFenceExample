@@ -194,6 +194,8 @@ class App extends Component {
       theCourse.initialRegion.latitudeDelta = 0.00005
       theCourse.initialRegion.longitudeDelta = 0.0000025
 
+      theCourse.courseFileVersion = CourseFileVersion
+
       theCourse.Features.forEach(function (p) {
 
         if ("TeeLocation" in p.properties) {
@@ -263,7 +265,7 @@ class App extends Component {
           p.properties.image = "Hole" + num + ".png"
           p.properties.page = "Hole" + num + ".html"
           p.properties.number = num + 1
-          p.courseFileVersion = CourseFileVersion
+          
           // p.properties.Tphoto = "./images/Tee2.png"
           // p.properties.Flagphoto = "./images/Hole" + num + ".png"
         }
@@ -281,7 +283,7 @@ class App extends Component {
 
   // 
   // save the holeConfig struct into the aCourse for the hole you are working on
-  handleSaveClick(holeConfig) {
+  handleSaveHoleConfigClick(holeConfig) {
     // console.log("aCou->", this.state.aCourse, this.state.whichHole) 
 
     // first make a copy
@@ -682,7 +684,7 @@ class App extends Component {
     }
 
     this.setState({ whichHole: indx })
-    console.log("indx", indx, typeof (indx))
+    // console.log("indx", indx, typeof (indx))
 
     if (Object.keys(this.state.aCourse.Features[indx].properties).length === 0) {
       let h = utils.createHoleConfig()
@@ -719,6 +721,19 @@ class App extends Component {
     h.properties.fairwayTemplateCenter4 = this.state.aCourse.Features[indx].properties.fairwayTemplateCenter[3]
     h.properties.fairwayTemplateCenter5 = this.state.aCourse.Features[indx].properties.fairwayTemplateCenter[4]
     h.properties.fairwayTemplateCenter6 = this.state.aCourse.Features[indx].properties.fairwayTemplateCenter[5]
+
+    h.noLocationProperties.FairwayLocation = this.state.aCourse.Features[indx].noLocationProperties.FairwayLocation
+    h.noLocationProperties.fairwayTemplateCenter1 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter1
+    h.noLocationProperties.fairwayTemplateCenter2 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter2
+    h.noLocationProperties.fairwayTemplateCenter3 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter3
+
+    h.noLocationProperties.fairwayTemplateCenter4 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter4
+    h.noLocationProperties.fairwayTemplateCenter5 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter5
+    h.noLocationProperties.fairwayTemplateCenter6 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter6
+
+    h.noLocationProperties.fairwayTemplateCenter7 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter7
+    h.noLocationProperties.fairwayTemplateCenter8 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter8
+    h.noLocationProperties.fairwayTemplateCenter9 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter9
 
     this.setState({ holeConfig: h })
 
@@ -884,7 +899,7 @@ class App extends Component {
           <div className="generalButtonContainer" >
             <GeneralButton key={996} name="Help" handleClick={this.handleHelpClick} />
             <GeneralButton key={997} name="Clear" handleClick={this.handleClearClick} />
-            <GeneralButton key={998} name="Save Hole" handleClick={() => { this.handleSaveClick(this.state.holeConfig) }} />
+            <GeneralButton key={998} name="Save Hole" handleClick={() => { this.handleSaveHoleConfigClick(this.state.holeConfig) }} />
             <GeneralButton key={999} name="Save Course" handleClick={() => { this.handleSaveCourseClick() }} />
 
             <input type="file"
@@ -955,7 +970,7 @@ class App extends Component {
           initialFairway={this.state.holeConfig.properties.FairwayLocation}
           holeConfig={this.state.holeConfig}
           handleHoleConfigChange={(h) => this.handleHoleConfigChange(h)}
-          handleSaveClick={(h) => this.handleSaveClick(h)}
+          handleSaveClick={(h) => this.handleSaveHoleConfigClick(h)}
           handleReturnClick={() => this.returnClick()}
         />
       )
