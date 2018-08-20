@@ -912,7 +912,7 @@ class App extends Component {
       }
     }
 
-    let API_KEY = "AIzaSyBjhjazSK1XalgXiY3gCp32hhkTZzGG67E"
+    let API_KEY = "Your API KEY HERE"
     let url = "https://maps.googleapis.com/maps/api/js?key=" + API_KEY + "&v=3.exp&libraries=geometry,drawing,places"
     if (this.state.showHoleEditor) {
 
