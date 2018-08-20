@@ -10,7 +10,7 @@ class ButtonGroup extends React.Component {
         selected: props.selected,
       }
       this.holeMap = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17, 18]
-      // console.log("bg-s->", props)
+      console.log("bg-s->", props)
     }
   
     // shouldComponentUpdate(nextProps, nextState) {
@@ -34,6 +34,7 @@ class ButtonGroup extends React.Component {
   
     render=() => {
       let buttonList = this.holeMap.map((j, kIndex) => {
+        // console.log("j->", j, this.props.selected)
         let h="h" + (kIndex + 1)
         return (
           <button 
@@ -43,6 +44,7 @@ class ButtonGroup extends React.Component {
             onClick={() => {this.handleClick(kIndex)}} >{j}</button>
         ) 
       })
+      
       return (buttonList)
     }
   }

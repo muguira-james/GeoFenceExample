@@ -19,19 +19,32 @@
 .holeTeeContainer {
   
   margin-top: 10px;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  
+  padding-bottom: 2px;
   padding-top: 5px;
   justify-content: flex-start;
+  flex-direction: row;
+  display: flex;
+
+}
+
+.holeTeeContainer2 {
+  
+  
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+  
+  padding-left: 160px;
+  justify-content: flex-center;
   flex-direction: row;
   display: flex;
 
 }
 
 .holeGreenContainer {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-top: 5px;
+  
+  padding-bottom: 2px;
   padding-top: 5px;
   justify-content: flex-start;
   flex-direction: row;
@@ -39,13 +52,57 @@
 
 }
 
+.holeGreenContainer2 {
+  
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+  
+  padding-left: 160px;
+  justify-content: flex-center;
+  flex-direction: row;
+  display: flex;
+
+}
+
 .holeFairwayContainer {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-top: 5px;
+  
   padding-top: 5px;
   justify-content: flex-start;
   flex-direction: row;
   display: flex;
 
+}
+.holeFairwayContainer2 {
+  
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+  
+  padding-left: 160px;
+  justify-content: flex-center;
+  flex-direction: row;
+  display: flex;
+
+}
+
+.holeFairwayContainer3 {
+  
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+  
+  padding-left: 160px;
+  justify-content: flex-center;
+  flex-direction: row;
+  display: flex;
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.WhichHole {
+  display: flex;
+  flex-direction: row;
 }

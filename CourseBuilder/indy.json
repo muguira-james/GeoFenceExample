@@ -1,0 +1,2654 @@
+{
+  "Features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "With water guarding the tee shot, players will want to drive to the right side of the fairway. Long hitters can fly the water. A long green with narrow opening is guarded by a large trap on the right. The approach must be played well in any hopes of getting a birdie.",
+        "TeeLocation": {
+          "latitude": 39.79277530082653,
+          "longitude": -86.22998178292153
+        },
+        "FlagLocation": {
+          "latitude": 39.79634565331254,
+          "longitude": -86.22937523042106
+        },
+        "FairwayLocation": {
+          "latitude": 39.79500472930901,
+          "longitude": -86.22899039243578
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.792843400504694,
+            "longitude": -86.229963391909
+          },
+          {
+            "latitude": 39.792690385467594,
+            "longitude": -86.22993120540082
+          },
+          {
+            "latitude": 39.79272973222394,
+            "longitude": -86.23006531585156
+          },
+          {
+            "latitude": 39.79273759156755,
+            "longitude": -86.2299411234884
+          },
+          {
+            "latitude": 39.79266948270995,
+            "longitude": -86.23004911484111
+          },
+          {
+            "latitude": 39.79264741967747,
+            "longitude": -86.2299392776672
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.79502730870402,
+            "longitude": -86.22902511002695
+          },
+          {
+            "latitude": 39.794862640592754,
+            "longitude": -86.22908545972979
+          },
+          {
+            "latitude": 39.79491218679161,
+            "longitude": -86.22889770509875
+          },
+          {
+            "latitude": 39.79493685604433,
+            "longitude": -86.22892934468541
+          },
+          {
+            "latitude": 39.79483399396478,
+            "longitude": -86.22902019008905
+          },
+          {
+            "latitude": 39.79485002362792,
+            "longitude": -86.22891056922231
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.79631807611725,
+            "longitude": -86.22947358101987
+          },
+          {
+            "latitude": 39.79645651100692,
+            "longitude": -86.22937299818182
+          },
+          {
+            "latitude": 39.79632244774966,
+            "longitude": -86.22928850859785
+          },
+          {
+            "latitude": 39.796369308140754,
+            "longitude": -86.22930351284299
+          },
+          {
+            "latitude": 39.796276648063284,
+            "longitude": -86.22941581591874
+          },
+          {
+            "latitude": 39.796285391332965,
+            "longitude": -86.22931021836553
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 1,
+        "Par": 4,
+        "Yards": 385,
+        "image": "IndyHole1.png",
+        "page": "Hole0.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.79500472930901,
+          "longitude": -86.22899039243578
+        },
+        {
+          "latitude": 39.79503472930901,
+          "longitude": -86.22896039243578
+        },
+        {
+          "latitude": 39.79503472930901,
+          "longitude": -86.22902039243577
+        },
+        {
+          "latitude": 39.79500472930901,
+          "longitude": -86.22902039243577
+        },
+        {
+          "latitude": 39.79500472930901,
+          "longitude": -86.22896039243578
+        },
+        {
+          "latitude": 39.794974729309004,
+          "longitude": -86.22902039243577
+        },
+        {
+          "latitude": 39.794974729309004,
+          "longitude": -86.22896039243578
+        },
+        {
+          "latitude": 39.794974729309004,
+          "longitude": -86.22899039243578
+        },
+        {
+          "latitude": 39.79503472930901,
+          "longitude": -86.22899039243578
+        },
+        {
+          "latitude": 39.79499572930901,
+          "longitude": -86.22898139243577
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "This hole is a long par 5. Long hitters will get tempted to “give it a rip” and look to get on the green in two. Green should be approached by left side to avoid short bunkers. This hole should give up some birdies.",
+        "TeeLocation": {
+          "latitude": 39.79632845701441,
+          "longitude": -86.22991807016672
+        },
+        "FlagLocation": {
+          "latitude": 39.80069439023807,
+          "longitude": -86.2290210092599
+        },
+        "FairwayLocation": {
+          "latitude": 39.79870658456398,
+          "longitude": -86.22898882275172
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.79624017532814,
+            "longitude": -86.23000997344457
+          },
+          {
+            "latitude": 39.79622123156322,
+            "longitude": -86.22988525072537
+          },
+          {
+            "latitude": 39.79611048329501,
+            "longitude": -86.22997778693639
+          },
+          {
+            "latitude": 39.79649317085756,
+            "longitude": -86.22977558162961
+          },
+          {
+            "latitude": 39.79652583085726,
+            "longitude": -86.22987581384172
+          },
+          {
+            "latitude": 39.7964733714058,
+            "longitude": -86.2298278847054
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.798821447759565,
+            "longitude": -86.22910417245635
+          },
+          {
+            "latitude": 39.7989598776103,
+            "longitude": -86.22905186938056
+          },
+          {
+            "latitude": 39.79886224816563,
+            "longitude": -86.22895396875151
+          },
+          {
+            "latitude": 39.79896012292913,
+            "longitude": -86.22892059220123
+          },
+          {
+            "latitude": 39.798893694059664,
+            "longitude": -86.22919248671337
+          },
+          {
+            "latitude": 39.79877274998382,
+            "longitude": -86.2289152277832
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.80079101888335,
+            "longitude": -86.22894583255214
+          },
+          {
+            "latitude": 39.80070650610013,
+            "longitude": -86.22887207180423
+          },
+          {
+            "latitude": 39.8007764477212,
+            "longitude": -86.22901422888202
+          },
+          {
+            "latitude": 39.80076461487937,
+            "longitude": -86.22885219587135
+          },
+          {
+            "latitude": 39.80062533102526,
+            "longitude": -86.22897522778317
+          },
+          {
+            "latitude": 39.80062824526436,
+            "longitude": -86.22887633575249
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 2,
+        "Par": 5,
+        "Yards": 521,
+        "image": "IndyHole2.png",
+        "page": "Hole1.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.79870658456398,
+          "longitude": -86.22898882275172
+        },
+        {
+          "latitude": 39.79873658456398,
+          "longitude": -86.22895882275172
+        },
+        {
+          "latitude": 39.79873658456398,
+          "longitude": -86.22901882275171
+        },
+        {
+          "latitude": 39.79870658456398,
+          "longitude": -86.22901882275171
+        },
+        {
+          "latitude": 39.79870658456398,
+          "longitude": -86.22895882275172
+        },
+        {
+          "latitude": 39.79867658456398,
+          "longitude": -86.22901882275171
+        },
+        {
+          "latitude": 39.79867658456398,
+          "longitude": -86.22895882275172
+        },
+        {
+          "latitude": 39.79867658456398,
+          "longitude": -86.22898882275172
+        },
+        {
+          "latitude": 39.79873658456398,
+          "longitude": -86.22898882275172
+        },
+        {
+          "latitude": 39.79869758456398,
+          "longitude": -86.22897982275171
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "This one is a short par 3 made dif cult by swirling winds. Players hope to stick the wide, narrow green. The waste bunker may catch errant shots to the left. Far right pin location brings Little Eagle Creek into play. The heavily contoured green makes putting a challenge.",
+        "TeeLocation": {
+          "latitude": 39.800997055249304,
+          "longitude": -86.22834742993888
+        },
+        "FlagLocation": {
+          "latitude": 39.80159446844747,
+          "longitude": -86.23004929155883
+        },
+        "FairwayLocation": {
+          "latitude": 39.8012505922161,
+          "longitude": -86.22948066324767
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.80104938355845,
+            "longitude": -86.22832758335085
+          },
+          {
+            "latitude": 39.800948108292395,
+            "longitude": -86.22841888560953
+          },
+          {
+            "latitude": 39.80104136344378,
+            "longitude": -86.2284135211915
+          },
+          {
+            "latitude": 39.80091139110236,
+            "longitude": -86.2283289845351
+          },
+          {
+            "latitude": 39.80102855943828,
+            "longitude": -86.2282709673384
+          },
+          {
+            "latitude": 39.800928018704155,
+            "longitude": -86.22828338698184
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.80121969922902,
+            "longitude": -86.22936297611034
+          },
+          {
+            "latitude": 39.801226984763524,
+            "longitude": -86.22950746569427
+          },
+          {
+            "latitude": 39.8013368669299,
+            "longitude": -86.22942699942382
+          },
+          {
+            "latitude": 39.801185327895894,
+            "longitude": -86.22916985706127
+          },
+          {
+            "latitude": 39.80116698474955,
+            "longitude": -86.22908233556541
+          },
+          {
+            "latitude": 39.80121361219261,
+            "longitude": -86.22911084846294
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.80152548284628,
+            "longitude": -86.23013836042134
+          },
+          {
+            "latitude": 39.801653707570175,
+            "longitude": -86.23008203403208
+          },
+          {
+            "latitude": 39.80150362633534,
+            "longitude": -86.22997608677593
+          },
+          {
+            "latitude": 39.80156854615359,
+            "longitude": -86.23000804737842
+          },
+          {
+            "latitude": 39.801462776898035,
+            "longitude": -86.23009084615501
+          },
+          {
+            "latitude": 39.80146714820336,
+            "longitude": -86.23001072958743
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 3,
+        "Par": 3,
+        "Yards": 143,
+        "image": "IndyHole3.png",
+        "page": "Hole2.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.8012505922161,
+          "longitude": -86.22948066324767
+        },
+        {
+          "latitude": 39.8012805922161,
+          "longitude": -86.22945066324768
+        },
+        {
+          "latitude": 39.8012805922161,
+          "longitude": -86.22951066324767
+        },
+        {
+          "latitude": 39.8012505922161,
+          "longitude": -86.22951066324767
+        },
+        {
+          "latitude": 39.8012505922161,
+          "longitude": -86.22945066324768
+        },
+        {
+          "latitude": 39.8012205922161,
+          "longitude": -86.22951066324767
+        },
+        {
+          "latitude": 39.8012205922161,
+          "longitude": -86.22945066324768
+        },
+        {
+          "latitude": 39.8012205922161,
+          "longitude": -86.22948066324767
+        },
+        {
+          "latitude": 39.8012805922161,
+          "longitude": -86.22948066324767
+        },
+        {
+          "latitude": 39.8012415922161,
+          "longitude": -86.22947166324766
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "This short par 4 requires players to have an accurate tee shot. Pin placements on the left side of the green force players to land their tee shots to the right of the unique fairway bunker. Severely sloped green leads to dif cult putting positions.",
+        "TeeLocation": {
+          "latitude": 39.801926184314546,
+          "longitude": -86.23081582161234
+        },
+        "FlagLocation": {
+          "latitude": 39.80198311824264,
+          "longitude": -86.22742909574816,
+          "label": "g"
+        },
+        "FairwayLocation": {
+          "latitude": 39.80184178029016,
+          "longitude": -86.22847291488802,
+          "label": "f"
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.801965525787395,
+            "longitude": -86.23076599733082
+          },
+          {
+            "latitude": 39.80191744176199,
+            "longitude": -86.23088824125574
+          },
+          {
+            "latitude": 39.801943669416374,
+            "longitude": -86.23072596761034,
+            "label": "C"
+          },
+          {
+            "latitude": 39.80191802444322,
+            "longitude": -86.23067232553166
+          },
+          {
+            "latitude": 39.80188073896857,
+            "longitude": -86.23075512430825
+          },
+          {
+            "latitude": 39.80190842372938,
+            "longitude": -86.2306092936198
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.80178395614389,
+            "longitude": -86.22864189405595
+          },
+          {
+            "latitude": 39.80194277931731,
+            "longitude": -86.22862043638384
+          },
+          {
+            "latitude": 39.80172229849545,
+            "longitude": -86.22873845358049,
+            "label": "O"
+          },
+          {
+            "latitude": 39.80189786752401,
+            "longitude": -86.22865856933424
+          },
+          {
+            "latitude": 39.801805212495765,
+            "longitude": -86.2287896478731
+          },
+          {
+            "latitude": 39.80182415472251,
+            "longitude": -86.22870148467848
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.80208220034544,
+            "longitude": -86.22744250684912,
+            "label": "G"
+          },
+          {
+            "latitude": 39.80198020406104,
+            "longitude": -86.2273325362795
+          },
+          {
+            "latitude": 39.80195251932911,
+            "longitude": -86.22752163201505
+          },
+          {
+            "latitude": 39.8019422341081,
+            "longitude": -86.22739906697842
+          },
+          {
+            "latitude": 39.801817523067,
+            "longitude": -86.22754087435334
+          },
+          {
+            "latitude": 39.80188454937239,
+            "longitude": -86.22745539336773
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 4,
+        "Par": 4,
+        "Yards": 311,
+        "image": "IndyHole4.png",
+        "page": "Hole3.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.801920857856054,
+          "longitude": -86.22876183123168
+        },
+        {
+          "latitude": 39.801950857856056,
+          "longitude": -86.22873183123168
+        },
+        {
+          "latitude": 39.801950857856056,
+          "longitude": -86.22879183123167
+        },
+        {
+          "latitude": 39.801920857856054,
+          "longitude": -86.22879183123167
+        },
+        {
+          "latitude": 39.801920857856054,
+          "longitude": -86.22873183123168
+        },
+        {
+          "latitude": 39.80189085785605,
+          "longitude": -86.22879183123167
+        },
+        {
+          "latitude": 39.80189085785605,
+          "longitude": -86.22873183123168
+        },
+        {
+          "latitude": 39.80189085785605,
+          "longitude": -86.22876183123168
+        },
+        {
+          "latitude": 39.801950857856056,
+          "longitude": -86.22876183123168
+        },
+        {
+          "latitude": 39.801911857856055,
+          "longitude": -86.22875283123167
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "This hole requires a challenging tee shot with OB left and bunkers right. Most players will have to layup over the creek on the landing to the right of the green. A severely undulating green demands accuracy with approach shot.",
+        "TeeLocation": {
+          "latitude": 39.80175879897085,
+          "longitude": -86.22669706162236
+        },
+        "FlagLocation": {
+          "latitude": 39.79751390775425,
+          "longitude": -86.22644827226657
+        },
+        "FairwayLocation": {
+          "latitude": 39.79993335548819,
+          "longitude": -86.22611180872497
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.80175879897085,
+            "longitude": -86.22662195976994
+          },
+          {
+            "latitude": 39.80167283027964,
+            "longitude": -86.2266863327863
+          },
+          {
+            "latitude": 39.80166845898744,
+            "longitude": -86.22659245547078
+          },
+          {
+            "latitude": 39.801725039126694,
+            "longitude": -86.22659021495605
+          },
+          {
+            "latitude": 39.801641126527855,
+            "longitude": -86.22665423826953
+          },
+          {
+            "latitude": 39.80164986911557,
+            "longitude": -86.22657278059745
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.79982430517657,
+            "longitude": -86.22618941775409
+          },
+          {
+            "latitude": 39.79986656212324,
+            "longitude": -86.22604994288531
+          },
+          {
+            "latitude": 39.79973250551321,
+            "longitude": -86.22608749381152
+          },
+          {
+            "latitude": 39.799860795649614,
+            "longitude": -86.22601133550069
+          },
+          {
+            "latitude": 39.799769595895995,
+            "longitude": -86.2261531428756
+          },
+          {
+            "latitude": 39.79977396730897,
+            "longitude": -86.22605425084492
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.797525565237166,
+            "longitude": -86.22653737713597
+          },
+          {
+            "latitude": 39.79760279601192,
+            "longitude": -86.22641340354937
+          },
+          {
+            "latitude": 39.797457077496546,
+            "longitude": -86.22639060477275
+          },
+          {
+            "latitude": 39.79754973949137,
+            "longitude": -86.22647803986928
+          },
+          {
+            "latitude": 39.79757074091339,
+            "longitude": -86.22653669876473
+          },
+          {
+            "latitude": 39.797599884593005,
+            "longitude": -86.2264471944656
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 5,
+        "Par": 5,
+        "Yards": 531,
+        "image": "IndyHole5.png",
+        "page": "Hole4.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.79993335548819,
+          "longitude": -86.22611180872497
+        },
+        {
+          "latitude": 39.799963355488195,
+          "longitude": -86.22608180872497
+        },
+        {
+          "latitude": 39.799963355488195,
+          "longitude": -86.22614180872496
+        },
+        {
+          "latitude": 39.79993335548819,
+          "longitude": -86.22614180872496
+        },
+        {
+          "latitude": 39.79993335548819,
+          "longitude": -86.22608180872497
+        },
+        {
+          "latitude": 39.79990335548819,
+          "longitude": -86.22614180872496
+        },
+        {
+          "latitude": 39.79990335548819,
+          "longitude": -86.22608180872497
+        },
+        {
+          "latitude": 39.79990335548819,
+          "longitude": -86.22611180872497
+        },
+        {
+          "latitude": 39.799963355488195,
+          "longitude": -86.22611180872497
+        },
+        {
+          "latitude": 39.799924355488194,
+          "longitude": -86.22610280872496
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "The ladies will face a short but intimidating tee shot, a shot that must hug Little Eagle Creek to have a chance for a clear approach to the green. Long, rolling green will make putting a challenge.",
+        "TeeLocation": {
+          "latitude": 39.797696010148734,
+          "longitude": -86.22600452036437
+        },
+        "FlagLocation": {
+          "latitude": 39.79440765154613,
+          "longitude": -86.22619227499541
+        },
+        "FairwayLocation": {
+          "latitude": 39.79564921845369,
+          "longitude": -86.2266053351837
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.797893063024986,
+            "longitude": -86.22614830882605
+          },
+          {
+            "latitude": 39.79782020411329,
+            "longitude": -86.2257737909656
+          },
+          {
+            "latitude": 39.79746525212121,
+            "longitude": -86.22600580204539
+          },
+          {
+            "latitude": 39.79798255139205,
+            "longitude": -86.22599810512122
+          },
+          {
+            "latitude": 39.79763197180018,
+            "longitude": -86.2261868511539
+          },
+          {
+            "latitude": 39.7980181242091,
+            "longitude": -86.22613623888549
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.79630399171782,
+            "longitude": -86.22651576661224
+          },
+          {
+            "latitude": 39.79629379123917,
+            "longitude": -86.22665355067363
+          },
+          {
+            "latitude": 39.79620113112214,
+            "longitude": -86.2266481862556
+          },
+          {
+            "latitude": 39.79620258833543,
+            "longitude": -86.22652515434378
+          },
+          {
+            "latitude": 39.79612595747442,
+            "longitude": -86.22661331753841
+          },
+          {
+            "latitude": 39.79612741468929,
+            "longitude": -86.22651710771675
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.79457571455399,
+            "longitude": -86.22619732967485
+          },
+          {
+            "latitude": 39.79453636863648,
+            "longitude": -86.22631633822107
+          },
+          {
+            "latitude": 39.79445099317324,
+            "longitude": -86.22629756275796
+          },
+          {
+            "latitude": 39.79448596717367,
+            "longitude": -86.22619062410024
+          },
+          {
+            "latitude": 39.794378732885626,
+            "longitude": -86.22626001183176
+          },
+          {
+            "latitude": 39.794372903877694,
+            "longitude": -86.22618525968221
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 6,
+        "Par": 4,
+        "Yards": 345,
+        "image": "IndyHole6.png",
+        "page": "Hole5.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.79564921845369,
+          "longitude": -86.2266053351837
+        },
+        {
+          "latitude": 39.79567921845369,
+          "longitude": -86.22657533518371
+        },
+        {
+          "latitude": 39.79567921845369,
+          "longitude": -86.2266353351837
+        },
+        {
+          "latitude": 39.79564921845369,
+          "longitude": -86.2266353351837
+        },
+        {
+          "latitude": 39.79564921845369,
+          "longitude": -86.22657533518371
+        },
+        {
+          "latitude": 39.79561921845369,
+          "longitude": -86.2266353351837
+        },
+        {
+          "latitude": 39.79561921845369,
+          "longitude": -86.22657533518371
+        },
+        {
+          "latitude": 39.79561921845369,
+          "longitude": -86.2266053351837
+        },
+        {
+          "latitude": 39.79567921845369,
+          "longitude": -86.2266053351837
+        },
+        {
+          "latitude": 39.79564021845369,
+          "longitude": -86.2265963351837
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "This long par 3 stresses an accurate tee shot. Little Eagle Creek stands between the tee box and the green. A large green allows for many dif cult pin locations. The spectator mount on the left affords great views.",
+        "TeeLocation": {
+          "latitude": 39.79372714433693,
+          "longitude": -86.22636998702592
+        },
+        "FlagLocation": {
+          "latitude": 39.792381650193406,
+          "longitude": -86.22643900648973
+        },
+        "FairwayLocation": {
+          "latitude": 39.79279989236583,
+          "longitude": -86.22626921428792,
+          "label": "f"
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.79379542646967,
+            "longitude": -86.22633706341497
+          },
+          {
+            "latitude": 39.793687798151126,
+            "longitude": -86.22645581771434
+          },
+          {
+            "latitude": 39.79370237081515,
+            "longitude": -86.22630293180049
+          },
+          {
+            "latitude": 39.79377786319742,
+            "longitude": -86.22639784867562
+          },
+          {
+            "latitude": 39.79365314077296,
+            "longitude": -86.22634519589695
+          },
+          {
+            "latitude": 39.79377992291056,
+            "longitude": -86.22627044374741
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.792848550178206,
+            "longitude": -86.22629196427226
+          },
+          {
+            "latitude": 39.792947645441814,
+            "longitude": -86.22619406364322
+          },
+          {
+            "latitude": 39.79283106276394,
+            "longitude": -86.22614846608997
+          },
+          {
+            "latitude": 39.792935652346955,
+            "longitude": -86.22614039729962
+          },
+          {
+            "latitude": 39.79286484841619,
+            "longitude": -86.22620978503113
+          },
+          {
+            "latitude": 39.79278324046414,
+            "longitude": -86.22621818136105
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.79247054508401,
+            "longitude": -86.22642425434015
+          },
+          {
+            "latitude": 39.79231315733052,
+            "longitude": -86.22639475004098
+          },
+          {
+            "latitude": 39.79236561995503,
+            "longitude": -86.22651410834214
+          },
+          {
+            "latitude": 39.792427006608065,
+            "longitude": -86.22636120050271
+          },
+          {
+            "latitude": 39.792327056461296,
+            "longitude": -86.22654592322186
+          },
+          {
+            "latitude": 39.79235620236287,
+            "longitude": -86.22636522381623
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 7,
+        "Par": 3,
+        "Yards": 183,
+        "image": "IndyHole7.png",
+        "page": "Hole6.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.792921592134746,
+          "longitude": -86.22619259983685
+        },
+        {
+          "latitude": 39.79295159213475,
+          "longitude": -86.22616259983685
+        },
+        {
+          "latitude": 39.79295159213475,
+          "longitude": -86.22622259983685
+        },
+        {
+          "latitude": 39.792921592134746,
+          "longitude": -86.22622259983685
+        },
+        {
+          "latitude": 39.792921592134746,
+          "longitude": -86.22616259983685
+        },
+        {
+          "latitude": 39.792891592134744,
+          "longitude": -86.22622259983685
+        },
+        {
+          "latitude": 39.792891592134744,
+          "longitude": -86.22616259983685
+        },
+        {
+          "latitude": 39.792891592134744,
+          "longitude": -86.22619259983685
+        },
+        {
+          "latitude": 39.79295159213475,
+          "longitude": -86.22619259983685
+        },
+        {
+          "latitude": 39.79291259213475,
+          "longitude": -86.22618359983684
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "The historic barn gives players a target. Pot bunkers guard the front left edges of the green. The green slopes toward the creek; players would be smart to leave approach shots below the hole.",
+        "TeeLocation": {
+          "latitude": 39.792429552918065,
+          "longitude": -86.22713472115993
+        },
+        "FlagLocation": {
+          "latitude": 39.788962203951016,
+          "longitude": -86.22731174695491
+        },
+        "FairwayLocation": {
+          "latitude": 39.79045161656454,
+          "longitude": -86.2267699407339
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.792511307391905,
+            "longitude": -86.22712714721308
+          },
+          {
+            "latitude": 39.79239203272069,
+            "longitude": -86.22721776477226
+          },
+          {
+            "latitude": 39.79238474625027,
+            "longitude": -86.22708767763504
+          },
+          {
+            "latitude": 39.79247091806771,
+            "longitude": -86.22706432409194
+          },
+          {
+            "latitude": 39.79236368151259,
+            "longitude": -86.22716723943614
+          },
+          {
+            "latitude": 39.792477350398265,
+            "longitude": -86.22719441122916
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.79072324104269,
+            "longitude": -86.22682118974848
+          },
+          {
+            "latitude": 39.790638314292664,
+            "longitude": -86.22688041689679
+          },
+          {
+            "latitude": 39.79063977162381,
+            "longitude": -86.22676374080464
+          },
+          {
+            "latitude": 39.79052773055137,
+            "longitude": -86.22685178903271
+          },
+          {
+            "latitude": 39.790470041163445,
+            "longitude": -86.22689167246506
+          },
+          {
+            "latitude": 39.79052104785999,
+            "longitude": -86.22674450067211
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.78903155267619,
+            "longitude": -86.22727204114273
+          },
+          {
+            "latitude": 39.78894848280961,
+            "longitude": -86.22717548161819
+          },
+          {
+            "latitude": 39.78906944416105,
+            "longitude": -86.22717548161819
+          },
+          {
+            "latitude": 39.789076211066856,
+            "longitude": -86.22708782342602
+          },
+          {
+            "latitude": 39.78899957540184,
+            "longitude": -86.22704724058792
+          },
+          {
+            "latitude": 39.789075358385844,
+            "longitude": -86.22699260500599
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 8,
+        "Par": 4,
+        "Yards": 420,
+        "image": "IndyHole8.png",
+        "page": "Hole7.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.79045161656454,
+          "longitude": -86.2267699407339
+        },
+        {
+          "latitude": 39.79048161656454,
+          "longitude": -86.2267399407339
+        },
+        {
+          "latitude": 39.79048161656454,
+          "longitude": -86.2267999407339
+        },
+        {
+          "latitude": 39.79045161656454,
+          "longitude": -86.2267999407339
+        },
+        {
+          "latitude": 39.79045161656454,
+          "longitude": -86.2267399407339
+        },
+        {
+          "latitude": 39.79042161656454,
+          "longitude": -86.2267999407339
+        },
+        {
+          "latitude": 39.79042161656454,
+          "longitude": -86.2267399407339
+        },
+        {
+          "latitude": 39.79042161656454,
+          "longitude": -86.2267699407339
+        },
+        {
+          "latitude": 39.79048161656454,
+          "longitude": -86.2267699407339
+        },
+        {
+          "latitude": 39.79044261656454,
+          "longitude": -86.2267609407339
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "On this short par 4, the ladies will aim for the right side of the fairway, leaving an easy approach to the green. Missed tee shots to the left will result in a blind approach. Gently sloping greens should yield some birdies.",
+        "TeeLocation": {
+          "latitude": 39.789003378897846,
+          "longitude": -86.22872448791259
+        },
+        "FlagLocation": {
+          "latitude": 39.791980087958656,
+          "longitude": -86.22788979794956
+        },
+        "FairwayLocation": {
+          "latitude": 39.7908051749388,
+          "longitude": -86.22796848098636
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.78898482010635,
+            "longitude": -86.22878788038167
+          },
+          {
+            "latitude": 39.7890693472935,
+            "longitude": -86.22871411963376
+          },
+          {
+            "latitude": 39.78896587434326,
+            "longitude": -86.22867790981206
+          },
+          {
+            "latitude": 39.789172699506544,
+            "longitude": -86.22867533792254
+          },
+          {
+            "latitude": 39.789170389445275,
+            "longitude": -86.22858647532217
+          },
+          {
+            "latitude": 39.789088777110265,
+            "longitude": -86.22860291827914
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.79074907429369,
+            "longitude": -86.2280235133631
+          },
+          {
+            "latitude": 39.790852249485106,
+            "longitude": -86.22804138635985
+          },
+          {
+            "latitude": 39.79078727361936,
+            "longitude": -86.22812453483931
+          },
+          {
+            "latitude": 39.79084119473443,
+            "longitude": -86.22778826731081
+          },
+          {
+            "latitude": 39.790713553728324,
+            "longitude": -86.22780266975752
+          },
+          {
+            "latitude": 39.79078787749616,
+            "longitude": -86.22785934584971
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.79205732496036,
+            "longitude": -86.22791125562168
+          },
+          {
+            "latitude": 39.79207044066907,
+            "longitude": -86.22799708631015
+          },
+          {
+            "latitude": 39.791980308380005,
+            "longitude": -86.22798908328406
+          },
+          {
+            "latitude": 39.791989052195795,
+            "longitude": -86.22778960841532
+          },
+          {
+            "latitude": 39.79189201621927,
+            "longitude": -86.22792739247672
+          },
+          {
+            "latitude": 39.79190950387231,
+            "longitude": -86.22782581823702
+          }
+        ],
+          "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 9,
+        "Par": 4,
+        "Yards": 378,
+        "image": "IndyHole9.png",
+        "page": "Hole8.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.7908051749388,
+          "longitude": -86.22796848098636
+        },
+        {
+          "latitude": 39.7908351749388,
+          "longitude": -86.22793848098637
+        },
+        {
+          "latitude": 39.7908351749388,
+          "longitude": -86.22799848098636
+        },
+        {
+          "latitude": 39.7908051749388,
+          "longitude": -86.22799848098636
+        },
+        {
+          "latitude": 39.7908051749388,
+          "longitude": -86.22793848098637
+        },
+        {
+          "latitude": 39.790775174938794,
+          "longitude": -86.22799848098636
+        },
+        {
+          "latitude": 39.790775174938794,
+          "longitude": -86.22793848098637
+        },
+        {
+          "latitude": 39.790775174938794,
+          "longitude": -86.22796848098636
+        },
+        {
+          "latitude": 39.7908351749388,
+          "longitude": -86.22796848098636
+        },
+        {
+          "latitude": 39.7907961749388,
+          "longitude": -86.22795948098636
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "On this long snaking par 5, golfers will need to approach the green from the left. If the green is missed right it will end up in a deep swale. Sloping, elevated greens create dif cult putts.",
+        "TeeLocation": {
+          "latitude": 39.793786118210456,
+          "longitude": -86.22729695644432
+        },
+        "FlagLocation": {
+          "latitude": 39.79715781495627,
+          "longitude": -86.2271701411857
+        },
+        "FairwayLocation": {
+          "latitude": 39.79526102386561,
+          "longitude": -86.22729511450541
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.79368737737507,
+            "longitude": -86.22729529078345
+          },
+          {
+            "latitude": 39.79388265081785,
+            "longitude": -86.2272523754392
+          },
+          {
+            "latitude": 39.79379812954493,
+            "longitude": -86.22739050920347
+          },
+          {
+            "latitude": 39.793994459682146,
+            "longitude": -86.2273238666861
+          },
+          {
+            "latitude": 39.79409269860239,
+            "longitude": -86.22733961023732
+          },
+          {
+            "latitude": 39.79405189536691,
+            "longitude": -86.22723133139937
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.79571094838507,
+            "longitude": -86.22735891187068
+          },
+          {
+            "latitude": 39.79571532005601,
+            "longitude": -86.22748999040954
+          },
+          {
+            "latitude": 39.795613916057384,
+            "longitude": -86.22743098181121
+          },
+          {
+            "latitude": 39.79563577444019,
+            "longitude": -86.22724491798755
+          },
+          {
+            "latitude": 39.79553437033734,
+            "longitude": -86.22728211921088
+          },
+          {
+            "latitude": 39.7955678865602,
+            "longitude": -86.22716713392612
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.797249889609645,
+            "longitude": -86.22702764966027
+          },
+          {
+            "latitude": 39.79724843241852,
+            "longitude": -86.2271403024389
+          },
+          {
+            "latitude": 39.79716974405306,
+            "longitude": -86.22707056500451
+          },
+          {
+            "latitude": 39.79713228999298,
+            "longitude": -86.22725162351009
+          },
+          {
+            "latitude": 39.79703817340304,
+            "longitude": -86.22725529712073
+          },
+          {
+            "latitude": 39.797090632423696,
+            "longitude": -86.22716981613513
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 10,
+        "Par": 5,
+        "Yards": 510,
+        "image": "IndyHole10.png",
+        "page": "Hole9.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.79526102386561,
+          "longitude": -86.22729511450541
+        },
+        {
+          "latitude": 39.795291023865616,
+          "longitude": -86.22726511450541
+        },
+        {
+          "latitude": 39.795291023865616,
+          "longitude": -86.2273251145054
+        },
+        {
+          "latitude": 39.79526102386561,
+          "longitude": -86.2273251145054
+        },
+        {
+          "latitude": 39.79526102386561,
+          "longitude": -86.22726511450541
+        },
+        {
+          "latitude": 39.79523102386561,
+          "longitude": -86.2273251145054
+        },
+        {
+          "latitude": 39.79523102386561,
+          "longitude": -86.22726511450541
+        },
+        {
+          "latitude": 39.79523102386561,
+          "longitude": -86.22729511450541
+        },
+        {
+          "latitude": 39.795291023865616,
+          "longitude": -86.22729511450541
+        },
+        {
+          "latitude": 39.795252023865615,
+          "longitude": -86.2272861145054
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "On this short par 4, drives need to be aimed to the right of the fairway for players to have an open shot at the green. Ladies who end up on the left side of the fairway will be blocked from the green. This severely sloped green must be approached at the right tier of the pin position for any shot at birdie.",
+        "TeeLocation": {
+          "latitude": 39.797636531608354,
+          "longitude": -86.22722914978402
+        },
+        "FlagLocation": {
+          "latitude": 39.80053856209465,
+          "longitude": -86.22728008832667
+        },
+        "FairwayLocation": {
+          "latitude": 39.79981224843754,
+          "longitude": -86.22699309196207
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.79784983694529,
+            "longitude": -86.22722211362702
+          },
+          {
+            "latitude": 39.797908124055645,
+            "longitude": -86.22731027682164
+          },
+          {
+            "latitude": 39.79780089361488,
+            "longitude": -86.2273210056577
+          },
+          {
+            "latitude": 39.79767411888906,
+            "longitude": -86.22715371729714
+          },
+          {
+            "latitude": 39.797520258180796,
+            "longitude": -86.22729150135854
+          },
+          {
+            "latitude": 39.79755377343593,
+            "longitude": -86.22717517496926
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.79966429173174,
+            "longitude": -86.22716930532448
+          },
+          {
+            "latitude": 39.79967157743101,
+            "longitude": -86.22705262923233
+          },
+          {
+            "latitude": 39.799761920037845,
+            "longitude": -86.22712102556221
+          },
+          {
+            "latitude": 39.799737612516736,
+            "longitude": -86.22685325393007
+          },
+          {
+            "latitude": 39.79968429829617,
+            "longitude": -86.22693337049765
+          },
+          {
+            "latitude": 39.799631841254,
+            "longitude": -86.22683716067598
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.800575117154516,
+            "longitude": -86.22734239201316
+          },
+          {
+            "latitude": 39.80055908882571,
+            "longitude": -86.22718950609931
+          },
+          {
+            "latitude": 39.80045271891256,
+            "longitude": -86.22728204231032
+          },
+          {
+            "latitude": 39.80067977799765,
+            "longitude": -86.22722797117518
+          },
+          {
+            "latitude": 39.80065123517196,
+            "longitude": -86.22712167421622
+          },
+          {
+            "latitude": 39.800743033608875,
+            "longitude": -86.22715286932277
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 11,
+        "Par": 4,
+        "Yards": 342,
+        "image": "IndyHole11.png",
+        "page": "Hole10.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.79981224843754,
+          "longitude": -86.22699309196207
+        },
+        {
+          "latitude": 39.79984224843754,
+          "longitude": -86.22696309196208
+        },
+        {
+          "latitude": 39.79984224843754,
+          "longitude": -86.22702309196207
+        },
+        {
+          "latitude": 39.79981224843754,
+          "longitude": -86.22702309196207
+        },
+        {
+          "latitude": 39.79981224843754,
+          "longitude": -86.22696309196208
+        },
+        {
+          "latitude": 39.79978224843754,
+          "longitude": -86.22702309196207
+        },
+        {
+          "latitude": 39.79978224843754,
+          "longitude": -86.22696309196208
+        },
+        {
+          "latitude": 39.79978224843754,
+          "longitude": -86.22699309196207
+        },
+        {
+          "latitude": 39.79984224843754,
+          "longitude": -86.22699309196207
+        },
+        {
+          "latitude": 39.79980324843754,
+          "longitude": -86.22698409196207
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "This is a short but difficult par 3. Little Eagle Creek and a long trap guard the left, leaving a safe landing area to the right. Birdie is a great score on this hole.",
+        "TeeLocation": {
+          "latitude": 39.80147402767459,
+          "longitude": -86.22751684909508
+        },
+        "FlagLocation": {
+          "latitude": 39.799966636280175,
+          "longitude": -86.2279714835231
+        },
+        "FairwayLocation": {
+          "latitude": 39.80033529007378,
+          "longitude": -86.22802244549439
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.8015446288445,
+            "longitude": -86.22748980640466
+          },
+          {
+            "latitude": 39.80146011698746,
+            "longitude": -86.2275877070337
+          },
+          {
+            "latitude": 39.80144860883337,
+            "longitude": -86.2274621547233
+          },
+          {
+            "latitude": 39.801402556933205,
+            "longitude": -86.22761378960053
+          },
+          {
+            "latitude": 39.80137838533206,
+            "longitude": -86.22751956258213
+          },
+          {
+            "latitude": 39.80130553011278,
+            "longitude": -86.22759769634644
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.800307053665534,
+            "longitude": -86.22808536190422
+          },
+          {
+            "latitude": 39.80037553856808,
+            "longitude": -86.22814402079968
+          },
+          {
+            "latitude": 39.80027122514032,
+            "longitude": -86.22817754841236
+          },
+          {
+            "latitude": 39.800272682267405,
+            "longitude": -86.22792308825882
+          },
+          {
+            "latitude": 39.800349052486375,
+            "longitude": -86.22800052261738
+          },
+          {
+            "latitude": 39.800385480612285,
+            "longitude": -86.2279190649453
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.800060002553934,
+            "longitude": -86.22795207089877
+          },
+          {
+            "latitude": 39.8000876880477,
+            "longitude": -86.22806472367739
+          },
+          {
+            "latitude": 39.799981317405354,
+            "longitude": -86.22806338257288
+          },
+          {
+            "latitude": 39.799897246283244,
+            "longitude": -86.22790297169121
+          },
+          {
+            "latitude": 39.79981041795553,
+            "longitude": -86.2278959164658
+          },
+          {
+            "latitude": 39.79983227500456,
+            "longitude": -86.22798209685715
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 12,
+        "Par": 3,
+        "Yards": 168,
+        "image": "IndyHole12.png",
+        "page": "Hole11.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.80033529007378,
+          "longitude": -86.22802244549439
+        },
+        {
+          "latitude": 39.800365290073785,
+          "longitude": -86.2279924454944
+        },
+        {
+          "latitude": 39.800365290073785,
+          "longitude": -86.22805244549438
+        },
+        {
+          "latitude": 39.80033529007378,
+          "longitude": -86.22805244549438
+        },
+        {
+          "latitude": 39.80033529007378,
+          "longitude": -86.2279924454944
+        },
+        {
+          "latitude": 39.80030529007378,
+          "longitude": -86.22805244549438
+        },
+        {
+          "latitude": 39.80030529007378,
+          "longitude": -86.2279924454944
+        },
+        {
+          "latitude": 39.80030529007378,
+          "longitude": -86.22802244549439
+        },
+        {
+          "latitude": 39.800365290073785,
+          "longitude": -86.22802244549439
+        },
+        {
+          "latitude": 39.800326290073784,
+          "longitude": -86.22801344549438
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Players will aim for the right side of the fairway, but avoid the long deep bunker. Drives to the left will leave a blind shot to the green. Large undulating green makes for severely breaking putts.",
+        "TeeLocation": {
+          "latitude": 39.7998107228163,
+          "longitude": -86.22846366887734
+        },
+        "FlagLocation": {
+          "latitude": 39.79656354724266,
+          "longitude": -86.22808681851075
+        },
+        "FairwayLocation": {
+          "latitude": 39.79778818715771,
+          "longitude": -86.22782396202729
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.79973410084807,
+            "longitude": -86.2285068041814
+          },
+          {
+            "latitude": 39.799771986437406,
+            "longitude": -86.22840219802981
+          },
+          {
+            "latitude": 39.79968601526239,
+            "longitude": -86.22843438453799
+          },
+          {
+            "latitude": 39.79966016314309,
+            "longitude": -86.22833913574902
+          },
+          {
+            "latitude": 39.79956167748305,
+            "longitude": -86.22835622040475
+          },
+          {
+            "latitude": 39.799605391732285,
+            "longitude": -86.22847190509526
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.79814097278951,
+            "longitude": -86.22791180573904
+          },
+          {
+            "latitude": 39.79822111721423,
+            "longitude": -86.227971805739
+          },
+          {
+            "latitude": 39.79812554450621,
+            "longitude": -86.22801337997873
+          },
+          {
+            "latitude": 39.79819694592333,
+            "longitude": -86.22775355540716
+          },
+          {
+            "latitude": 39.798091172982765,
+            "longitude": -86.22778136889895
+          },
+          {
+            "latitude": 39.79812468795968,
+            "longitude": -86.22767711245024
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.796711561223695,
+            "longitude": -86.2280931373324
+          },
+          {
+            "latitude": 39.79662412901852,
+            "longitude": -86.22814409930368
+          },
+          {
+            "latitude": 39.79669990360278,
+            "longitude": -86.22822188336511
+          },
+          {
+            "latitude": 39.79652358400817,
+            "longitude": -86.22801507078611
+          },
+          {
+            "latitude": 39.79647172588846,
+            "longitude": -86.22811798613031
+          },
+          {
+            "latitude": 39.796426552438795,
+            "longitude": -86.22801641189062
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 13,
+        "Par": 4,
+        "Yards": 405,
+        "image": "IndyHole13.png",
+        "page": "Hole12.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.79778818715771,
+          "longitude": -86.22782396202729
+        },
+        {
+          "latitude": 39.79781818715771,
+          "longitude": -86.22779396202729
+        },
+        {
+          "latitude": 39.79781818715771,
+          "longitude": -86.22785396202728
+        },
+        {
+          "latitude": 39.79778818715771,
+          "longitude": -86.22785396202728
+        },
+        {
+          "latitude": 39.79778818715771,
+          "longitude": -86.22779396202729
+        },
+        {
+          "latitude": 39.797758187157704,
+          "longitude": -86.22785396202728
+        },
+        {
+          "latitude": 39.797758187157704,
+          "longitude": -86.22779396202729
+        },
+        {
+          "latitude": 39.797758187157704,
+          "longitude": -86.22782396202729
+        },
+        {
+          "latitude": 39.79781818715771,
+          "longitude": -86.22782396202729
+        },
+        {
+          "latitude": 39.79777918715771,
+          "longitude": -86.22781496202728
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "As the longest par 5 on the course, an errant tee shot will make for a dif cult second shot. Deep bunkers guard the left side of the green. This is a good scoring hole and has potential for many birdies.",
+        "TeeLocation": {
+          "latitude": 39.796598553681235,
+          "longitude": -86.22881170508862
+        },
+        "FlagLocation": {
+          "latitude": 39.79321816987327,
+          "longitude": -86.22879401532617
+        },
+        "FairwayLocation": {
+          "latitude": 39.794606081154996,
+          "longitude": -86.22822941032854
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.796746756242705,
+            "longitude": -86.22873310448102
+          },
+          {
+            "latitude": 39.79671178339188,
+            "longitude": -86.22884004313875
+          },
+          {
+            "latitude": 39.796652639351834,
+            "longitude": -86.22875421245027
+          },
+          {
+            "latitude": 39.796579779126134,
+            "longitude": -86.22864861489705
+          },
+          {
+            "latitude": 39.79650169129803,
+            "longitude": -86.22861071426797
+          },
+          {
+            "latitude": 39.79651772057251,
+            "longitude": -86.2287116468089
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.79515736797384,
+            "longitude": -86.2281952079619
+          },
+          {
+            "latitude": 39.795249173744224,
+            "longitude": -86.22819485825903
+          },
+          {
+            "latitude": 39.79520897312622,
+            "longitude": -86.22829409999258
+          },
+          {
+            "latitude": 39.79524248950768,
+            "longitude": -86.22800208891283
+          },
+          {
+            "latitude": 39.7951673152627,
+            "longitude": -86.22796150607473
+          },
+          {
+            "latitude": 39.79517168696822,
+            "longitude": -86.2280503686751
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.79333778465282,
+            "longitude": -86.22889090590706
+          },
+          {
+            "latitude": 39.793298438244285,
+            "longitude": -86.22881982736817
+          },
+          {
+            "latitude": 39.79337713103882,
+            "longitude": -86.22879971080056
+          },
+          {
+            "latitude": 39.793196144043286,
+            "longitude": -86.22869299374139
+          },
+          {
+            "latitude": 39.79311513928707,
+            "longitude": -86.22871276060613
+          },
+          {
+            "latitude": 39.79314574213273,
+            "longitude": -86.22861923299348
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 14,
+        "Par": 5,
+        "Yards": 535,
+        "image": "IndyHole14.png",
+        "page": "Hole13.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.794606081154996,
+          "longitude": -86.22822941032854
+        },
+        {
+          "latitude": 39.794636081155,
+          "longitude": -86.22819941032854
+        },
+        {
+          "latitude": 39.794636081155,
+          "longitude": -86.22825941032853
+        },
+        {
+          "latitude": 39.794606081154996,
+          "longitude": -86.22825941032853
+        },
+        {
+          "latitude": 39.794606081154996,
+          "longitude": -86.22819941032854
+        },
+        {
+          "latitude": 39.79457608115499,
+          "longitude": -86.22825941032853
+        },
+        {
+          "latitude": 39.79457608115499,
+          "longitude": -86.22819941032854
+        },
+        {
+          "latitude": 39.79457608115499,
+          "longitude": -86.22822941032854
+        },
+        {
+          "latitude": 39.794636081155,
+          "longitude": -86.22822941032854
+        },
+        {
+          "latitude": 39.794597081155,
+          "longitude": -86.22822041032853
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Players will enter inside the track and approach this dif cult par 3. Tee shots that miss the green will roll to the bottom of the valley, leaving a tough pitch back to the green. Huge sloping green allows for interesting pin positions.",
+        "TeeLocation": {
+          "latitude": 39.79223318731711,
+          "longitude": -86.23153120962587
+        },
+        "FlagLocation": {
+          "latitude": 39.79319827978881,
+          "longitude": -86.23293912294969
+        },
+        "FairwayLocation": {
+          "latitude": 39.79290791269249,
+          "longitude": -86.23224199501482
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.79238328589075,
+            "longitude": -86.23156805815762
+          },
+          {
+            "latitude": 39.79232353680279,
+            "longitude": -86.23151406427445
+          },
+          {
+            "latitude": 39.79238388895839,
+            "longitude": -86.23147249003472
+          },
+          {
+            "latitude": 39.79214780689577,
+            "longitude": -86.2314916152007
+          },
+          {
+            "latitude": 39.792072630380005,
+            "longitude": -86.23153015752854
+          },
+          {
+            "latitude": 39.792144038080956,
+            "longitude": -86.23158683362072
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.79304052258529,
+            "longitude": -86.23235528650349
+          },
+          {
+            "latitude": 39.79303615074441,
+            "longitude": -86.23246356626572
+          },
+          {
+            "latitude": 39.79296388959769,
+            "longitude": -86.23241260429444
+          },
+          {
+            "latitude": 39.792905598297196,
+            "longitude": -86.23223995151585
+          },
+          {
+            "latitude": 39.792846452587106,
+            "longitude": -86.23230933924737
+          },
+          {
+            "latitude": 39.79283042245701,
+            "longitude": -86.23222117605275
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.79317422517791,
+            "longitude": -86.23303630011367
+          },
+          {
+            "latitude": 39.79326749087072,
+            "longitude": -86.23305507557677
+          },
+          {
+            "latitude": 39.793264576319736,
+            "longitude": -86.23296656267928
+          },
+          {
+            "latitude": 39.793211627073575,
+            "longitude": -86.23284613075322
+          },
+          {
+            "latitude": 39.7931335369122,
+            "longitude": -86.23288601418557
+          },
+          {
+            "latitude": 39.79313645146875,
+            "longitude": -86.23279650988644
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 15,
+        "Par": 3,
+        "Yards": 174,
+        "image": "IndyHole15.png",
+        "page": "Hole14.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.79290791269249,
+          "longitude": -86.23224199501482
+        },
+        {
+          "latitude": 39.792937912692494,
+          "longitude": -86.23221199501482
+        },
+        {
+          "latitude": 39.792937912692494,
+          "longitude": -86.23227199501481
+        },
+        {
+          "latitude": 39.79290791269249,
+          "longitude": -86.23227199501481
+        },
+        {
+          "latitude": 39.79290791269249,
+          "longitude": -86.23221199501482
+        },
+        {
+          "latitude": 39.79287791269249,
+          "longitude": -86.23227199501481
+        },
+        {
+          "latitude": 39.79287791269249,
+          "longitude": -86.23221199501482
+        },
+        {
+          "latitude": 39.79287791269249,
+          "longitude": -86.23224199501482
+        },
+        {
+          "latitude": 39.792937912692494,
+          "longitude": -86.23224199501482
+        },
+        {
+          "latitude": 39.79289891269249,
+          "longitude": -86.23223299501481
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "On this scenic par 4, golfers tee off over a lake bordered by sections of retaining wall from the racetrack. The lake guards the entire left side of the hole, coming into play on drives and approach shots. Large green allows for dangerous pin placements near the water’s edge.",
+        "TeeLocation": {
+          "latitude": 39.79387445296032,
+          "longitude": -86.23380538117482
+        },
+        "FlagLocation": {
+          "latitude": 39.79677998252612,
+          "longitude": -86.23343162317838
+        },
+        "FairwayLocation": {
+          "latitude": 39.79559672509981,
+          "longitude": -86.23320161129391
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.793894623241926,
+            "longitude": -86.23396906649481
+          },
+          {
+            "latitude": 39.79390773860026,
+            "longitude": -86.2338734983719
+          },
+          {
+            "latitude": 39.793816533550995,
+            "longitude": -86.23389629714853
+          },
+          {
+            "latitude": 39.79388065312967,
+            "longitude": -86.23370084559332
+          },
+          {
+            "latitude": 39.79381859333955,
+            "longitude": -86.23365489833719
+          },
+          {
+            "latitude": 39.793795277115024,
+            "longitude": -86.23373571431051
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.795390230096146,
+            "longitude": -86.23327652128313
+          },
+          {
+            "latitude": 39.79539314455702,
+            "longitude": -86.23338246853922
+          },
+          {
+            "latitude": 39.79549077892639,
+            "longitude": -86.2333261421499
+          },
+          {
+            "latitude": 39.795467836606726,
+            "longitude": -86.23311046965927
+          },
+          {
+            "latitude": 39.79538100466783,
+            "longitude": -86.23306049908962
+          },
+          {
+            "latitude": 39.7953678895905,
+            "longitude": -86.23314802058547
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.7967429548156,
+            "longitude": -86.23330838538777
+          },
+          {
+            "latitude": 39.796662808668316,
+            "longitude": -86.23334593631398
+          },
+          {
+            "latitude": 39.79667446629554,
+            "longitude": -86.23325340010297
+          },
+          {
+            "latitude": 39.79689779612341,
+            "longitude": -86.23343072804386
+          },
+          {
+            "latitude": 39.796931912905926,
+            "longitude": -86.233522914552
+          },
+          {
+            "latitude": 39.79685176697883,
+            "longitude": -86.23350582989627
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 16,
+        "Par": 4,
+        "Yards": 370,
+        "image": "IndyHole16.png",
+        "page": "Hole15.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.79559672509981,
+          "longitude": -86.23320161129391
+        },
+        {
+          "latitude": 39.795626725099815,
+          "longitude": -86.23317161129391
+        },
+        {
+          "latitude": 39.795626725099815,
+          "longitude": -86.2332316112939
+        },
+        {
+          "latitude": 39.79559672509981,
+          "longitude": -86.2332316112939
+        },
+        {
+          "latitude": 39.79559672509981,
+          "longitude": -86.23317161129391
+        },
+        {
+          "latitude": 39.79556672509981,
+          "longitude": -86.2332316112939
+        },
+        {
+          "latitude": 39.79556672509981,
+          "longitude": -86.23317161129391
+        },
+        {
+          "latitude": 39.79556672509981,
+          "longitude": -86.23320161129391
+        },
+        {
+          "latitude": 39.795626725099815,
+          "longitude": -86.23320161129391
+        },
+        {
+          "latitude": 39.795587725099814,
+          "longitude": -86.2331926112939
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "This hole is a short par 4. It is important for players to hit the narrow fairway. Trouble will ensue if missed as the hole is surrounded by 26 bunkers. With the right pin location birdies should be achievable.",
+        "TeeLocation": {
+          "latitude": 39.797899429335985,
+          "longitude": -86.23287530187821
+        },
+        "FlagLocation": {
+          "latitude": 39.795133273424916,
+          "longitude": -86.23224943261715
+        },
+        "FairwayLocation": {
+          "latitude": 39.796443486790686,
+          "longitude": -86.23222936842774
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.79801561594068,
+            "longitude": -86.23298117826437
+          },
+          {
+            "latitude": 39.79793401409987,
+            "longitude": -86.23304957459425
+          },
+          {
+            "latitude": 39.79792527103983,
+            "longitude": -86.23294630954717
+          },
+          {
+            "latitude": 39.797701932719555,
+            "longitude": -86.23291226537452
+          },
+          {
+            "latitude": 39.797784135572506,
+            "longitude": -86.2329923819421
+          },
+          {
+            "latitude": 39.79779142147096,
+            "longitude": -86.2328720322393
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.79664720094815,
+            "longitude": -86.23231852648297
+          },
+          {
+            "latitude": 39.796561225866846,
+            "longitude": -86.23225415346661
+          },
+          {
+            "latitude": 39.79654956822041,
+            "longitude": -86.23237082955876
+          },
+          {
+            "latitude": 39.796412872734514,
+            "longitude": -86.23210521849722
+          },
+          {
+            "latitude": 39.79631875550503,
+            "longitude": -86.2321853350648
+          },
+          {
+            "latitude": 39.79629981176184,
+            "longitude": -86.23206632646651
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.79500195703618,
+            "longitude": -86.23221700074396
+          },
+          {
+            "latitude": 39.79501215770632,
+            "longitude": -86.23210837127885
+          },
+          {
+            "latitude": 39.795090848540355,
+            "longitude": -86.23216603877268
+          },
+          {
+            "latitude": 39.795291489871325,
+            "longitude": -86.23230906638236
+          },
+          {
+            "latitude": 39.79518862825138,
+            "longitude": -86.23235431423274
+          },
+          {
+            "latitude": 39.795211944003555,
+            "longitude": -86.23222323569388
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 17,
+        "Par": 4,
+        "Yards": 375,
+        "image": "IndyHole17.png",
+        "page": "Hole16.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.796443486790686,
+          "longitude": -86.23222936842774
+        },
+        {
+          "latitude": 39.79647348679069,
+          "longitude": -86.23219936842774
+        },
+        {
+          "latitude": 39.79647348679069,
+          "longitude": -86.23225936842773
+        },
+        {
+          "latitude": 39.796443486790686,
+          "longitude": -86.23225936842773
+        },
+        {
+          "latitude": 39.796443486790686,
+          "longitude": -86.23219936842774
+        },
+        {
+          "latitude": 39.796413486790684,
+          "longitude": -86.23225936842773
+        },
+        {
+          "latitude": 39.796413486790684,
+          "longitude": -86.23219936842774
+        },
+        {
+          "latitude": 39.796413486790684,
+          "longitude": -86.23222936842774
+        },
+        {
+          "latitude": 39.79647348679069,
+          "longitude": -86.23222936842774
+        },
+        {
+          "latitude": 39.79643448679069,
+          "longitude": -86.23222036842773
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "This  nishing hole is expected to see many birdies which should lead to lots of drama heading into Saturday’s  nal round. With a bunker running the length of the fairway players will want to stay right. Further right is a mound perfect for spectators. A short second shot should set up a lot of birdie tries.",
+        "TeeLocation": {
+          "latitude": 39.79606589809914,
+          "longitude": -86.2312489686546
+        },
+        "FlagLocation": {
+          "latitude": 39.79318333129175,
+          "longitude": -86.23160030108403
+        },
+        "FairwayLocation": {
+          "latitude": 39.79423098710006,
+          "longitude": -86.2319908307793
+        },
+        "teeTemplateCenter": [
+          {
+            "latitude": 39.795993365453796,
+            "longitude": -86.23129403551445
+          },
+          {
+            "latitude": 39.79601085206413,
+            "longitude": -86.23120820482598
+          },
+          {
+            "latitude": 39.795921276883846,
+            "longitude": -86.23123770912514
+          },
+          {
+            "latitude": 39.79612210742708,
+            "longitude": -86.23119863185019
+          },
+          {
+            "latitude": 39.796105222575534,
+            "longitude": -86.23130959382144
+          },
+          {
+            "latitude": 39.79619119822684,
+            "longitude": -86.23126300486655
+          }
+        ],
+        "fairwayTemplateCenter": [
+          {
+            "latitude": 39.79405272671462,
+            "longitude": -86.23189727685644
+          },
+          {
+            "latitude": 39.79415619201343,
+            "longitude": -86.2318905713339
+          },
+          {
+            "latitude": 39.79410955978531,
+            "longitude": -86.2319804253359
+          },
+          {
+            "latitude": 39.79412479925089,
+            "longitude": -86.23209046634764
+          },
+          {
+            "latitude": 39.79404379526905,
+            "longitude": -86.23216521849719
+          },
+          {
+            "latitude": 39.794011735563245,
+            "longitude": -86.232064985362
+          }
+        ],
+        "greenTemplateCenter": [
+          {
+            "latitude": 39.793172268553256,
+            "longitude": -86.23148801356638
+          },
+          {
+            "latitude": 39.79308920368673,
+            "longitude": -86.23154299885118
+          },
+          {
+            "latitude": 39.79308337456954,
+            "longitude": -86.23144375711763
+          },
+          {
+            "latitude": 39.79328395664975,
+            "longitude": -86.23168008836836
+          },
+          {
+            "latitude": 39.79324084115973,
+            "longitude": -86.23176825156298
+          },
+          {
+            "latitude": 39.79319129375701,
+            "longitude": -86.23167740615935
+          }
+        ],
+        "teeDrawingPattern": "3grp",
+        "greenDrawingPattern": "3grp",
+        "fairwayDrawingPattern": "3grp",
+        "number": 18,
+        "Par": 4,
+        "Yards": 360,
+        "image": "IndyHole18.png",
+        "page": "Hole17.html"
+      },
+      "noLocationProperties": [
+        {
+          "latitude": 39.79423098710006,
+          "longitude": -86.2319908307793
+        },
+        {
+          "latitude": 39.79426098710006,
+          "longitude": -86.2319608307793
+        },
+        {
+          "latitude": 39.79426098710006,
+          "longitude": -86.23202083077929
+        },
+        {
+          "latitude": 39.79423098710006,
+          "longitude": -86.23202083077929
+        },
+        {
+          "latitude": 39.79423098710006,
+          "longitude": -86.2319608307793
+        },
+        {
+          "latitude": 39.794200987100055,
+          "longitude": -86.23202083077929
+        },
+        {
+          "latitude": 39.794200987100055,
+          "longitude": -86.2319608307793
+        },
+        {
+          "latitude": 39.794200987100055,
+          "longitude": -86.2319908307793
+        },
+        {
+          "latitude": 39.79426098710006,
+          "longitude": -86.2319908307793
+        },
+        {
+          "latitude": 39.79422198710006,
+          "longitude": -86.23198183077929
+        }
+      ]
+    }
+  ],
+  "type": "FeatureCollection",
+  "initialRegion": {
+    "latitude": 39.79519990082653,
+    "longitude": -86.22999179295153,
+    "latitudeDelta": 0.0005,
+    "longitudeDelta": 0.0020
+  },
+  "maxDelta": 0.02,
+  "courseGeoFence": [
+    { "latitude": 39.787758, "longitude": -86.239078 },
+    { "latitude": 39.804047, "longitude": -86.239592 },
+    { "latitude": 39.801969, "longitude": -86.231780 },
+    { "latitude": 39.802034, "longitude": -86.226372 },
+    { "latitude": 39.788020, "longitude": -86.225689 }
+  ],
+  "courseFileVersion": "v0.0.1"
+}
