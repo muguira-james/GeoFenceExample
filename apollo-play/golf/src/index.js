@@ -41,7 +41,7 @@ var playerData = [
 ]
 
 const baseURL = "http://ec2-52-90-72-175.compute-1.amazonaws.com:5000/active"
-var lpgaURL = 'http://services.lpgascoring.com/ws/1.5/locatorboards/players?clientId=70874eab-b701-47bb-be91-a42b2cb70da6'
+var lpgaURL = 'http://services.lpgascoring.com/ws/1.5/locatorboards/players?clientId=<your ID here>'
 
 // const awsURL = 'http://ec2-54-173-167-35.compute-1.amazonaws.com:8080/LPGA-FanExperience/api/testdata'
 
