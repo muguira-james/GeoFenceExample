@@ -1,3 +1,14 @@
+/*
+how does this think init?
+
+If there is no course file loaded, holeConfig is basically an empty object
+
+If a course file has been read the (Latitude, longitude) are converted to Google types (lat, lng)
+
+a simulated holeButtonClick(index = 0) is issued and away we go!
+
+*/
+
 import React, { Component } from 'react';
 
 import './App.css';
@@ -768,20 +779,21 @@ class App extends Component {
     h.properties.fairwayTemplateCenter6 = this.state.aCourse.Features[indx].properties.fairwayTemplateCenter[5]
 
 
-    h.noLocationProperties.FairwayLocation = this.state.aCourse.Features[indx].noLocationProperties.FairwayLocation
-    h.noLocationProperties.fairwayTemplateCenter1 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter1
-    h.noLocationProperties.fairwayTemplateCenter2 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter2
-    h.noLocationProperties.fairwayTemplateCenter3 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter3
-
-    h.noLocationProperties.fairwayTemplateCenter4 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter4
-    h.noLocationProperties.fairwayTemplateCenter5 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter5
-    h.noLocationProperties.fairwayTemplateCenter6 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter6
-
-    h.noLocationProperties.fairwayTemplateCenter7 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter7
-    h.noLocationProperties.fairwayTemplateCenter8 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter8
-    h.noLocationProperties.fairwayTemplateCenter9 = this.state.aCourse.Features[indx].noLocationProperties.fairwayTemplateCenter9
+    let j = 0
+    h.noLocationProperties.FairwayLocation = this.state.aCourse.Features[indx].noLocationProperties[j++]
+    h.noLocationProperties.fairwayTemplateCenter1 = this.state.aCourse.Features[indx].noLocationProperties[j++]
+    h.noLocationProperties.fairwayTemplateCenter2 = this.state.aCourse.Features[indx].noLocationProperties[j++]
+    h.noLocationProperties.fairwayTemplateCenter3 = this.state.aCourse.Features[indx].noLocationProperties[j++]
     
+    h.noLocationProperties.fairwayTemplateCenter4 = this.state.aCourse.Features[indx].noLocationProperties[j++]
+    h.noLocationProperties.fairwayTemplateCenter5 = this.state.aCourse.Features[indx].noLocationProperties[j++]
+    h.noLocationProperties.fairwayTemplateCenter6 = this.state.aCourse.Features[indx].noLocationProperties[j++]
+
+    h.noLocationProperties.fairwayTemplateCenter7 = this.state.aCourse.Features[indx].noLocationProperties[j++]
+    h.noLocationProperties.fairwayTemplateCenter8 = this.state.aCourse.Features[indx].noLocationProperties[j++]
+    h.noLocationProperties.fairwayTemplateCenter9 = this.state.aCourse.Features[indx].noLocationProperties[j++]
     
+    console.log("holeConfig after->", h)
     this.setState({ holeConfig: h })
 
   }
@@ -838,15 +850,31 @@ class App extends Component {
         theCourse.Features[zz].properties.fairwayTemplateCenter[z] = utils.convertGeoToGoogle(p.properties.fairwayTemplateCenter[z])
       }
     }
+
+    for (let j=0; j<18; j++) {
+      let aKeyList = Object.keys(theCourse.Features[j])
+      if (aKeyList.includes('noLocationProperties')) {
+        theCourse.Features[j].noLocationProperties.forEach( (k,i) => {
+          theCourse.Features[j].noLocationProperties[i] = utils.convertGeoToGoogle(k)
+        })
+      }
+    }
+    
+    
+
     console.log("yy-->", theCourse)
     this.setState({ holeConfig: h, aCourse: theCourse });
-    console.log("ic->", theCourse)
-    this.setState({ initialRegion: theCourse.initialRegion })
+    console.log("hc->", h)
+    
     this.handleHoleButtonClick(0)
     let llng = {}
     llng.lat = theCourse.initialRegion.latitude
     llng.lng = theCourse.initialRegion.longitude
     this.map.panTo(llng)
+
+    theCourse.initialRegion = utils.convertGeoToGoogle(theCourse.initialRegion)
+    this.setState({ initialRegion: theCourse.initialRegion })
+    console.log("init r->", theCourse.initialRegion)
   }
 
   // 
@@ -912,7 +940,7 @@ class App extends Component {
       }
     }
 
-    let API_KEY = "Your API KEY HERE"
+    let API_KEY = "AIzaSyBjhjazSK1XalgXiY3gCp32hhkTZzGG67E"
     let url = "https://maps.googleapis.com/maps/api/js?key=" + API_KEY + "&v=3.exp&libraries=geometry,drawing,places"
     if (this.state.showHoleEditor) {
 

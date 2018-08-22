@@ -249,7 +249,7 @@ export default class NoHoleLocation extends React.Component {
 
   render = () => {
     
-    console.log("noLocation Comp->" , this.props.holeConfig)
+    console.log("noLocation Comp->" , this.props)
 
 
     let deMap = 
